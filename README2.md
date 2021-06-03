@@ -32,13 +32,16 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 * 3.2 HTML5
 * 3.3 CSS
 * 3.4 JavaScript
-* 3.5 Materialize
-* 3.6 Google fonts
-* 3.7 Font Awesome
-* 3.8 W3schools
-* 3.9 Balsamiq
-* 3.10 Email JS 
-* 3.11 Favicon Generator 
+* 3.5 Python
+* 3.6 Flask
+* 3.7 Mongo DB
+* 3.8 Materialize
+* 3.9 Google fonts
+* 3.10 Font Awesome
+* 3.11 W3schools
+* 3.12 Balsamiq
+* 3.13 Email JS 
+* 3.14 Favicon Generator 
 
 ## **4. Testing** ##
 * 4.1 See [testing.md](testing.md) document 
