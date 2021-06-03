@@ -1,11 +1,11 @@
 # **Tipsy Mac Staggers** #
-![Image of Irish Flag](assets/images/readme_images/people_drinking.jpg)
+![Image of people drinking](assets/images/readme_images/people_drinking.jpg)
 
 ## **Introduction** ##
 
-The Tipsy Mac Staggers website was created and built by Stephen Mc Govern. The aim of the website is to act as a drinks data base where users can search for a new drink/cocktail. The site will provide all of the ingredients, quantaties and instructions to make each drink.
+The Tipsy Mac Staggers website was created and built by Stephen Mc Govern. The aim of the website is to act as a drinks database where users can search for a new drink/cocktail. The site will provide all of the ingredients, quantaties and instructions to make each drink.
 
-Registered users will also be able to upload their own drinks recepies that they have made so other users can sample another users twist on an established classic drink. 
+Registered users will also be able to upload their own cocktail/drinks recepies that they have made so other users can sample another users twist on an established classic drink. 
 
 **ADDITIONAL FEATURES**
 
