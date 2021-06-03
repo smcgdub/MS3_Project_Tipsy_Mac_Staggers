@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- FAV ICON NOT WORKING-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/favicon_io/site.webmanifest">
   <!-- MATERIALIZE LIBRARY -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- MATERIALIZE ICONS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- FONT AWESOME LIBRARY -->
   <script src="https://kit.fontawesome.com/debc4afe80.js" crossorigin="anonymous"></script>
+  <!-- FAV ICON NOT WORKING-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/favicon_io/site.webmanifest">
   <!-- LOCAL CSS STYLE SHEET -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   {% block styles %}
@@ -24,6 +24,32 @@
 
 <body>
 
+  <header>
+    <nav class="nav-extended right navbar_colour">
+      <div class="nav-wrapper">
+        <a href="{{ url_for('home') }}" class="brand-logo">Tipsy's</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons bars">dehaze</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="btn nav-btn waves-effect" href="{{ url_for('home') }}">Home</a></li>
+          <li><a class="btn nav-btn waves-effect" href="#">Profile</a></li>
+          <li><a class="btn nav-btn waves-effect" href="#">Add Drink</a></li>
+          <li><a class="btn nav-btn waves-effect" href="#">Register</a></li>
+          <li><a class="btn nav-btn waves-effect" href="#">Login</a></li>
+          <li><a class="btn nav-btn waves-effect" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- MOBILE SIDE NAVBAR -->
+    <ul class="sidenav" id="mobile-demo">
+      <h4 class="center">Menu</h4>
+      <li class="li_nav mobile-home"><a class="li_nav waves-effect" href="{{ url_for('home') }}">Home</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="#">Profile</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="#">Add drink</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="#">Register</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="#">Login</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="#">Logout</a></li>
+    </ul>
+  </header>
   {% block content %}
   {% endblock %}
 

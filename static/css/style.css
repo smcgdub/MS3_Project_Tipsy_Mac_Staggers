@@ -1,0 +1,51 @@
+/* GLOBAL FONT */
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+
+body {
+  font-family: 'Nixie One', cursive;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+
+.navbar_colour {
+  background-color: #f4a209;
+  border: 1px solid #000;
+}
+
+nav .brand-logo {
+  color: #000;
+  margin-left: 10px;
+  /* text-shadow: 1px 1px #fff; */
+}
+
+.nav-btn {
+  color: #000;
+  background-color: #aad922;
+  border-radius: 5px;
+  border: 1px solid #000;
+  /* text-shadow: 1px 1px #000; */
+  margin: 0px;
+  /* font-weight: 900; */
+}
+
+.nav-btn:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+
+.li_nav {
+  background-color: #aad922;
+  color: #ffffff;
+  border-bottom: 1px solid #000;
+}
+
+.bars {
+  color: #000;
+}
+
+.mobile-home {
+  border-top: 2px solid #000;
+}
