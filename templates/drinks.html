@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tipsy Mac Staggers</title>
-</head>
-<body>
-  
+{% extends "base.html" %}
+{% block content %}
+
   {% for drink in drinks %}
-      {{ drink.drink_category}}<br>    
-      {{ drink.drink_name }}<br>
-      {{ drink.ingredients }}<br>
+      {{ drink.drink_category|capitalize}}<br>    
+      {{ drink.drink_name|capitalize }}<br>
+      {{ drink.drink_ingredients|capitalize }}<br>
+      {{ drink.drink_instructions|capitalize }}<br>
+      {{ drink.drink_instructions2|capitalize }}<br>
   {% endfor %}
 
-</body>
-</html>
+{% endblock %}
