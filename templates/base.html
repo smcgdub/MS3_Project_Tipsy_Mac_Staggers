@@ -50,8 +50,25 @@
     </ul>
   </header>
 
-  {% block content %}
-  {% endblock %}
+  <!-- DISPLAY FLASH MESSAGES -->
+  <section class="container">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div class="row flash_messages">
+      <div class="col s10"></div>
+        <h4 class="center">{{ message }}</h4>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+  </section>
+
+  <main class="container">
+    {% block content %}
+    {% endblock %}
+  </main>
 
   <!-- FOOTER -->
   <footer class="page-footer">

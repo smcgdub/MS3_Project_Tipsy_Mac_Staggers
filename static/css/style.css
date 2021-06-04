@@ -8,6 +8,17 @@ body {
   flex-direction: column;
 }
 
+/* FLASH MESSAGES */
+.flash_messages {
+  background-color: #f4a209;
+  border: 1px solid #000;
+  color: #000;
+  text-shadow: 1px 1px #fff;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  margin-top: 2rem;
+}
+
 /* NAVBAR */
 
 .navbar_colour {

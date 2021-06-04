@@ -22,8 +22,8 @@
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">account_circle</i>
-          <input id="username" name="username" type="text" class="validate" autocomplete="username" required>
-          <label for="username">Create Username</label>
+          <input id="username" name="username" type="text" class="validate" autocomplete="username" minlength="5" maxlength="15" required>
+          <label for="username">Create Username (Min 5 characters)</label>
         </div>
       </div>
     </div>
@@ -43,8 +43,8 @@
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">security</i>
-          <input id="password" name="password" type="password" class="validate" autocomplete="password">
-          <label for="password">Create Password</label>
+          <input id="password" name="password" type="password" class="validate" autocomplete="password" minlength="6" maxlength="15">
+          <label for="password">Create Password (Min 6 characters)</label>
         </div>
       </div>
     </div>
@@ -54,7 +54,6 @@
         <div class="input-field col s12">
           <i class="material-icons prefix left">date_range</i>
           <input id="d_o_b" name="d_o_b" type="text" class="datepicker">
-          <!-- <input id="password" name="password" type="password" class="validate" autocomplete="password"> -->
           <label for="d_o_b">Your Date Of Birth</label>
         </div>
       </div>
