@@ -4,6 +4,7 @@
 <div class="container">
   <!-- REGISTER HEADING -->
   <h2 class="center">Register</h2>
+  <p class="center">You must be over 18 to register on this site</p>
   <!-- REGISTER FORM INPUTS -->
   <form method="POST" action="{{ url_for('register') }}">
     <!-- YOUR NAME INPUT -->
@@ -47,6 +48,17 @@
         </div>
       </div>
     </div>
+    <!-- DATE OF BIRTH -->
+    <div class="row">
+      <div class="col s12">
+        <div class="input-field col s12">
+          <i class="material-icons prefix left">date_range</i>
+          <input id="d_o_b" name="d_o_b" type="text" class="datepicker">
+          <!-- <input id="password" name="password" type="password" class="validate" autocomplete="password"> -->
+          <label for="d_o_b">Your Date Of Birth</label>
+        </div>
+      </div>
+    </div>
     <!-- SUBMIT BUTTON -->
     <div class="row">
       <div class="col s12 center">
@@ -55,6 +67,12 @@
         </button>
       </div>
     </div>
+    <p class="center">
+      <label>
+        <input type="checkbox"/>
+        <span>I confirm that i am over 18 years of age</span>
+      </label>
+    </p>
   </form>
 </div>
 

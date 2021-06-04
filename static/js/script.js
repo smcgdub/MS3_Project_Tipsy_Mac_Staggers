@@ -4,3 +4,8 @@ $(document).ready(function () {
     edge: "right"
   });
 });
+
+// DATE OF BIRTH ON REGISTER PAGE
+$(document).ready(function () {
+  $('.datepicker').datepicker();
+});
