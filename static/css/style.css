@@ -28,7 +28,7 @@ nav .brand-logo {
   border: 1px solid #000;
   /* text-shadow: 1px 1px #000; */
   margin: 0px;
-  /* font-weight: 900; */
+  font-weight: bolder;
 }
 
 .nav-btn:hover {
@@ -81,4 +81,23 @@ nav .brand-logo {
   /* text-shadow: 1px 1px #000; */
   color: #000;
   /* font-size: 1.2rem; */
+}
+
+/* REGISTER PAGE */
+
+.register_button {
+  background-color: #aad922;
+  color: #000;
+  /* text-shadow: 1px 1px #000; */
+  border: 1px solid #000;
+  font-family: 'Nixie One', cursive;
+  border-radius: 5px;
+}
+
+.register_button:hover {
+  background-color: #ffffff;
+  color: #000;
+  /* text-shadow: 1px 1px #000; */
+  border: 1px solid #000;
+  font-family: 'Nixie One', cursive;
 }

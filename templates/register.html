@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+  <!-- REGISTER HEADING -->
+  <h2 class="center">Register</h2>
+  <!-- REGISTER FORM INPUTS -->
+  <form method="POST" action="{{ url_for('register') }}">
+    <!-- YOUR NAME INPUT -->
+    <div class="row">
+      <div class="col s12">
+        <div class="input-field col s12">
+          <i class="material-icons prefix left">accessibility</i>
+          <input id="your_name" name="your_name" type="text" class="validate" required>
+          <label for="your_name">Your Name</label>
+        </div>
+      </div>
+    </div>
+    <!-- YOUR USERNAME INPUT -->
+    <div class="row">
+      <div class="col s12">
+        <div class="input-field col s12">
+          <i class="material-icons prefix left">account_circle</i>
+          <input id="username" name="username" type="text" class="validate" autocomplete="username" required>
+          <label for="username">Create Username</label>
+        </div>
+      </div>
+    </div>
+    <!-- EMAIL INPUT -->
+    <div class="row">
+      <div class="col s12">
+        <div class="input-field col s12">
+          <i class="material-icons prefix left">email</i>
+          <input id="email" name="email" type="email" class="validate" autocomplete="email" required>
+          <label for="email">Your Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+      </div>
+    </div>
+    <!-- PASSWORD -->
+    <div class="row">
+      <div class="col s12">
+        <div class="input-field col s12">
+          <i class="material-icons prefix left">security</i>
+          <input id="password" name="password" type="password" class="validate" autocomplete="password">
+          <label for="password">Create Password</label>
+        </div>
+      </div>
+    </div>
+    <!-- SUBMIT BUTTON -->
+    <div class="row">
+      <div class="col s12 center">
+        <button class="btn-large waves-effect waves-light register_button" type="submit" name="action">Register
+          <i class="material-icons right">person_add</i>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock %}
