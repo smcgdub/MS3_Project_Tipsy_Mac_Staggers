@@ -28,7 +28,8 @@
     <nav class="nav-extended right navbar_colour">
       <div class="nav-wrapper">
         <a href="{{ url_for('home') }}" class="brand-logo">Tipsy's</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons bars">dehaze</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+            class="material-icons bars">dehaze</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('home') }}">Home</a></li>
           <li><a class="btn nav-btn waves-effect" href="#">Profile</a></li>
@@ -52,6 +53,42 @@
   </header>
   {% block content %}
   {% endblock %}
+
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row follow_us_row">
+        <div class="col s12 center">
+          <span class="follow_us_text">Follow Us:</span>
+        </div>
+      </div>
+      <!-- SOCIAL MEDIA ICONS -->
+      <div class="row">
+        <div class="col s12 center">
+          <i class="fab fa-instagram social_icon"></i>
+          <i class="fab fa-youtube social_icon"></i>
+          <i class="fab fa-facebook-square social_icon"></i>
+          <i class="fab fa-twitter-square social_icon"></i>
+        </div>
+      </div>
+    </div>
+    <!-- SUB FOOTER -->
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 m6 s12">
+            <span class="sub_foot_text left">Website developed by:</span><br>
+            <span class="sub_foot_text left">Stephen Mc Govern</span>
+          </div>
+          <div class="col l6 m6 s12">
+            <span class="sub_foot_text right">Tipsy Mac Staggers</span><br>
+            <span class="sub_foot_text right">Copyright © 2021 | All rights reserved </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- JQUERY SCRIPT -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -18,7 +18,7 @@ body {
 nav .brand-logo {
   color: #000;
   margin-left: 10px;
-  /* text-shadow: 1px 1px #fff; */
+  text-shadow: 1px 1px #fff;
 }
 
 .nav-btn {
@@ -48,4 +48,37 @@ nav .brand-logo {
 
 .mobile-home {
   border-top: 2px solid #000;
+}
+
+/* FOOTER */
+
+.page-footer {
+  border: 1px solid #000;
+  background-color: #f4a209;
+}
+
+.footer-copyright {
+  border: 1px solid #000;
+}
+
+.social_icon {
+  font-size: 4rem;
+  margin: 5px;
+  text-shadow: 1px 1px #000;
+}
+
+.follow_us_text {
+  font-size: 2rem;
+  color: #000;
+  text-shadow: 1px 1px #fff;
+}
+
+.follow_us_row {
+  margin: 0px;
+}
+
+.sub_foot_text {
+  /* text-shadow: 1px 1px #000; */
+  color: #000;
+  /* font-size: 1.2rem; */
 }
