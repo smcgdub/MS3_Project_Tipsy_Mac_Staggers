@@ -76,6 +76,22 @@ nav .brand-logo {
   text-shadow: 1px 1px #000;
 }
 
+.fa-instagram:before {
+  color: #fff;
+}
+
+.fa-youtube:before {
+  color: #fff;
+}
+
+.fa-facebook-square:before {
+  color: #fff;
+}
+
+.fa-twitter-square:before {
+  color: #fff;
+}
+
 .follow_us_text {
   font-size: 2rem;
   color: #000;
