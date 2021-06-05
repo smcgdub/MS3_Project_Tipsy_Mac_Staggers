@@ -20,7 +20,6 @@ body {
 }
 
 /* NAVBAR */
-
 .navbar_colour {
   background-color: #f4a209;
   border: 1px solid #000;
@@ -62,7 +61,6 @@ nav .brand-logo {
 }
 
 /* FOOTER */
-
 .page-footer {
   border: 1px solid #000;
   background-color: #f4a209;
@@ -95,7 +93,6 @@ nav .brand-logo {
 }
 
 /* REGISTER PAGE */
-
 .register_button {
   background-color: #aad922;
   color: #000;

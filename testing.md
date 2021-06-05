@@ -131,3 +131,32 @@ When i click on this input and start typing the auto complete function doesn't p
 I have also tried to do a hard reset of the browsers, deleted the cache and the issue still persists. I have spoken with the tutors at Code Institute and after looking at solutions and we have narrowed it down to the Email JS contact form that is causing this. All of my code was checked and reviewed and came back with no errors. I have tested the form for thoroughly for functionality and this error doesn't impact the functionality of the page or the email function in anyway for the user. I have marked this down to be looked at in future to try and resolve. 
 >
 
+**1.4 Python Code Validating**
+
+**A) Register Page**
+
+Any user who wishes to contribute content to the website must first register their details and create an account. There are 5 input fields on the register page which are:
+
+1) Users name 
+2) Create username 
+3) Users email 
+4) Create password
+5) Enter their date of birth 
+
+* **Your Name:**<br> 
+
+
+* **Create Username:**<br> 
+Users registering on the site must create a username that is a minimum of 5 characters. To help guide new users i have created 2 pieces of placeholder text. The first piece of placeholder text prompts the user to "Create Username". The second piece of placeholder text specifies "Min 5 characters" This lets any new registering user know they have to use a minimum of 5 characters when creating their username. I have also installed some validation code in the HTML so if the user creates a username of less than 5 characters the input field will turn red and they user will be displayed a message of "Invalid Username". If the user enters the 5 characters correctly when they click on a new input field the field they populated will turn green and they will get the confirmation message "Username valid" 
+
+**INSERT SCREENSHOT HERE**
+
+* **Your Email:**<br>
+Users registering on the site must also enter a valid email address. I have created some placeholder again to help guide new users. The first piece is placeholder text on this input field specifying "Your email". If the user enters an invalid email address then the field will turn red and the user will see a message saying "Invalid email address". If the user enters a correct email address then the field will turn green and the user will see the message "Email valid" 
+
+**INSERT SCREENSHOT HERE**
+
+* **Create Password:**<br> 
+Agin in this field i have placed some placeholder text promting the new user to "Create Password" As i did with the username i have specified in the placeholder text the password must be a minimum of 6 characters. If the user enters a password of less than 6 characters they will be greated with a message of "Invalid password". If the user enters 6 or more characters then the field will turn green. I havent added any confirmation place holder text, the field will jsut turn green to confirm the passowrd in long enough.
+
+**INSERT SCREENSHOT HERE**
