@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="container">
+<div>
   <!-- REGISTER HEADING -->
-  <h2 class="center">Register</h2>
+  <h2 class="center register_text">Register</h2>
   <p class="center">You must be over 18 to register on this site</p>
   <!-- REGISTER FORM INPUTS -->
   <form method="POST" action="{{ url_for('register') }}">
@@ -22,8 +22,10 @@
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">account_circle</i>
-          <input id="username" name="username" type="text" class="validate" autocomplete="username" minlength="5" maxlength="15" required>
-          <label for="username">Create Username (Min 5 characters)</label>
+          <input id="username" name="username" type="text" class="validate" autocomplete="username" minlength="5"
+            maxlength="15" required>
+          <label for="username">Create Username</label>
+          <span class="helper-text" data-error="Invalid username" data-success="Username valid">Min 5 characters</span>
         </div>
       </div>
     </div>
@@ -34,7 +36,7 @@
           <i class="material-icons prefix left">email</i>
           <input id="email" name="email" type="email" class="validate" autocomplete="email" required>
           <label for="email">Your Email</label>
-          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          <span class="helper-text" data-error="Invalid email address" data-success="Email valid ">Help text</span>
         </div>
       </div>
     </div>
@@ -43,8 +45,10 @@
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">security</i>
-          <input id="password" name="password" type="password" class="validate" autocomplete="password" minlength="6" maxlength="15">
-          <label for="password">Create Password (Min 6 characters)</label>
+          <input id="password" name="password" type="password" class="validate" autocomplete="password" minlength="6"
+            maxlength="15">
+          <label for="password">Create Password</label>
+          <span class="helper-text" data-error="Invalid Password" data-success="">Min 6 characters</span>
         </div>
       </div>
     </div>
@@ -68,7 +72,7 @@
     </div>
     <p class="center">
       <label>
-        <input type="checkbox"/>
+        <input type="checkbox" />
         <span>I confirm that i am over 18 years of age</span>
       </label>
     </p>

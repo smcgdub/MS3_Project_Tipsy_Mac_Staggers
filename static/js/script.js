@@ -10,7 +10,7 @@ var currYear = (new Date()).getFullYear();
 
 $(document).ready(function () {
   $('.datepicker').datepicker({
-    format: 'dd mm, yyyy',
+    format: 'dd mmm yyyy',
     yearRange: [1900, currYear - 0],
     setDefaultDate: new Date(01,01,2021)
   });

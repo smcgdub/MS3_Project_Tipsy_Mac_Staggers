@@ -28,12 +28,19 @@ def home():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # CHECK IF USER IS ALREADY REGISTERED ON SITE
+        # CHECK IF USERNAME OR EMAIL IS ALREADY REGISTERED ON SITE
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
             flash("Sorry, that username already exists")
+            return redirect(url_for("register"))
+
+        existing_email = mongo.db.users.find_one(
+            {"email": request.form.get("email").lower()})
+
+        if existing_email:
+            flash("Sorry, that email's already registered")
             return redirect(url_for("register"))
 
         register = {
