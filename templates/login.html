@@ -3,20 +3,20 @@
 
 <div>
   <!-- REGISTER HEADING -->
-  <h2 class="center register_text">Register</h2>
-  <p class="center">You must be over 18 to register on this site</p>
+  <h2 class="center register_text">Log In</h2>
+  <!-- <p class="center">You must be over 18 to register on this site</p> -->
   <!-- REGISTER FORM INPUTS -->
-  <form method="POST" action="{{ url_for('register') }}">
+  <form method="POST" action="{{ url_for('login') }}">
     <!-- YOUR NAME INPUT -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">accessibility</i>
-          <input id="your_name" name="your_name" type="text" class="validate" required>
+          <input id="your_name" name="your_name" type="text" class="validate" pattern="[a-zA-Z]" title="Only letters allowed a-z A-Z" required>
           <label for="your_name">Your Name</label>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- YOUR USERNAME INPUT -->
     <div class="row">
       <div class="col s12">
@@ -24,13 +24,13 @@
           <i class="material-icons prefix left">account_circle</i>
           <input id="username" name="username" type="text" class="validate" autocomplete="username" minlength="5"
             maxlength="15" pattern="[a-zA-Z0-9]{5,15}" title="Only letters and numbers allowed a-z A-Z 0-9" required>
-          <label for="username">Create Username</label>
-          <span class="helper-text" data-error="Invalid username" data-success="Username valid">Min 5 characters</span>
+          <label for="username">Enter Username</label>
+          <span class="helper-text" data-error="Invalid username" data-success="Username valid"></span>
         </div>
       </div>
     </div>
     <!-- EMAIL INPUT -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">email</i>
@@ -39,21 +39,21 @@
           <span class="helper-text" data-error="Invalid email address" data-success="Email valid ">Help text</span>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- PASSWORD -->
     <div class="row">
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">security</i>
           <input id="password" name="password" type="password" class="validate" autocomplete="password" minlength="6"
-            maxlength="15" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}" title="Must contain 1 number, 1 uppercase and 1 lowercase letter" required>
-          <label for="password">Create Password</label>
-          <span class="helper-text" data-error="Invalid Password" data-success="">Min 6 characters</span>
+            maxlength="15" required>
+          <label for="password">Enter Password</label>
+          <span class="helper-text" data-error="Invalid Password" data-success=""></span>
         </div>
       </div>
     </div>
     <!-- DATE OF BIRTH -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix left">date_range</i>
@@ -61,28 +61,27 @@
           <label for="d_o_b">Your Date Of Birth</label>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- SUBMIT BUTTON -->
     <div class="row">
       <div class="col s12 center">
-        <button class="btn-large waves-effect waves-light register_button" type="submit" name="action">Register
-          <i class="material-icons right">person_add</i>
+        <button class="btn-large waves-effect waves-light register_button" type="submit" name="action">Log In
+          <i class="material-icons right">forward</i>
         </button>
       </div>
     </div>
-    <p class="center">
+    <!-- <p class="center">
       <label>
         <input type="checkbox" />
         <span>I confirm that i am over 18 years of age</span>
       </label>
-    </p>
+    </p> -->
   </form>
-</div>
 
   <div class="row">
     <div class="col s12">
       <p class="center">
-        Already Registered? <a href="{{ url_for('login') }}">Log In Here</a> 
+        New Here? <a href="{{ url_for('register') }}">Register an account</a> 
       </p>
     </div>
   </div>
