@@ -108,6 +108,11 @@ nav .brand-logo {
   /* font-size: 1.2rem; */
 }
 
+/* FOOTER STICKY BOTTOM */
+main {
+  flex: 1 0 auto;
+}
+
 /* REGISTER PAGE */
 .register_button {
   background-color: #aad922;
@@ -129,4 +134,10 @@ nav .brand-logo {
 .register_text {
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
+}
+
+/* DRINKS PAGE */
+.tipsys_drinks {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
 }

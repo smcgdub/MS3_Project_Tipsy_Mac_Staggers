@@ -1,12 +1,59 @@
 {% extends "base.html" %}
 {% block content %}
 
-  {% for drink in drinks %}
-      {{ drink.drink_category|capitalize}}<br>    
-      {{ drink.drink_name|capitalize }}<br>
-      {{ drink.drink_ingredients|capitalize }}<br>
-      {{ drink.drink_instructions|capitalize }}<br>
-      {{ drink.drink_instructions2|capitalize }}<br>
-  {% endfor %}
+<!-- <div class="card">
+  <div class="card-content">
+    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+      little markup to use effectively.</p>
+  </div>
+  <div class="card-tabs">
+    <ul class="tabs tabs-fixed-width">
+      <li class="tab"><a class="active" href="#test4">About Drink</a></li>
+      <li class="tab"><a href="#test5">Ingredients</a></li>
+      <li class="tab"><a href="#test6">Instructions</a></li>
+    </ul>
+  </div>
+
+  <div class="card-content grey lighten-4">
+    <div id="test4">About Drink</div>
+    <div id="test5">Ingredients</div>
+    <div id="test6">Instructions</div>
+  </div>
+</div> -->
+<!-- PAGE HEADER -->
+<div class="row">
+  <div class="col s12">
+    <h4 class="center tipsys_drinks">Tipsy's Drinks</h4>
+  </div>
+</div>
+
+<!-- DRINKS CARDS -->
+{% for drink in drinks %}
+<ul class="collapsible">
+  <!-- DRINK NAME AND TYPE -->
+  <li>
+    <div class="collapsible-header s6"><i class="fas fa-cocktail"></i>Name: {{ drink.drink_name|capitalize }} | Type:
+      {{ drink.drink_category|capitalize}}</div>
+  </li>
+  <!-- <li>
+    <div class="collapsible-header"><i class="fas fa-cocktail"></i>Type: {{ drink.drink_category|capitalize}}</div>
+  </li> -->
+  <!-- <li>
+    <div class="collapsible-header"><i class="fas fa-info"></i>About Drink:</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li> -->
+  <!-- DRINK INGREDIENTS -->
+  <li>
+    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients: </div>
+    <div class="collapsible-body"><span>{{ drink.drink_ingredients|capitalize }}</span></div>
+  </li>
+  <!-- DRINK INSTRUCTIONS -->
+  <li>
+    <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions: </div>
+    <div class="collapsible-body"><span>{{ drink.drink_instructions|capitalize }}</span></div>
+  </li>
+</ul>
+{% endfor %}
+
 
 {% endblock %}
