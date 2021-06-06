@@ -16,7 +16,7 @@ $(document).ready(function () {
   });
 });
 
-// DRINKS CARD
+// DRINKS CARD OPEN & CLOSE
 $(document).ready(function () {
   $('.collapsible').collapsible();
 });
