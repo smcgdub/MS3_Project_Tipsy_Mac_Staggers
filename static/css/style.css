@@ -147,3 +147,24 @@ main {
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
 }
+
+/* HEADER TEXT FADE IN EFFECT */
+h3.tipsys_drinks {
+  display: none
+}
+
+h3.profile_username_h3 {
+  display: none
+}
+
+h2.register_text {
+  display: none
+}
+
+p.register_p {
+  display: none
+}
+
+h3.add_drink {
+  display: none
+}
