@@ -168,3 +168,7 @@ p.register_p {
 h3.add_drink {
   display: none
 }
+
+ul.drinks_cards {
+  display: none
+}

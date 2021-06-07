@@ -33,4 +33,5 @@ $(document).ready(function () {
   $('h2.register_text').slideDown(1000)
   $('p.register_p').slideDown(1000)
   $('h3.add_drink').slideDown(1000)
+  $('ul.drinks_cards').slideDown(1000)
 });

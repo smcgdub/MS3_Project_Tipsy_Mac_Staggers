@@ -3,11 +3,9 @@
 
 ## **Introduction** ##
 
-The Tipsy Mac Staggers website was created and built by Stephen Mc Govern. The aim of the website is to act as a drinks database where users can search for a new drink/cocktail. The site will provide all of the ingredients, quantaties and instructions to make each drink.
+The Tipsy Mac Staggers website was created and built by Stephen Mc Govern. The aim of the website is to act as a drinks database where users can search for a new drink/cocktail that they wish to try. The site will provide all of the ingredients, quantaties and instructions to make each drink.
 
 Registered users will also be able to upload their own cocktail/drinks recepies that they have made so other users can sample another users twist on an established classic drink. 
-
-**ADDITIONAL FEATURES**
 
 > 
 ## **Table of contents** ## 
@@ -21,17 +19,20 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 
 ## **2. Features** ##
 * 2.1 The Navbar
-* 2.2 Search Drinks Feature 
-* 2.3 The Footer
-* 2.4 User Profile 
-* 2.5 Add Drink 
-* 2.6 Contact Us Form
+* 2.2 Search drinks feature 
+* 2.3 User profile
+* 2.4 Add drink
+* 2.5 Drink categories
+* 2.6 LogIn
+* 2.7 Log out
+* 2.8 The Footer 
+<!-- * 2.6 Contact Us Form -->
 
 ## **3. Technologies/Languages Used** ##
 * 3.1 Gitpod
 * 3.2 HTML5
 * 3.3 CSS
-* 3.4 JavaScript
+* 3.4 JavaScript/JQuery
 * 3.5 Python
 * 3.6 Flask
 * 3.7 Mongo DB
@@ -40,7 +41,7 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 * 3.10 Font Awesome
 * 3.11 W3schools
 * 3.12 Balsamiq
-* 3.13 Email JS 
+<!-- * 3.13 Email JS  -->
 * 3.14 Favicon Generator 
 
 ## **4. Testing** ##
@@ -69,7 +70,7 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 
 ### **1.1 - Target Audience** ###
 
-* This website is aimed at anyone who is looking for instructions on how to make a cocktail/drink that they may not be familiar with or are unsure about what ingredients, quantaties and steps to follow to make that drink. The site is built around user engagement and all users are encouraged to register and add their favourite drinks to the site. 
+* This website is aimed at anyone who is looking for instructions on how to make a cocktail/drink that they may not be familiar with or are unsure about what ingredients, quantaties and steps to follow to make that drink. The site is built around user engagement and all users are encouraged to register and add their favourite drinks to the site, the more registered users generating content the better the site will become. 
 
 ### **1.2 - Visitor goals** ###
 
@@ -87,7 +88,7 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 
 ### **1.4 - Design Choices** ###
 
-* As the website is a site used for drink recepies I wanted it to be bright, simple to use and have a fun looking font. 
+* As the website is a site used for drink recepies I wanted it to be bright, simple and easy to use on all devices. 
 
 **FONTS**
 
@@ -113,7 +114,7 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 
 ### **2.1 - The Navbar** ###
 
-For the Navbar i decided to use a Materialize mobile collapse navbar. I chose this option because i wanted the Navbar to be responsive on all screen sizes and the Materialize mobile collapse navbar offers this function. 
+For the Navbar i decided to use a Materialize mobile collapse navbar. I chose this option because i wanted the Navbar to be responsive on all screen sizes and the Materialize mobile collapse navbar offers this function in a quick and easy way. 
 
 <!-- ![Image of Navbar](assets/readme-images/navbar.png) -->
 
