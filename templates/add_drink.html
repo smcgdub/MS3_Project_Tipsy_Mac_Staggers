@@ -4,7 +4,7 @@
 <h3 class="center add_drink">Add Drink</h3>
 
 <div class="row">
-  <form class="col s12" method="POST" action="">
+  <form class="col s12" method="POST" action="{{ url_for('add_drink') }}">
     <!-- DRINK NAME INPUT -->
     <div class="row">
       <div class="col s12">
@@ -34,9 +34,10 @@
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix">shopping_cart</i>
-          <input id="drink_ingredients" name="drink_ingredients" type="text" class="validate" required>
+          <textarea id="drink_ingredients" name="drink_ingredients" class="materialize-textarea validate"
+            data-length="1000" required></textarea>
           <label for="drink_ingredients">Ingredients:</label>
-          <span class="helper-text" data-error="" data-success="">List all ingredients</span>
+          <span class="helper-text" data-error="Add drink ingredients" data-success="">List all ingredients</span>
         </div>
       </div>
     </div>
@@ -46,14 +47,23 @@
       <div class="col s12">
         <div class="input-field col s12">
           <i class="material-icons prefix">format_list_numbered</i>
-          <input id="drink_instructions" name="drink_instructions" type="text" class="validate" required>
+          <textarea id="drink_instructions" name="drink_instructions" class="materialize-textarea validate"
+            data-length="1000" required></textarea>
+          <!-- <input id="drink_instructions" name="drink_instructions" type="text" class="validate" required> -->
           <label for="drink_instructions">Instructions:</label>
-          <span class="helper-text" data-error="" data-success="">Enter step by step instructions</span>
+          <span class="helper-text" data-error="Add step by step instructions" data-success="">Enter step by step
+            instructions</span>
         </div>
       </div>
     </div>
-
-
+    <!-- SUBMIT BUTTON -->
+    <div class="row">
+      <div class="col s12 center">
+        <button class="btn-large waves-effect waves-light register_button" type="submit">Submit Drink
+          <i class="material-icons right">forward</i>
+        </button>
+      </div>
+    </div>
   </form>
 </div>
 
