@@ -53,6 +53,17 @@
     <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions: </div>
     <div class="collapsible-body"><span>{{ drink.drink_instructions|capitalize }}</span></div>
   </li>
+  <!-- EDIT BUTTON -->
+  <li>
+    <!-- EDIT BUTTON -->
+    <a href="{{ url_for('edit_drink', drink_id=drink._id) }}"
+      class="btn-small waves-effect waves-light edit_drink_btn s6">Edit Drink <i
+        class="material-icons right">border_color</i></a>
+    <!-- DELETE BUTTON -->
+    <a href="" class="btn-small waves-effect waves-light delete_drink_btn s6">Delete Drink
+      <i class="material-icons right">cancel</i>
+    </a>
+  </li>
 </ul>
 {% endfor %}
 

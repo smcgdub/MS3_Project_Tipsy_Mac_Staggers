@@ -142,10 +142,51 @@ main {
   margin-bottom: 0.8rem;
 }
 
+.edit_drink_btn {
+  background-color: #a209f4;
+  color: #ffffff;
+}
+
+.edit_drink_btn:hover {
+  background-color: #e3b4fc;
+  color: #000000;
+}
+
+.delete_drink_btn:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+.delete_drink_btn {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
 /* ADD DRINK PAGE */
 .add_drink {
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
+}
+
+/* EDIT DRINK PAGE */
+.cancel_edit_button {
+  background-color: #ff0000;
+  color: #ffffff;
+  /* text-shadow: 1px 1px #000; */
+  border: 1px solid #000;
+  font-family: 'Nixie One', cursive;
+  border-radius: 5px;
+  margin: 2.5px;
+}
+
+.cancel_edit_button:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+  /* text-shadow: 1px 1px #000; */
+  border: 1px solid #000;
+  font-family: 'Nixie One', cursive;
+  border-radius: 5px;
+  margin: 2.5px;
 }
 
 /* HEADER TEXT FADE IN EFFECT */
@@ -170,5 +211,17 @@ h3.add_drink {
 }
 
 ul.drinks_cards {
+  display: none
+}
+
+h3.edit_drink {
+  display: none
+}
+
+form.edit_drink_form {
+  display: none
+}
+
+form.add_drink_form {
   display: none
 }

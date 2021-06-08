@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center add_drink">Add Drink</h3>
+<h3 class="center edit_drink">Edit Drink</h3>
 
 <div class="row">
-  <form class="col s12 add_drink_form" method="POST" action="{{ url_for('add_drink') }}">
+  <form class="col s12 edit_drink_form" method="POST" action="{{ url_for('edit_drink', drink_id=drink._id) }}">
     <!-- DRINK NAME INPUT -->
     <div class="row">
       <div class="col s12">
         <div class="input-field col s12">
           <i class="fas fa-cocktail prefix"></i>
-          <input id="drink_name" name="drink_name" type="text" class="validate" maxlength="100" data-length="100" required>
+          <input id="drink_name" name="drink_name" type="text" class="validate" maxlength="100" data-length="100" value="{{ drink.drink_name|capitalize }}" required>
           <label for="drink_name">Drink Name:</label>
           <span class="helper-text" data-error="Enter drink name" data-success=""></span>
         </div>
@@ -22,7 +22,7 @@
       <div class="col s12">
         <div class="input-field col s12">
           <i class="fas fa-cocktail prefix"></i>
-          <input id="drink_category" name="drink_category" type="text" class="validate" maxlength="50" data-length="50" required>
+          <input id="drink_category" name="drink_category" type="text" class="validate" maxlength="50" data-length="50" value="{{ drink.drink_category|capitalize }}" required>
           <label for="drink_category">Drink Type:</label>
           <span class="helper-text" data-error="Enter drink type" data-success="">Ex: Whisky/Vodka/Rum (Enter only 1)</span>
         </div>
@@ -35,7 +35,7 @@
         <div class="input-field col s12">
           <i class="material-icons prefix">shopping_cart</i>
           <textarea id="drink_ingredients" name="drink_ingredients" class="materialize-textarea validate"
-            data-length="1000" required></textarea>
+            data-length="1000" required>{{- drink.drink_ingredients -}}</textarea>
           <label for="drink_ingredients">Ingredients:</label>
           <span class="helper-text" data-error="Add drink ingredients" data-success="">List all ingredients & quantities</span>
         </div>
@@ -48,7 +48,7 @@
         <div class="input-field col s12">
           <i class="material-icons prefix">format_list_numbered</i>
           <textarea id="drink_instructions" name="drink_instructions" class="materialize-textarea validate"
-            data-length="1000" required></textarea>
+            data-length="1000" required>{{- drink.drink_instructions -}}</textarea>
           <!-- <input id="drink_instructions" name="drink_instructions" type="text" class="validate" required> -->
           <label for="drink_instructions">Instructions:</label>
           <span class="helper-text" data-error="Add step by step instructions" data-success="">Enter step by step
@@ -56,11 +56,14 @@
         </div>
       </div>
     </div>
-    <!-- SUBMIT BUTTON -->
+    <!-- EDIT & CANCEL BUTTON -->
     <div class="row">
       <div class="col s12 center">
-        <button class="btn-large waves-effect waves-light register_button" type="submit">Submit Drink
-          <i class="material-icons right">forward</i>
+        <!-- CANCEL BUTTON -->
+        <a href="{{ url_for('home') }}" class="btn-large waves-effect waves-light cancel_edit_button">Cancel<i class="material-icons right">cancel</i></a>
+        <!-- EDIT BUTTON -->
+        <button class="btn-large waves-effect waves-light register_button" type="submit">Done
+          <i class="material-icons right">check</i>
         </button>
       </div>
     </div>

@@ -124,6 +124,12 @@ def add_drink():
     return render_template("add_drink.html")
 
 
+@app.route("/edit_drink/<drink_id>", methods=["GET", "POST"])
+def edit_drink(drink_id):
+    drink = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
+    return render_template("edit_drink.html", drink=drink)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

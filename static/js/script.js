@@ -30,11 +30,14 @@ $(document).ready(function () {
 // PAGE HEADERS FADEIN
 $(document).ready(function () {
   $('h3.tipsys_drinks').slideDown(1000),
-    $('h3.profile_username_h3').slideDown(1000)
+  $('h3.profile_username_h3').slideDown(1000)
   $('h2.register_text').slideDown(1000)
   $('p.register_p').slideDown(1000)
   $('h3.add_drink').slideDown(1000)
   $('ul.drinks_cards').slideDown(1000)
+  $('h3.edit_drink').slideDown(1000)
+  $('form.edit_drink_form').slideDown(1000)
+  $('form.add_drink_form').slideDown(1000)
 });
 
 // CHARACTER COUNTER FOR ADD DRINK PAGE - INGREDIENTS AND INSTRUCTIONS INPUT
