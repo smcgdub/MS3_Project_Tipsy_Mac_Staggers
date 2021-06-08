@@ -126,7 +126,20 @@ def add_drink():
 
 @app.route("/edit_drink/<drink_id>", methods=["GET", "POST"])
 def edit_drink(drink_id):
+    if request.method == "POST":
+        new_drink = {
+            "drink_category": request.form.get("drink_category"),
+            "drink_name": request.form.get("drink_name"),
+            "drink_ingredients": request.form.get("drink_ingredients"),
+            "drink_instructions": request.form.get("drink_instructions"),
+            "created_by": session["user"]
+        }
+        mongo.db.drinks.update({"_id": ObjectId(drink_id)}, new_drink)
+        flash("Drink has been updated")
+        return redirect(url_for("home"))
+
     drink = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
+    # return redirect(url_for("home"))
     return render_template("edit_drink.html", drink=drink)
 
 

@@ -1,7 +1,7 @@
 // AUTOMATICALLY INIT ALL JS WITH FUNCTION BELOW
-// document.addEventListener('DOMContentLoaded', function () {
-//   M.AutoInit();
-// });
+document.addEventListener('DOMContentLoaded', function () {
+  M.AutoInit();
+});
 
 // MOBILE SIDE NAV OPEN RIGHT
 $(document).ready(function () {
