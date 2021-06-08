@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div>
+<div class="register_page">
   <!-- REGISTER HEADING -->
   <h2 class="center register_text">Register</h2>
   <p class="center register_p">You must be over 18 to register on this site</p>
   <!-- REGISTER FORM INPUTS -->
-  <form method="POST" action="{{ url_for('register') }}">
+  <form method="POST" action="{{ url_for('register') }}" class="register_page_form">
     <!-- YOUR NAME INPUT -->
     <div class="row">
       <div class="col s12">

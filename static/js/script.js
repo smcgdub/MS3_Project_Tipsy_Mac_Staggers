@@ -38,6 +38,8 @@ $(document).ready(function () {
   $('h3.edit_drink').slideDown(1000)
   $('form.edit_drink_form').slideDown(1000)
   $('form.add_drink_form').slideDown(1000)
+  $('form.register_page_form').slideDown(1000)
+  $('form.login_page_form').slideDown(1000)
 });
 
 // CHARACTER COUNTER FOR ADD DRINK PAGE - INGREDIENTS AND INSTRUCTIONS INPUT
