@@ -114,7 +114,8 @@ def add_drink():
             "drink_category": request.form.get("drink_category"),
             "drink_name": request.form.get("drink_name"),
             "drink_ingredients": request.form.get("drink_ingredients"),
-            "drink_instructions": request.form.get("drink_instructions")
+            "drink_instructions": request.form.get("drink_instructions"),
+            "created_by": session["user"]
         }
         mongo.db.drinks.insert_one(new_drink)
         flash("Drink added to database")
