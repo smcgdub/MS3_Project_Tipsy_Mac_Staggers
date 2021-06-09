@@ -26,6 +26,14 @@ def home():
     return render_template("drinks.html", drinks=drinks)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    # SEARCH FUNCTION FROM HOMEPAGE
+    search = request.form.get("search")
+    drinks = mongo.db.drinks.find({"$text": {"$search": search}})
+    return render_template("drinks.html", drinks=drinks)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -148,8 +156,9 @@ def edit_drink(drink_id):
 
 @app.route("/delete_drink/<drink_id>")
 def delete_drink(drink_id):
+    # FINDS DRINK BY ITS UNIQUE ID AND DELETE IT
     mongo.db.drinks.remove({"_id": ObjectId(drink_id)})
-    flash("Drink has been deleted")
+    flash("Drink has been deleted", "info")
     return redirect(url_for("home"))
 
 
