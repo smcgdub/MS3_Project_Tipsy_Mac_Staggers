@@ -21,6 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
+    # LIST ALL OF THE DRINKS IN THE DATABASE
     drinks = mongo.db.drinks.find()
     return render_template("drinks.html", drinks=drinks)
 
@@ -31,18 +32,18 @@ def register():
         # CHECK IF USERNAME OR EMAIL IS ALREADY REGISTERED ON SITE
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-
+        # ERROR MESSAGE IF USERNAME ALREADY EXISTS
         if existing_user:
             flash("Sorry, that username already exists")
             return redirect(url_for("register"))
 
         existing_email = mongo.db.users.find_one(
             {"email": request.form.get("email").lower()})
-
+        # ERROR MESSAGE IF EMAIL ALREADY EXISTS
         if existing_email:
             flash("Sorry, that email's already registered")
             return redirect(url_for("register"))
-
+        # DETAILS TO REGISTER IN MONGO DB FOR NEW USERS
         register = {
             "your_name": request.form.get("your_name").lower(),
             "username": request.form.get("username").lower(),
@@ -92,16 +93,17 @@ def login():
 def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-
     if session["user"]:
+        # LOAD PROFILE PAGE IF USER ALREADY EXISTS
         return render_template("profile.html", username=username)
     else:
+        # RETURNS USER TO LOGIN PAGE
         return redirect(url_for("login"))
 
 
 @app.route("/logout")
 def logout():
-    #
+    # LOGGS USER OUT OF THEI SESSION
     flash("You have logged out")
     session.pop("user")
     return redirect(url_for("login"))
@@ -109,6 +111,7 @@ def logout():
 
 @app.route("/add_drink", methods=["GET", "POST"])
 def add_drink():
+    # IF USER IS POSTING INFORMATION TO THE WEBSITE
     if request.method == "POST":
         new_drink = {
             "drink_category": request.form.get("drink_category"),

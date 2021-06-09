@@ -19,6 +19,14 @@ body {
   margin-top: 1.4rem;
 }
 
+.modal .modal-footer {
+  text-align: center;
+}
+
+.modal_p {
+  margin: 0px;
+}
+
 /* NAVBAR */
 .navbar_colour {
   background-color: #f4a209;
@@ -143,25 +151,29 @@ main {
 }
 
 .edit_drink_btn {
-  background-color: #a209f4;
+  background-color: #f4a209;
+  /* background-color: #a209f4; */
   /* background-color: #095BF4; */
   /* background-color: #aad922; */
-  color: #ffffff;
+  color: #000000;
+  /* width: 100%; */
 }
 
 .edit_drink_btn:hover {
-  background-color: #e3b4fc;
+  /* background-color: #e3b4fc; */
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.delete_drink_btn {
+  background-color: #ff0000;
   color: #000000;
 }
 
 .delete_drink_btn:hover {
   background-color: #ffffff;
+  text-shadow: 1px 1px #fff;
   color: #ff0000;
-}
-
-.delete_drink_btn {
-  background-color: #ff0000;
-  color: #ffffff;
 }
 
 /* ADD DRINK PAGE */
