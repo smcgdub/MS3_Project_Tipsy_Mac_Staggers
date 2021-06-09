@@ -33,7 +33,9 @@
   <div class="modal-content">
     <h4 class="modal-h4 center">A quick note from Tipsy Mac Stagger</h4>
     <br>
-    <p class="modal_p">This website contains recepies for alcoholic drinks. If you are ablove the legal age for drinking in your country we want you to sample the many drinks in our database and enjoy them. All we ask is that you drink responsibly. </p>
+    <p class="modal_p">This website contains recepies for alcoholic drinks. If you are ablove the legal age for drinking
+      in your country we want you to sample the many drinks in our database and enjoy them. All we ask is that you drink
+      responsibly. </p>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">I understand</a>
@@ -65,15 +67,16 @@
     <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions: </div>
     <div class="collapsible-body"><span>{{ drink.drink_instructions|capitalize }}</span></div>
   </li>
-  <!-- EDIT BUTTON -->
+  <!-- EDIT/DELETE DRINK BUTTONS -->
   {% if session.user|lower == drink.created_by|lower %}
   <li>
-    <!-- EDIT BUTTON -->
+    <!-- EDIT DRINK BUTTON -->
     <a href="{{ url_for('edit_drink', drink_id=drink._id) }}"
       class="btn-small waves-effect waves-light edit_drink_btn s6">Edit Drink<i
         class="material-icons right">border_color</i></a>
-    <!-- DELETE BUTTON -->
-    <a href="" class="btn-small waves-effect waves-light delete_drink_btn s6">Delete Drink
+    <!-- DELETE DRINK BUTTON -->
+    <a href="{{ url_for('delete_drink', drink_id=drink._id) }}"
+      class="btn-small waves-effect waves-light delete_drink_btn s6" onclick="return confirm('Are you sure you want to delete this drink?');">Delete Drink
       <i class="material-icons right">cancel</i>
     </a>
   </li>
