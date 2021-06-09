@@ -150,6 +150,10 @@ main {
   margin-bottom: 0.8rem;
 }
 
+.all_drinks_h4 {
+  margin: 0rem 1rem 1rem 1rem;
+}
+
 .edit_drink_btn {
   background-color: #f4a209;
   /* background-color: #a209f4; */
@@ -266,6 +270,10 @@ form.register_page_form {
 }
 
 form.login_page_form {
+  display: none
+}
+
+form.search_bar{
   display: none
 }
 
