@@ -65,14 +65,14 @@
     <div class="row">
       <div class="col s12">
         <div class="input-field col s12"><i class="material-icons prefix">access_time</i>
-          <select>
+          <select id="preperation_time" name="preperation_time" class="validate" type="number">
             <option value="" disabled selected>Select:</option>
             <option value="5">5 Minutes</option>
             <option value="10">10 Minutes</option>
             <option value="15">15 Minutes</option>
             <option value="20">20 Minutes</option>
           </select>
-          <label for="preperation_time">Preperation Time:</label>
+          <label for="preperation_time">Preperation Time (Minutes):</label>
         </div>
       </div>
     </div>
@@ -80,8 +80,8 @@
     <!-- SERVES -->
     <div class="row">
       <div class="col s12">
-        <div class="input-field col s12"><i class="fas fa-chart-pie prefix"></i>
-          <select>
+        <div class="input-field col s12"><i class="material-icons prefix left">face</i>
+          <select id="serves" name="serves" class="validate" type="number">
             <option value="" disabled selected>Select:</option>
             <option value="1">1x person</option>
             <option value="2">2x people</option>
@@ -92,7 +92,7 @@
             <option value="7">7x people</option>
             <option value="8">8x people</option>
           </select>
-          <label for="serves">Serves:</label>
+          <label for="serves">Serves (People):</label>
         </div>
       </div>
     </div>

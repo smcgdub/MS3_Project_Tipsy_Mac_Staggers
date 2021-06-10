@@ -197,6 +197,13 @@ main {
   font-size: 1.1rem;
 }
 
+.search_clear_btns {
+  margin-bottom: 0px;
+}
+
+.preperation_row {
+  margin-bottom: 5px;
+}
 /* ADD DRINK PAGE */
 .add_drink {
   margin-top: 1.5rem;
@@ -275,6 +282,11 @@ form.login_page_form {
 
 form.search_bar{
   display: none
+}
+
+.search_bar_input {
+  border: 1px solid #000000;
+  /* padding: 10px; */
 }
 
 /* .collapsible-header {

@@ -126,6 +126,8 @@ def add_drink():
             "drink_name": request.form.get("drink_name"),
             "drink_ingredients": request.form.get("drink_ingredients"),
             "drink_instructions": request.form.get("drink_instructions"),
+            "preperation_time": request.form.get("preperation_time"),
+            "serves": request.form.get("serves"),
             "created_by": session["user"]
         }
         mongo.db.drinks.insert_one(new_drink)
@@ -143,6 +145,8 @@ def edit_drink(drink_id):
             "drink_name": request.form.get("drink_name"),
             "drink_ingredients": request.form.get("drink_ingredients"),
             "drink_instructions": request.form.get("drink_instructions"),
+            "preperation_time": request.form.get("preperation_time"),
+            "serves": request.form.get("serves"),
             "created_by": session["user"]
         }
         mongo.db.drinks.update({"_id": ObjectId(drink_id)}, new_drink)

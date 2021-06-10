@@ -31,13 +31,13 @@
 <div class="row">
   <div class="col s12">
     <form action="{{ url_for('search') }}" method="POST" class="search_bar">
-      <div class="input-field col s12">
+      <div class="input-field col s12 search_bar_input" style="padding: 10px;">
         <i class="material-icons left prefix">search</i>
         <input type="text" name="search" id="search" class="validate" required>
         <label for="search">Search Drinks</label>
       </div>
       <!-- SEARCH AND RESET BUTTON -->
-      <div class="row center" style="margin-bottom: 0px;">
+      <div class="row center search_clear_btns">
         <!-- SEARCH BUTTON -->
         <button class="btn-large waves-effect waves-light register_button center" type="submit">Search
           <i class="material-icons left">search</i>
@@ -79,16 +79,28 @@
     <div class="collapsible-header"><i class="fas fa-info"></i>About Drink:</div>
     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
   </li> -->
+
   <!-- DRINK INGREDIENTS -->
   <li>
-    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients: </div>
+    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:</div>
     <div class="collapsible-body"><span>{{ drink.drink_ingredients|capitalize }}</span></div>
   </li>
+
   <!-- DRINK INSTRUCTIONS -->
   <li>
-    <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions: </div>
-    <div class="collapsible-body"><span>{{ drink.drink_instructions|capitalize }}</span></div>
+    <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions:</div>
+    <div class="collapsible-body">
+      <div class="row preperation_row">
+        <span><i class="material-icons prefix left">access_time</i>Prep time: {{ drink.preperation_time|capitalize }}
+          minutes<span>
+      </div>
+      <div class="row">
+        <span><i class="material-icons prefix left">face</i>Serves: {{ drink.serves }} people</span>
+      </div>
+      <span>{{ drink.drink_instructions|capitalize }}</span>
+    </div>
   </li>
+
   <!-- EDIT/DELETE DRINK BUTTONS -->
   {% if session.user|lower == drink.created_by|lower %}
   <li>
@@ -108,12 +120,11 @@
 {% else %}
 <h5 class="center">Sorry we've no drinks that match that search. Why dont you add that drink to the
   database?</h5>
-  <br>
+<br>
 <p class="no_results_p center">Registered members can add a drink by clicking<a href="{{ url_for('add_drink') }}">
-    Here</a> If you're not registered yet you can register by clicking<a
-    href="{{ url_for('register') }}"> Here</a></p>
-    <p class="no_results_p center">Registration takes less than 1 minute</p>
-    <br>
+    Here</a> If you're not registered yet you can register by clicking<a href="{{ url_for('register') }}"> Here</a></p>
+<p class="no_results_p center">Registration takes less than 1 minute</p>
+<br>
 <!-- <p class="no_results_p center"> If you're not registered yet you can do so by clicking<a
     href="{{ url_for('register') }}"> Here</a></p> -->
 <!-- <p class="no_results_p center">Registration takes less than 1 minute</p> -->
