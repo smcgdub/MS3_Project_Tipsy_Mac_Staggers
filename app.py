@@ -166,6 +166,12 @@ def delete_drink(drink_id):
     return redirect(url_for("home"))
 
 
+@app.route("/shop")
+def shop():
+    # PAGE FOR USERS TO SHOP FOR COCKTAIL ESSENTIALS
+    return render_template("shop.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

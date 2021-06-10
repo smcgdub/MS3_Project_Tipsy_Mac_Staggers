@@ -204,6 +204,7 @@ main {
 .preperation_row {
   margin-bottom: 5px;
 }
+
 /* ADD DRINK PAGE */
 .add_drink {
   margin-top: 1.5rem;
@@ -280,7 +281,7 @@ form.login_page_form {
   display: none
 }
 
-form.search_bar{
+form.search_bar {
   display: none
 }
 
@@ -289,6 +290,8 @@ form.search_bar{
   /* padding: 10px; */
 }
 
-/* .collapsible-header {
-  background-color: #f4a209;
-} */
+.shop_div {
+  display: none
+}
+
+/* SHOP PAGE */
