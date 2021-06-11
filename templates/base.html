@@ -35,6 +35,7 @@
           <!-- <li><a class="btn nav-btn waves-effect" href="#">Drink Categories</a></li> -->
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('shop') }}">Shop</a></li>          
           <li><a class="btn nav-btn waves-effect logout-btn" href="{{ url_for('logout') }}">Logout</a></li>
+          <li><a class="btn nav-btn waves-effect" href="{{ url_for('drinks_by') }}">Drinks By</a></li>
           {% else %}
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('register') }}">Register</a></li>

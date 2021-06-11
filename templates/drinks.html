@@ -1,26 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-- <div class="card">
-  <div class="card-content">
-    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-      little markup to use effectively.</p>
-  </div>
-  <div class="card-tabs">
-    <ul class="tabs tabs-fixed-width">
-      <li class="tab"><a class="active" href="#test4">About Drink</a></li>
-      <li class="tab"><a href="#test5">Ingredients</a></li>
-      <li class="tab"><a href="#test6">Instructions</a></li>
-    </ul>
-  </div>
-
-  <div class="card-content grey lighten-4">
-    <div id="test4">About Drink</div>
-    <div id="test5">Ingredients</div>
-    <div id="test6">Instructions</div>
-  </div>
-</div> -->
-
 <!-- PAGE HEADER -->
 <div class="row">
   <div class="col s12">
@@ -34,7 +14,7 @@
       <div class="input-field col s12 search_bar_input" style="padding: 10px;">
         <i class="material-icons left prefix">search</i>
         <input type="text" name="search" id="search" class="validate" required>
-        <label for="search">Search Drinks</label>
+        <label class="search_bar_label" for="search">Search by drink: Name, type or ingredient</label>
       </div>
       <!-- SEARCH AND RESET BUTTON -->
       <div class="row center search_clear_btns">
@@ -63,7 +43,9 @@
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">I understand</a>
   </div>
 </div> -->
+
 <h4 class="center all_drinks_h4">All Drinks</h4>
+
 <!-- DRINKS CARDS -->
 {% for drink in drinks %}
 <ul class="collapsible drinks_cards">
@@ -125,9 +107,6 @@
     Here</a> If you're not registered yet you can register by clicking<a href="{{ url_for('register') }}"> Here</a></p>
 <p class="no_results_p center">Registration takes less than 1 minute</p>
 <br>
-<!-- <p class="no_results_p center"> If you're not registered yet you can do so by clicking<a
-    href="{{ url_for('register') }}"> Here</a></p> -->
-<!-- <p class="no_results_p center">Registration takes less than 1 minute</p> -->
 {% endfor %}
 
 {% endblock %}

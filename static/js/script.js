@@ -60,15 +60,32 @@ $(document).ready(function () {
 });
 
 // PHOTO UPLOADER WIDGET
-var myWidget = cloudinary.createUploadWidget({
-  cloudName: 'my_cloud_name',
-  uploadPreset: 'my_preset'
-}, (error, result) => {
-  if (!error && result && result.event === "success") {
-    console.log('Done! Here is the image info: ', result.info);
-  }
-})
+// var myWidget = cloudinary.createUploadWidget({
+//   cloudName: 'my_cloud_name',
+//   uploadPreset: 'my_preset'
+// }, (error, result) => {
+//   if (!error && result && result.event === "success") {
+//     console.log('Done! Here is the image info: ', result.info);
+//   }
+// })
 
-document.getElementById("upload_widget").addEventListener("click", function () {
-  myWidget.open();
-}, false);
+// document.getElementById("upload_widget").addEventListener("click", function () {
+//   myWidget.open();
+// }, false);
+
+
+// cloudinary callback. Sets upload image url input
+// function imageUploaded(error, result) {
+//   $( '<preview img tag>' ).prop("src", result[0].secure_url);
+//   $( '<hidden form input>' ).val(result[0].secure_url);
+// }
+// // Shows the cloudinary image upload widget
+// $( <image upload button> ).click(function(event) {
+//   event.preventDefault();
+//   cloudinary.openUploadWidget(
+//     {
+//       cloud_name: '<your cloud name here>',
+//       upload_preset: '<your preset here>'
+//     },
+//     imageUploaded);
+// });

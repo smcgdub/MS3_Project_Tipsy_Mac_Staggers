@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for drink in drinks_by %}
+<div class="row">
+  <div class="col">
+    <li>
+      <div> Added by: {{ drink.created_by|capitalize }}</div>
+    </li>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}
