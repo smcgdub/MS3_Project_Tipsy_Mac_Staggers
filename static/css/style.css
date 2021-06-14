@@ -19,6 +19,10 @@ body {
   margin-top: 1.4rem;
 }
 
+#AgeVerifyScript {
+  font-family: 'Nixie One', cursive;
+}
+
 .modal .modal-footer {
   text-align: center;
 }

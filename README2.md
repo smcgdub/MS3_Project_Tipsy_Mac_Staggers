@@ -26,7 +26,7 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 * 2.6 LogIn
 * 2.7 Log out
 * 2.8 The Footer 
-<!-- * 2.6 Contact Us Form -->
+* 2.9 Age verifier
 
 ## **3. Technologies/Languages Used** ##
 * 3.1 Gitpod
@@ -41,7 +41,7 @@ Registered users will also be able to upload their own cocktail/drinks recepies 
 * 3.10 Font Awesome
 * 3.11 W3schools
 * 3.12 Balsamiq
-<!-- * 3.13 Email JS  -->
+* 3.13 Age Verifier 
 * 3.14 Favicon Generator 
 
 ## **4. Testing** ##
@@ -135,14 +135,6 @@ On smaller screen sizes the navbar will collapse, the name "Tipsy Mac Staggers" 
 
 <!-- ![Image of Navbar as hamburger menu](assets/readme-images/hamburger-navbar.png) -->
 
-### **2.7 - Contact Us Form** ###
-
-The contact us form has Email JS operating on the backend. Once a user clicks ont he send message button an alert will populate to show the user the message was sent. Email JS will also send an auto reply to the user to let them know their message was successfully received and that we will be back in contact with them.
-
-I have also created a caps lock notification for the email input so the user will get a pop up alert if they have caps lock on when they try and enter their email address. 
-
-<!-- ![Image of contact us form](assets/readme-images/contact-us-form.png) -->
-
 ### **2.8 - The Footer** ###
 
 In the footer i have listed all of the companies social media links. As with the navbar, the footer is identical on each page to maintain consistency no matter what page the user finds themselves on.
@@ -161,7 +153,7 @@ In the footer i have listed all of the companies social media links. As with the
 * 3.7 - [Font Awesome](https://fontawesome.com/) - Font Awesome is a font and icon toolkit based on CSS and Less. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 38% market share among those websites that use third-party font scripts on their platform.<br>
 * 3.8 - [W3schools](https://www.w3schools.com/) - W3Schools is a training website for learning web technologies online.<br> 
 * 3.9 - [Balsamiq](https://balsamiq.com/) - Balsamiq Wireframes is a rapid low-fidelity UI wireframing tool that reproduces the experience of sketching on a notepad or whiteboard.<br>
-* 3.14 - [Email JS](https://www.emailjs.com/) - EmailJS helps to send emails using client-side technologies only. No server is required, just connect EmailJS to one of the supported email services, create an email template, and use our Javascript library to trigger an email.
+* 3.14 - [Age Verify](https://ageverify.com/) - AgeVerify is a website age checker, pop up splash entry page & age verification pop-up script that easily integrates in to your existing website with a single line of code, brought to you by the fine folks at Imbibe Digital.
 * 3.15 - [Favicon](https://favicon.io/favicon-generator/) - A free and simple website that allows you to create, build and customize your Favicons for your own site. 
 >
 
