@@ -27,7 +27,7 @@ $(document).ready(function () {
   $('.collapsible').collapsible();
 });
 
-// PAGE HEADERS FADEIN
+// PAGE HEADERS FADE IN
 $(document).ready(function () {
   $('h3.tipsys_drinks').slideDown(1000),
     $('h3.profile_username_h3').slideDown(1000),
@@ -50,15 +50,17 @@ $(document).ready(function () {
   $('textarea#drink_instructions').characterCounter();
 });
 
-// OPEN MODAL ON LOAD
-$(document).ready(function () {
-  $('.modal').modal();
-  $('#modal1').modal('open');
-  $('#cls').click(function () {
-    $('#modal1').modal('close');
-  });
-});
+// DATE OF BIRTH FORMAT ON REGISTER PAGE
+// var currYear = (new Date()).getFullYear();
 
+// $(document).ready(function () {
+//   $('.datepicker1').datepicker({
+//     format: 'dd mmm yyyy',
+//     yearRange: [1900, currYear - 0],
+//     setDefaultDate: new Date(),
+//     showClearBtn: true
+//   });
+// });
 // PHOTO UPLOADER WIDGET
 // var myWidget = cloudinary.createUploadWidget({
 //   cloudName: 'my_cloud_name',

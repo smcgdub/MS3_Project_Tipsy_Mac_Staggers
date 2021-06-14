@@ -4,7 +4,6 @@
 <div class="register_page">
   <!-- REGISTER HEADING -->
   <h2 class="center register_text">Register</h2>
-  <p class="center register_p">You must be over 18 to register on this site</p>
   <!-- REGISTER FORM INPUTS -->
   <form method="POST" action="{{ url_for('register') }}" class="register_page_form">
     <!-- YOUR NAME INPUT -->
@@ -62,7 +61,7 @@
         </div>
       </div>
     </div>
-    <!-- SUBMIT BUTTON -->
+    <!-- REGISTER/SUBMIT BUTTON -->
     <div class="row">
       <div class="col s12 center">
         <button class="btn-large waves-effect waves-light register_button" type="submit" name="action">Register
@@ -70,12 +69,6 @@
         </button>
       </div>
     </div>
-    <p class="center">
-      <label>
-        <input type="checkbox" />
-        <span>I confirm that i am over 18 years of age</span>
-      </label>
-    </p>
   </form>
 </div>
 
