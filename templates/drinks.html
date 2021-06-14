@@ -42,15 +42,29 @@
     <div class="collapsible-header s6"><i class="fas fa-cocktail"></i>Name: {{ drink.drink_name|capitalize }} | Type:
       {{ drink.drink_category|capitalize}} | Added by: {{ drink.created_by|capitalize }}</div>
   </li>
-  <li>
+
+
+  <!-- LINK TO PROFILE PAGE TEST CODE -->
+  <!-- <li>
     <div class="collapsible-header s6"><i class="fas fa-cocktail"></i>Name: {{ drink.drink_name|capitalize }} | Type:
       {{ drink.drink_category|capitalize}} | Added by: <a href="/profile/stephen"> {{ drink.created_by|capitalize }}</a></div>
-  </li>
+  </li> -->
+
 
   <!-- DRINK INGREDIENTS -->
   <li>
     <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:</div>
     <div class="collapsible-body"><span>{{ drink.drink_ingredients|capitalize }}</span></div>
+  </li>
+
+  <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
+  <li>
+    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:</div>
+    <div class="collapsible-body">
+      {% for ingredient in ingredients %}
+      <span>{{ drink.drink_ingredients|capitalize }}</span>
+      {% endfor %}
+    </div>      
   </li>
 
   <!-- DRINK INSTRUCTIONS -->
@@ -62,7 +76,7 @@
           minutes<span>
       </div>
       <div class="row">
-        <span><i class="material-icons prefix left">face</i>Serves: {{ drink.serves }} people</span>
+        <span><i class="material-icons prefix left">face</i>Serves: {{ drink.serves }} persons</span>
       </div>
       <span>{{ drink.drink_instructions|capitalize }}</span>
     </div>
