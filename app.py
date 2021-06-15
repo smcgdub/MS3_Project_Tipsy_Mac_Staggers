@@ -122,10 +122,10 @@ def profile(username):
         return redirect(url_for("login"))
 
 
-@app.route("/drinks_by")
-def drinks_by():
-    drinks_by = mongo.db.drinks.find()
-    return render_template("drinks_by.html", drinks_by=drinks_by)
+# @app.route("/drinks_by")
+# def drinks_by():
+#     drinks_by = mongo.db.drinks.find()
+#     return render_template("drinks_by.html", drinks_by=drinks_by)
 
     # mongo.db.drinks.find({"created_by": "username"})
     # return render_template("drinks_by.html")
@@ -207,6 +207,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
-
-
