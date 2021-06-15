@@ -40,8 +40,9 @@ $(document).ready(function () {
     $('form.add_drink_form').slideDown(1000),
     $('form.register_page_form').slideDown(1000),
     $('form.login_page_form').slideDown(1000),
-    $('form.search_bar').slideDown(1000)
+    $('form.search_bar').slideDown(1000),
   $('div.shop_div').slideDown(1000)
+  $('div.welcome_back_col').slideDown(1000)
 });
 
 // CHARACTER COUNTER FOR ADD DRINK PAGE - INGREDIENTS AND INSTRUCTIONS INPUT
@@ -50,17 +51,11 @@ $(document).ready(function () {
   $('textarea#drink_instructions').characterCounter();
 });
 
-// DATE OF BIRTH FORMAT ON REGISTER PAGE
-// var currYear = (new Date()).getFullYear();
 
-// $(document).ready(function () {
-//   $('.datepicker1').datepicker({
-//     format: 'dd mmm yyyy',
-//     yearRange: [1900, currYear - 0],
-//     setDefaultDate: new Date(),
-//     showClearBtn: true
-//   });
-// });
+
+
+
+
 // PHOTO UPLOADER WIDGET
 // var myWidget = cloudinary.createUploadWidget({
 //   cloudName: 'my_cloud_name',

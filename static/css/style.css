@@ -166,7 +166,8 @@ main {
   color: #000000;
   /* width: 100%; */
   border: 1px solid #000000;
-  border-radius: 5px;
+  border-bottom: 0px solid #000000;
+  /* border-radius: 5px; */
 }
 
 .edit_drink_btn:hover {
@@ -174,14 +175,16 @@ main {
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #000000;
-  border-radius: 5px;
+  border-bottom: 0px solid #000000;
+  /* border-radius: 5px; */
 }
 
 .delete_drink_btn {
   background-color: #ff0000;
   color: #000000;
   border: 1px solid #000000;
-  border-radius: 5px;
+  border-bottom: 0px solid #000000;
+  /* border-radius: 5px; */
 }
 
 .delete_drink_btn:hover {
@@ -189,7 +192,8 @@ main {
   text-shadow: 1px 1px #fff;
   color: #ff0000;
   border: 1px solid #000000;
-  border-radius: 5px;
+  border-bottom: 0px solid #000000;
+  /* border-radius: 5px; */
 }
 
 .drinks_cards {
@@ -236,7 +240,7 @@ main {
   margin: 2.5px;
 }
 
-/* HEADER TEXT FADE IN EFFECT */
+/* FADE IN EFFECT */
 h3.tipsys_drinks {
   display: none
 }
@@ -292,6 +296,10 @@ form.search_bar {
 
 .shop_div {
   display: none
+}
+
+.welcome_back_col {
+  display: none;
 }
 
 /* SHOP PAGE */

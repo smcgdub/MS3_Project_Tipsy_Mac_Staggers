@@ -37,8 +37,8 @@
         <ul class="right hide-on-med-and-down">
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('home') }}">Home</a></li>
           {% if session.user %}
-          <li><a class="btn nav-btn waves-effect" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
-          </li>
+          <!-- <li><a class="btn nav-btn waves-effect" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+          </li> -->
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('add_drink') }}">Add Drink</a></li>
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
           <li><a class="btn nav-btn waves-effect logout-btn" href="{{ url_for('logout') }}">Logout</a></li>
@@ -55,8 +55,8 @@
       <h4 class="center">Menu</h4>
       <li class="li_nav mobile-home"><a class="li_nav waves-effect" href="{{ url_for('home') }}">Home</a></li>
       {% if session.user %}
-      <li class="li_nav"><a class="li_nav waves-effect"
-          href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+      <!-- <li class="li_nav"><a class="li_nav waves-effect"
+          href="{{ url_for('profile', username=session['user']) }}">Profile</a></li> -->
       <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('add_drink') }}">Add drink</a></li>
       <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
       <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('logout') }}">Logout</a></li>

@@ -64,7 +64,7 @@
       {% for ingredient in ingredients %}
       <span>{{ drink.drink_ingredients|capitalize }}</span>
       {% endfor %}
-    </div>      
+    </div>
   </li>
 
   <!-- DRINK INSTRUCTIONS -->
@@ -95,7 +95,32 @@
       onclick="return confirm('Are you sure you want to delete this drink?');">Delete Drink
       <i class="material-icons right">cancel</i>
     </a>
+
+  <!-- LIKE & DISLIKE BUTTON TEST CODE -->
+    <span class="likebtn-wrapper right s6" data-theme="custom" data-btn_size="24" data-f_size="15" data-icon_size="15"
+      data-icon_l_c="#ffffff" data-icon_l_c_v="#000000" data-icon_d_c="#ffffff" data-icon_d_c_v="#000000"
+      data-label_c="#ffffff" data-label_c_v="#000000" data-counter_l_c="#ffffff" data-counter_d_c="#ffffff"
+      data-bg_c="#f4a209" data-bg_c_v="#f4a209" data-brdr_c="#000000" data-f_family="Comic Sans MS" data-label_fs="r"
+      data-ef_voting="push" data-identifier="like_button" data-show_dislike_label="true" data-voting_frequency="1"
+      data-counter_zero_show="true" data-counter_count="true" data-popup_style="dark"
+      data-i18n_undislike_tooltip="Un-dislike" data-i18n_share_text="Share"></span>
+
+    <script>
+      (function (d, e, s) {
+        if (d.getElementById("likebtn_wjs")) return;
+        a = d.createElement(e);
+        m = d.getElementsByTagName(e)[0];
+        a.async = 1;
+        a.id = "likebtn_wjs";
+        a.src = s;
+        m.parentNode.insertBefore(a, m)
+      })(document, "script", "//w.likebtn.com/js/w/widget.js");
+    </script>
   </li>
+  <!-- LIKE & DISLIKE BUTTON TEST CODE END-->
+
+
+
   {% endif %}
 </ul>
 {% else %}

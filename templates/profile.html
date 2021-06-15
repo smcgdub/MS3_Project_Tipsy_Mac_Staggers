@@ -1,14 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- WELCOME BACK MESSAGE -->
 <div class="row">
   <div class="col s12">
-    <h3 class="center profile_username_h3">{{ username|capitalize }}'s Profile</h3>
+    <!-- <h3 class="center profile_username_h3">Welcome back {{ username|capitalize }}</h3> -->
+  </div>
+</div>
+<!-- WELCOME BACK IMAGE -->
+<div class="row">
+  <div class="col s12 welcome_back_col">
+    <!-- LINK TO IMAGE ON CLOUDINARY -->
+    <img class="responsive-img"
+      src="https://res.cloudinary.com/duxlpdunu/image/upload/v1623771333/welcome_back_jaowjf.jpg"
+      alt="Welcome back sign">
+  </div>
+</div>
+<!-- SEARCH DRINKS BUTTON - REDIRECT TO HOMEPAGE -->
+<div class="row center">
+  <div class="col s12">
+    <a class="btn-large nav-btn waves-effect center" href="{{ url_for('home') }}" >Search Drinks<i class="fas fa-cocktail right"></i></a>  
   </div>
 </div>
 
 
-<div class="file-field input-field">
+<!-- <div class="file-field input-field">
   <div class="btn">
     <span>File</span>
     <input type="file" accept="image/*" name="photo_url" id="photo_url">
@@ -16,6 +32,6 @@
   <div class="file-path-wrapper">
     <input class="file-path validate" type="text">
   </div>
-</div>
+</div> -->
 
 {% endblock %}

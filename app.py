@@ -15,6 +15,12 @@ if os.path.exists("env.py"):
 #     api_secret=os.environ.get("API_SECRET")
 # )
 
+# if request.method == "POST":
+#     photo = request.files['photo_url']
+#     photo_upload = cloudinary.uploader.upload(photo)
+#     review = {
+#         "photo_url": photo_upload["secure_url"]
+#     }
 
 app = Flask(__name__)
 
@@ -203,9 +209,4 @@ if __name__ == "__main__":
             debug=True)
 
 
-if request.method == "POST":
-    photo = request.files['photo_url']
-    photo_upload = cloudinary.uploader.upload(photo)
-    review = {
-        "photo_url": photo_upload["secure_url"]
-    }
+
