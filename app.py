@@ -77,7 +77,7 @@ def register():
 
         # START USER IN A SESSION
         session["user"] = request.form.get("username").lower()
-        flash("You have been succesfully registered")
+        flash("You have been successfully registered")
         return redirect(url_for("profile", username=session["user"]))
 
     return render_template("register.html")
@@ -135,7 +135,7 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
-    # LOGGS USER OUT OF THEI SESSION
+    # LOGS USER OUT OF THEIR SESSION
     flash("You have logged out")
     session.pop("user")
     return redirect(url_for("login"))

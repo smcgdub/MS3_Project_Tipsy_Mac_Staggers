@@ -49,3 +49,168 @@
     <div class="collapsible-header"><i class="fas fa-info"></i>About Drink:</div>
     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
   </li> -->
+
+
+
+
+
+
+  <!-- ALL DRINKS PAGE CODE -->
+  <!-- ALL DRINKS HEADING -->
+<!-- <h4 class="center all_drinks_h4">All Drinks</h4> -->
+
+<!-- DRINKS CARDS -->
+<!-- {% for drink in drinks %}
+<ul class="collapsible drinks_cards"> -->
+  <!-- DRINK NAME AND TYPE -->
+  <!-- <li>
+    <div class="collapsible-header s6"><i class="fas fa-cocktail"></i>Name: {{ drink.drink_name|capitalize }} | Type:
+      {{ drink.drink_category|capitalize}} | Added by: {{ drink.created_by|capitalize }}</div>
+  </li> -->
+
+
+  <!-- LINK TO PROFILE PAGE TEST CODE -->
+  <!-- <li>
+    <div class="collapsible-header s6"><i class="fas fa-cocktail"></i>Name: {{ drink.drink_name|capitalize }} | Type:
+      {{ drink.drink_category|capitalize}} | Added by: <a href="/profile/stephen"> {{ drink.created_by|capitalize }}</a></div>
+  </li> -->
+
+
+  <!-- DRINK INGREDIENTS -->
+  <!-- <li>
+    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:</div>
+    <div class="collapsible-body"><span>{{ drink.drink_ingredients|capitalize }}</span></div>
+  </li> -->
+
+  <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
+  <!-- <li>
+    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:</div>
+    <div class="collapsible-body">
+      {% for ingredient in ingredients %}
+      <span>{{ drink.drink_ingredients|capitalize }}</span>
+      {% endfor %}
+    </div>
+  </li> -->
+
+  <!-- DRINK INSTRUCTIONS -->
+  <!-- <li>
+    <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions:</div>
+    <div class="collapsible-body">
+      <div class="row preperation_row">
+        <span><i class="material-icons prefix left">access_time</i>Prep time: {{ drink.preperation_time|capitalize }}
+          minutes<span>
+      </div>
+      <div class="row">
+        <span><i class="material-icons prefix left">face</i>Serves: {{ drink.serves }} persons</span>
+      </div>
+      <span>{{ drink.drink_instructions|capitalize }}</span>
+    </div>
+  </li> -->
+
+  <!-- EDIT/DELETE DRINK BUTTONS -->
+  <!-- {% if session.user|lower == drink.created_by|lower %}
+  <li> -->
+    <!-- EDIT DRINK BUTTON -->
+    <!-- <a href="{{ url_for('edit_drink', drink_id=drink._id) }}"
+      class="btn-small waves-effect waves-light edit_drink_btn s6">Edit Drink<i
+        class="material-icons right">border_color</i></a> -->
+    <!-- DELETE DRINK BUTTON WITH CONFIRM DELETE FUNCTIONALITY -->
+    <!-- <a href="{{ url_for('delete_drink', drink_id=drink._id) }}"
+      class="btn-small waves-effect waves-light delete_drink_btn s6"
+      onclick="return confirm('Are you sure you want to delete this drink?');">Delete Drink
+      <i class="material-icons right">cancel</i>
+    </a> -->
+
+  <!-- LIKE & DISLIKE BUTTON TEST CODE -->
+    <!-- <span class="likebtn-wrapper right s6" data-theme="custom" data-btn_size="24" data-f_size="15" data-icon_size="15"
+      data-icon_l_c="#ffffff" data-icon_l_c_v="#000000" data-icon_d_c="#ffffff" data-icon_d_c_v="#000000"
+      data-label_c="#ffffff" data-label_c_v="#000000" data-counter_l_c="#ffffff" data-counter_d_c="#ffffff"
+      data-bg_c="#f4a209" data-bg_c_v="#f4a209" data-brdr_c="#000000" data-f_family="Comic Sans MS" data-label_fs="r"
+      data-ef_voting="push" data-identifier="like_button" data-show_dislike_label="true" data-voting_frequency="1"
+      data-counter_zero_show="true" data-counter_count="true" data-popup_style="dark"
+      data-i18n_undislike_tooltip="Un-dislike" data-i18n_share_text="Share"></span>
+
+    <script>
+      (function (d, e, s) {
+        if (d.getElementById("likebtn_wjs")) return;
+        a = d.createElement(e);
+        m = d.getElementsByTagName(e)[0];
+        a.async = 1;
+        a.id = "likebtn_wjs";
+        a.src = s;
+        m.parentNode.insertBefore(a, m)
+      })(document, "script", "//w.likebtn.com/js/w/widget.js");
+    </script>
+  </li> -->
+  <!-- LIKE & DISLIKE BUTTON TEST CODE END-->
+
+
+
+  <!-- {% endif %}
+</ul>
+{% else %}
+<h5 class="center">Sorry we've no drinks that match that search. Why dont you add that drink to the
+  database?</h5>
+<br>
+<p class="no_results_p center">Registered members can add a drink by clicking<a href="{{ url_for('add_drink') }}">
+    Here</a> If you're not registered yet you can register by clicking<a href="{{ url_for('register') }}"> Here</a></p>
+<p class="no_results_p center">Registration takes less than 1 minute</p>
+<br>
+{% endfor %} -->
+
+
+<!-- ALL DRINKS PAGE -->
+{% extends "base.html" %}
+{% block content %}
+
+<!-- PAGE HEADER -->
+<!-- <div class="row">
+  <div class="col s12">
+    <h3 class="center tipsys_drinks">Tipsy's Drinks</h3>
+  </div>
+</div> -->
+
+<!-- SEARCH BAR -->
+<!-- <div class="row">
+  <div class="col s12">
+    <form action="{{ url_for('search') }}" method="POST" class="search_bar">
+      <div class="input-field col s12 search_bar_input" style="padding: 10px;">
+        <i class="material-icons left prefix">search</i>
+        <input type="text" name="search" id="search" class="validate" required>
+        <label class="search_bar_label" for="search">Search by drink: Name, type or ingredient</label>
+      </div> -->
+      <!-- SEARCH AND RESET BUTTON -->
+      <!-- <div class="row center search_clear_btns"> -->
+        <!-- SEARCH BUTTON -->
+        <!-- <button class="btn-large waves-effect waves-light register_button center" type="submit">Search
+          <i class="material-icons left">search</i>
+        </button> -->
+        <!-- RESET BUTTON -->
+        <!-- <a href="{{ url_for('all_drinks') }}" class="btn-large waves-effect waves-light cancel_edit_button center"><i
+            class="material-icons left">cached</i>Reset</a>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+{% endblock %}
+
+
+<!-- PYTHON FUNCTIONS -->
+<!-- # THIS IS TEST CODE
+@app.route("/all_drinks")
+def all_drinks():
+    # LIST ALL OF THE DRINKS IN THE DATABASE
+    drinks = mongo.db.drinks.find()
+    return render_template("all_drinks.html", drinks=drinks)
+# TEST CODE END
+
+
+# THIS IS TEST CODE
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    # SEARCH FUNCTION FROM HOMEPAGE
+    search = request.form.get("search")
+    drinks = mongo.db.drinks.find({"$text": {"$search": search}})
+    return render_template("drinks.html", drinks=drinks)
+# TEST CODE END -->

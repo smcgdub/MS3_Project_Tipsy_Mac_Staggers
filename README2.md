@@ -7,7 +7,8 @@ The Tipsy Mac Staggers website was created and built by Stephen Mc Govern. The a
 
 Only registered users will also be able to upload their own cocktail/drinks recipes that they have made so other users can sample another users twist on an established classic drink. 
 
-> 
+<hr>
+
 ## **Table of contents** ## 
 
 ## **1. User Experience (UX)** ##
@@ -74,7 +75,11 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 
 * This website is aimed at anyone who is looking for instructions on how to make a cocktail/drink that they may not be familiar with or are unsure about what ingredients, quantities and steps to follow to make that drink. The site is built around user engagement and all users are encouraged to register which will allow them to add their own favorite drinks to the site. The more registered users generating content the better the site will become. 
 
+<hr>
+
 ### **1.2 - Visitor goals** ###
+
+<hr>
 
 ### **1.3 - User Stories** ###
 
@@ -87,6 +92,7 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 * Finally as a user I expect feedback from the website I am using when I interact with it. If i send a message to the website i would like a confirmation that my message has been sent successfully. 
 
 ### **User Experience Walk through** ### 
+<hr>
 
 ### **1.4 - Design Choices** ###
 
@@ -111,6 +117,25 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 * For the base colours i decided to go with the following colour palette:
 
 ![Image of the colour pallet used for the project](assets/images/readme_images/ms3_colour_palette.png)
+<br>
+
+**SEARCH FUNCTIONALITY**
+
+* Initially when i first built the site i was going to have only the search bar showing on the homepage (See image below).
+
+![Image of homepage search only function](assets/images/readme_images/search_only.png)
+
+* However i did want users to be able to browse all of the drinks on the website on a single page as part of the idea behind the site is to be able to find  search, find drinks/cocktails users may have never have even heard of. I believe the search bar only page would have acted as a barrier to this. I also wanted to have a page that displayed all the drinks on the website so they could browse everything on one page (See image below).
+
+![Image of homepage search function and all drinks displayed](assets/images/readme_images/search_and_drinks.png)
+
+**CONCLUSION** 
+
+* After building both of these pages and testing them i felt it was not a pleasant user experience as it was listing the drinks and search on 2 different pages and was just duplication and i didn't feel it gave a positive user experience. 
+
+* For this reason i decided to scrap the all drinks page and the search only page and combine the 2 pages into one. Now on the home page of the site users can browse all of the drinks on one single page and they also have the search functionality on this page as well. 
+
+<hr>
 
 ### **1.5 - Wire Frames** ###
 
@@ -138,6 +163,8 @@ The Navbar on each page is standardized, the page name "Tipsy Mac Stagger's" is 
 2. Register
 3. Log In
 
+(Image Below)
+
 ![Image of navbar on desktop for logged out users](assets/images/readme_images/navbar_desktop_logged_out.png)
 
 For an registered user the buttons/options they will see are:   
@@ -147,19 +174,26 @@ For an registered user the buttons/options they will see are:
 3. Shop
 4. Log Out
 
+(Image Below)
+
 ![Image of navbar on desktop for logged in users](assets/images/readme_images/navbar_desktop_logged_in.png)
 
 On smaller screen sizes the navbar buttons will collapse into a hamburger menu on the right hand side and the name "Tipsy's" will move to the middle of the navbar.
 
 ![Image of navbar on mobile device](assets/images/readme_images/navbar_mobile.png)
+<br>
 
-When the user clicks on the hamburger the menu will open from the right hand side to reveal the page options. 
+When the user clicks on the hamburger the menu will open from the right hand side to reveal the page options.
+<br>
+<br>
 
 ![Image of navbar opened on mobile device](assets/images/readme_images/navbar_mobile_opened.png)
+<br>
 
 ### **2.3 - Search drinks feature** ###
 
 At the top of the home page i have created a search bar for users to search for drinks. If a user wishes the can browse all the drinks listed on the website one by one, or to save time they can use the search feature. 
+<br>
 
 ![Image of search bar](assets/images/readme_images/search_drinks_bar.png)
 
@@ -168,6 +202,7 @@ I have set this functionality up so users can search by: Drink name, drink type 
 ### **2.4 - Add drink** ###
 
 Users of the site who register will have the ability to add drinks to the website. The add drink button will only be visible to registered users, none registered users will not have the ability to submit drinks. 
+<br>
 
 ![Image of the add drink page](assets/images/readme_images/add_drink.png)
 
@@ -185,8 +220,9 @@ The data the site collects from each user uploading a drink is:
 I have added a shop page to the website. The majority of cocktails will require you to use specific items to make the drink correctly. Users of the site who are new to making their own cocktails may not know what these items are or where to purchase them so i have created a "Shop Now" button with a link to Amazon where users can browse full cocktail making sets that can be delivered to their door. 
 
 ![Image of the shop now page](assets/images/readme_images/shop_now.png)
+<br>
 
-At the time of writing this README file (June 2021) the Amazon link is functioning normally and as intended. As the Amazon site is constantly updated this link may need adjusting, but as of the time of writing this README the link is working as normal.  
+At the time of writing this README file (June 2021) the Amazon link is functioning normally and as intended. As the Amazon site is constantly updated this link may need adjusting, but as of the time of writing this README the link is working as normal. 
 
 ![Image of the amazon page](assets/images/readme_images/amazon_link.png)
 
@@ -263,9 +299,11 @@ To deploy the site on Github i undertook the following steps:
 
 You will then receive a confirmation saying the page has been published and also be provided with the link where people can view your site.
 
-![Image of page published confirmation](assets/readme-images/github-page-published.png)
+![Image of page published confirmation](assets/images/readme_images/github_page_published.png)
 
-The link to view the published site can be found by clicking [Here](https://smcgdub.github.io/Discover-Ireland-MS2-Project/)
+The link to view the published site can be found by clicking [Here](https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/)
+
+Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/
 
 ### **5.2 Cloning** ###
 
