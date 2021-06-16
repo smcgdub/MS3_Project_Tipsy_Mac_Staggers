@@ -41,7 +41,7 @@ $(document).ready(function () {
     $('form.register_page_form').slideDown(1000),
     $('form.login_page_form').slideDown(1000),
     $('form.search_bar').slideDown(1000),
-  $('div.shop_div').slideDown(1000)
+    $('div.shop_div').slideDown(1000)
   $('div.welcome_back_col').slideDown(1000)
 });
 
@@ -52,8 +52,9 @@ $(document).ready(function () {
 });
 
 
-
-
+// function scrollToTop() {
+//   window.scrollTo(0, 0);
+// }
 
 
 // PHOTO UPLOADER WIDGET

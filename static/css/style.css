@@ -23,14 +23,6 @@ body {
   font-family: 'Nixie One', cursive;
 }
 
-/* .modal .modal-footer {
-  text-align: center;
-}
-
-.modal_p {
-  margin: 0px;
-} */
-
 /* NAVBAR */
 .navbar_colour {
   background-color: #f4a209;
@@ -211,6 +203,22 @@ main {
 
 .preperation_row {
   margin-bottom: 5px;
+}
+
+.scroll_top {
+  position: fixed;
+  top: 90%;
+  right: 50%;
+  text-align: center;
+  /* bottom: 1924px; */
+}
+
+.scroll {
+  background: #f4a209;
+  color: #ffffff;
+  padding: 4px;
+  border-radius: 20px;
+  opacity: 0.3;
 }
 
 /* ADD DRINK PAGE */
