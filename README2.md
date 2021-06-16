@@ -64,9 +64,11 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 
 ## **8. Disclaimer** ##
 * 8.1 Disclaimer on project
->
+
+<hr>
 
 ## **1. User Experience (UX)** ##
+<br>
 
 ### **1.1 - Target Audience** ###
 
@@ -111,6 +113,11 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 ![Image of the colour pallet used for the project](assets/images/readme_images/ms3_colour_palette.png)
 
 ### **1.5 - Wire Frames** ###
+
+<hr>
+
+## **2. Features** ## 
+<br>
 
 ### **2.1 - Age Verifier** ###
 
@@ -209,8 +216,10 @@ I have chosen a very basic footer for the website. The footer contains just the 
 
 ![Image of the footer](assets/images/readme_images/footer.png)
 
->
+<hr>
+
 ## **3. Technologies/Languages Used** ##
+<br>
 
 * 3.1 - [Gitpod](https://www.gitpod.io/) - Is the IDE recommended for Code Institute students and the one i chose to develop this project in.
 * 3.2 - [HTML5](https://html.com/html5/#What_is_HTML) - This is the markup language i used for this project.<br>
@@ -227,14 +236,18 @@ I have chosen a very basic footer for the website. The footer contains just the 
 * 3.13 - [Balsamiq](https://balsamiq.com/) - Balsamiq Wireframes is a small graphical tool to sketch out user interfaces for websites and web / desktop / mobile applications. I used Balsamiq to formulate my initial ideas for the site so i could visualize how the site would look and also be able to gage the scope of the project. 
 * 3.14 - [Age Verify](https://ageverify.com/) - AgeVerify is a website age checker, pop up splash entry page & age verification pop-up script that easily integrates in to your existing website with a single line of code, brought to you by the fine folks at Imbibe Digital.
 * 3.15 - [Favicon](https://favicon.io/favicon-generator/) - A free and simple website that allows you to create, build and customize your Favicons for your own site. 
->
+
+<hr>
 
 ## **4. Testing** ##
+<br>
 
 * Testing information can be found in the [testing.md](testing.md) file
 
->
+<hr>
+
 ## **5. Deployment** ##
+<br>
 
 ### **5.1 Deployment** ###
 
@@ -292,8 +305,10 @@ You can also clone the project using Github Desktop. To do this you can do the f
 7. Click Choose... and, using the Finder window, navigate to a local path where you want to clone the repository
 8. Click clone
 
->
+<hr>
+
 ## **6. Credits** ##
+<br>
 
 ### **6.1 Media** ###
 
@@ -317,15 +332,20 @@ Photo by [Omar Lopez](https://unsplash.com/@omarlopez1)<br>
 * A big thank you to my mentor Dick Vlaanderen who always gives me great feedback on my ideas and is able to point me in the right direction.
 * A final big thank you to all of the other students, CI alumni and CI staff who were always willing to help out and advise on the official CI Slack channels.
 
->
-### **7. Contact Me** ###
+<hr>
+
+## **7. Contact Me** ##
+<br>
 
 If you need to reach me i can be contacted via the three methods below:
 
 7.1 - [LinkedIn](https://www.linkedin.com/in/stephenmcgovern01/)<br>
 7.2 - [Email](mailto:stephen_xyz1@hotmail.com)<br>
 7.3 - [Skype](https://join.skype.com/invite/ndruMu7qVuKZ)
->
-### **8. Disclaimer** ###
+
+<hr>
+
+## **8. Disclaimer** ##
+<br>
 
 8.1 - This website and all of its content was completed for my personal assessment and is strictly for educational purposes only.
