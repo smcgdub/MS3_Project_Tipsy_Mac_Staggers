@@ -127,11 +127,11 @@
   {% endif %}
 </ul>
 {% else %}
-<h5 class="center">Sorry we've no drinks that match that search. Why dont you add that drink to the
+<h5 class="center">Sorry we've no drinks that match that search. Why don't you add that drink to the
   database?</h5>
 <br>
-<p class="no_results_p center">Registered members can add a drink by clicking<a href="{{ url_for('add_drink') }}">
-    Here</a> If you're not registered yet you can register by clicking<a href="{{ url_for('register') }}"> Here</a></p>
+<p class="no_results_p center">Registered members can add a drink after logging in<a href="{{ url_for('login') }}">
+    Here</a>. If you're not registered yet you can register by clicking<a href="{{ url_for('register') }}"> Here</a></p>
 <p class="no_results_p center">Registration takes less than 1 minute</p>
 <br>
 {% endfor %}
