@@ -9,19 +9,6 @@ if os.path.exists("env.py"):
     import env
 
 
-# cloudinary.config(
-#     cloud_name=os.environ.get("CLOUD_NAME"),
-#     api_key=os.environ.get("API_KEY"),
-#     api_secret=os.environ.get("API_SECRET")
-# )
-
-# if request.method == "POST":
-#     photo = request.files['photo_url']
-#     photo_upload = cloudinary.uploader.upload(photo)
-#     review = {
-#         "photo_url": photo_upload["secure_url"]
-#     }
-
 app = Flask(__name__)
 
 app.config["MONGO_DB"] = os.environ.get("MONGO_DB")

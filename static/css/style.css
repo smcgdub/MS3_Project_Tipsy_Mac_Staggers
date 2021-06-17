@@ -147,11 +147,25 @@ main {
 }
 
 .all_drinks_h4 {
-  margin: 0rem 1rem 1rem 1rem;
+  margin: 0px;
+}
+
+.drop_down_arrow {
+  margin-left: auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #aad922;
+}
+
+.drop_down_arrow:hover {
+  margin-left: auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .edit_drink_btn {
-  background-color: #f4a209;
+  background-color: #aad922;
   /* background-color: #a209f4; */
   /* background-color: #095BF4; */
   /* background-color: #aad922; */
