@@ -151,6 +151,10 @@ def add_drink():
 @app.route("/edit_drink/<drink_id>", methods=["GET", "POST"])
 def edit_drink(drink_id):
     if request.method == "POST":
+        # Code to print vale to terminal
+        print("prep time", request.form.get("preperation_time"))
+        print("serves", request.form.get("serves"))
+        # Code to print vale to terminal end - Above prints can be deleted
         new_drink = {
             "drink_category": request.form.get("drink_category"),
             "drink_name": request.form.get("drink_name"),
