@@ -206,11 +206,11 @@ main {
 }
 
 .scroll_top {
-  position: fixed;
-  top: 90%;
-  right: 50%;
-  text-align: center;
-  /* bottom: 1924px; */
+  position: sticky;
+  top: 95%;
+  margin-bottom: 20px;
+  /* right: 900px; */
+  /* text-align: center; */
 }
 
 .scroll {
@@ -219,6 +219,7 @@ main {
   padding: 4px;
   border-radius: 20px;
   opacity: 0.3;
+  margin-left: 50%;
 }
 
 /* ADD DRINK PAGE */
