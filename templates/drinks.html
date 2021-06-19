@@ -56,7 +56,8 @@
 
   <!-- DRINK INGREDIENTS -->
   <li>
-    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:<i class="material-icons drop_down_arrow">arrow_drop_down</i>
+    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:<i
+        class="material-icons drop_down_arrow">arrow_drop_down</i>
     </div>
     <div class="collapsible-body"><span>{{ drink.drink_ingredients|capitalize }}</span></div>
   </li>
@@ -72,22 +73,47 @@
     <!-- CONTENT -->
     <div class="collapsible-body">
       <ul>
-          {% for ingredient in drink.drink_ingredients.splitlines() %}
-          <li>
-            - {{ ingredient|capitalize }}
-          </li>
-          {% endfor %}
+        {% for ingredient in drink.drink_ingredients.splitlines() %}
+        <li>
+          - {{ ingredient|capitalize }}
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </li>
   <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
 
 
+  <!-- DISPLAY INSTRUCTIONS AS A LIST TEST CODE -->
+  <li>
+    <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions:<i
+        class="material-icons drop_down_arrow">arrow_drop_down</i></div>
+    <div class="collapsible-body">
+      <div class="row preperation_row">
+        <span><i class="material-icons prefix left">access_time</i>Prep time: {{ drink.preperation_time|capitalize }}
+          minutes<span>
+      </div>
+      <div class="row">
+        <span><i class="material-icons prefix left">face</i>Serves: {{ drink.serves }} persons</span>
+      </div>
+      <ol>
+        {% for instruction in drink.drink_instructions.splitlines() %}
+        <li>
+          {{ instruction|capitalize }}
+        </li>
+        {% endfor %}
+      </ol>
+      <!-- <span>{{ drink.drink_instructions|capitalize }}</span> -->
+    </div>
+  </li>
+  <!-- DISPLAY INSTRUCTIONS AS A LIST TEST CODE -->
+
 
 
   <!-- DRINK INSTRUCTIONS -->
   <li>
-    <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions:<i class="material-icons drop_down_arrow">arrow_drop_down</i></div>
+    <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions:<i
+        class="material-icons drop_down_arrow">arrow_drop_down</i></div>
     <div class="collapsible-body">
       <div class="row preperation_row">
         <span><i class="material-icons prefix left">access_time</i>Prep time: {{ drink.preperation_time|capitalize }}
@@ -114,7 +140,7 @@
       <i class="material-icons right">cancel</i>
     </a>
 
-  <!-- LIKE & DISLIKE BUTTON TEST CODE -->
+    <!-- LIKE & DISLIKE BUTTON TEST CODE -->
     <!-- <span class="likebtn-wrapper right s6" data-theme="custom" data-btn_size="24" data-f_size="15" data-icon_size="15"
       data-icon_l_c="#ffffff" data-icon_l_c_v="#000000" data-icon_d_c="#ffffff" data-icon_d_c_v="#000000"
       data-label_c="#ffffff" data-label_c_v="#000000" data-counter_l_c="#ffffff" data-counter_d_c="#ffffff"
@@ -135,9 +161,9 @@
       })(document, "script", "//w.likebtn.com/js/w/widget.js");
     </script>
   </li> -->
-  <!-- LIKE & DISLIKE BUTTON TEST CODE END-->
-  
-  {% endif %}
+    <!-- LIKE & DISLIKE BUTTON TEST CODE END-->
+
+    {% endif %}
 </ul>
 {% else %}
 <h5 class="center">Sorry we've no drinks that match that search. Why don't you add that drink to the
