@@ -164,6 +164,10 @@ main {
   background-color: #ffffff;
 }
 
+.ol_instructions {
+  padding-left: 20px;
+}
+
 .edit_drink_btn {
   background-color: #aad922;
   /* background-color: #a209f4; */

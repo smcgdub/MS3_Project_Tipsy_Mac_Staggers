@@ -55,20 +55,19 @@
 
 
   <!-- DRINK INGREDIENTS -->
-  <li>
+  <!-- <li>
     <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:<i
         class="material-icons drop_down_arrow">arrow_drop_down</i>
     </div>
     <div class="collapsible-body"><span>{{ drink.drink_ingredients|capitalize }}</span></div>
-  </li>
-
-
+  </li> -->
 
   <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
   <li>
     <!-- HEADER -->
     <div class="collapsible-header">
-      <i class="material-icons">shopping_cart</i>Ingredients:
+      <i class="material-icons">shopping_cart</i>Ingredients:<i
+      class="material-icons drop_down_arrow">arrow_drop_down</i>
     </div>
     <!-- CONTENT -->
     <div class="collapsible-body">
@@ -96,7 +95,7 @@
       <div class="row">
         <span><i class="material-icons prefix left">face</i>Serves: {{ drink.serves }} persons</span>
       </div>
-      <ol>
+      <ol class="ol_instructions">
         {% for instruction in drink.drink_instructions.splitlines() %}
         <li>
           {{ instruction|capitalize }}
@@ -108,10 +107,8 @@
   </li>
   <!-- DISPLAY INSTRUCTIONS AS A LIST TEST CODE -->
 
-
-
   <!-- DRINK INSTRUCTIONS -->
-  <li>
+  <!-- <li>
     <div class="collapsible-header"><i class="material-icons">format_list_numbered</i>Instructions:<i
         class="material-icons drop_down_arrow">arrow_drop_down</i></div>
     <div class="collapsible-body">
@@ -124,7 +121,7 @@
       </div>
       <span>{{ drink.drink_instructions|capitalize }}</span>
     </div>
-  </li>
+  </li> -->
 
   <!-- EDIT/DELETE DRINK BUTTONS -->
   {% if session.user|lower == drink.created_by|lower %}
