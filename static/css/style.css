@@ -150,6 +150,15 @@ main {
   margin: 0px;
 }
 
+.fb-like {
+  margin-left: 15px;
+}
+
+.fb-row {
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+
 .drop_down_arrow {
   margin-left: auto;
   border: 1px solid #000;

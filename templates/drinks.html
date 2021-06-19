@@ -42,7 +42,7 @@
 <ul class="collapsible drinks_cards">
   <!-- DRINK NAME AND TYPE -->
   <li>
-    <div class="collapsible-header s6"><i class="fas fa-cocktail"></i>Name: {{ drink.drink_name|capitalize }} | Type:
+    <div class="collapsible-header s12"><i class="fas fa-cocktail"></i>Name: {{ drink.drink_name|capitalize }} | Type:
       {{ drink.drink_category|capitalize}} | Added by: {{ drink.created_by|capitalize }}</div>
   </li>
 
@@ -67,7 +67,7 @@
     <!-- HEADER -->
     <div class="collapsible-header">
       <i class="material-icons">shopping_cart</i>Ingredients:<i
-      class="material-icons drop_down_arrow">arrow_drop_down</i>
+        class="material-icons drop_down_arrow">arrow_drop_down</i>
     </div>
     <!-- CONTENT -->
     <div class="collapsible-body">
@@ -102,7 +102,21 @@
         </li>
         {% endfor %}
       </ol>
-      <!-- <span>{{ drink.drink_instructions|capitalize }}</span> -->
+      <br>
+
+      <!-- FB LIKE CODE -->
+      <div class="row fb-row">
+        <div class="fb-like" data-href="https://ms3-project-tipsy-mac-staggers.herokuapp.com/" data-width=""
+          data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <!-- <span>{{ drink.drink_instructions|capitalize }}</span> -->
     </div>
   </li>
   <!-- DISPLAY INSTRUCTIONS AS A LIST TEST CODE -->
@@ -122,6 +136,7 @@
       <span>{{ drink.drink_instructions|capitalize }}</span>
     </div>
   </li> -->
+
 
   <!-- EDIT/DELETE DRINK BUTTONS -->
   {% if session.user|lower == drink.created_by|lower %}
