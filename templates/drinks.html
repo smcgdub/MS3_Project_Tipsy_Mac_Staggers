@@ -65,20 +65,22 @@
 
   <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
   <li>
+    <!-- HEADER -->
     <div class="collapsible-header">
       <i class="material-icons">shopping_cart</i>Ingredients:
     </div>
+    <!-- CONTENT -->
     <div class="collapsible-body">
       <ul>
-        <li>
-          {% for ingredient in drink.drink_ingredients.splitlines(true) %}
-          <p>{{ drink.drink_ingredients|capitalize }}</p>
+          {% for ingredient in drink.drink_ingredients.splitlines() %}
+          <li>
+            - {{ ingredient|capitalize }}
+          </li>
           {% endfor %}
-        </li>
       </ul>
     </div>
   </li>
-    <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
+  <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
 
 
 
