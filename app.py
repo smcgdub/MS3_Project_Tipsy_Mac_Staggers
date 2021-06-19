@@ -22,7 +22,7 @@ mongo = PyMongo(app)
 @app.route("/home")
 def home():
     # LIST ALL OF THE DRINKS IN THE DATABASE
-    drinks = mongo.db.drinks.find()
+    drinks = mongo.db.drinks.find().sort("drink_name", 1)
     return render_template("drinks.html", drinks=drinks)
 
 

@@ -64,14 +64,20 @@
 
 
   <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
-  <!-- <li>
-    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Ingredients:</div>
-    <div class="collapsible-body">
-      {% for ingredient in ingredients %}
-      <span>{{ drink.drink_ingredients|capitalize }}</span>
-      {% endfor %}
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">shopping_cart</i>Ingredients:
     </div>
-  </li> -->
+    <div class="collapsible-body">
+      <ul>
+        <li>
+          {% for ingredient in drink.drink_ingredients.splitlines(true) %}
+          <p>{{ drink.drink_ingredients|capitalize }}</p>
+          {% endfor %}
+        </li>
+      </ul>
+    </div>
+  </li>
     <!-- DISPLAY INGREDIENTS AS A LIST TEST CODE -->
 
 
