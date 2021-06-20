@@ -1,5 +1,4 @@
 # **Tipsy Mac Staggers** #
-![Image of people drinking](assets/images/readme_images/people_drinking.jpg)
 
 ![Image of site on several devices](assets/images/readme_images/readme_header_image.png)
 
@@ -130,22 +129,6 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 ![Image of the colour pallet used for the project](assets/images/readme_images/ms3_colour_palette.png)
 <br>
 
-**SEARCH FUNCTIONALITY**
-
-* Initially when i first built the site i was going to have only the search bar showing on the homepage (See image below).
-
-![Image of homepage search only function](assets/images/readme_images/search_only.png)
-
-* However i did want users to be able to browse all of the drinks on the website on a single page as part of the idea behind the site is to be able to find  search, find drinks/cocktails users may have never have even heard of. I believe the search bar only page would have acted as a barrier to this. I also wanted to have a page that displayed all the drinks on the website so they could browse everything on one page (See image below).
-
-![Image of homepage search function and all drinks displayed](assets/images/readme_images/search_and_drinks.png)
-
-**CONCLUSION** 
-
-* After building both of these pages and testing them i felt it was not a pleasant user experience as it was listing the drinks and search on 2 different pages and was just duplication and i didn't feel it gave a positive user experience. 
-
-* For this reason i decided to scrap the all drinks page and the search only page and combine the 2 pages into one. Now on the home page of the site users can browse all of the drinks on one single page and they also have the search functionality on this page as well. 
-
 <hr>
 
 ### **1.5 - Wire Frames** ###
@@ -183,7 +166,7 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 ## **2. Features** ## 
 <br>
 
-### **2.1 - Age Verifier** ###
+### **2.1 - AGE VERIFIER** ###
 
 When a user lands on the website for the first time they will see the Age Verify page/function. 
 
@@ -191,7 +174,7 @@ When a user lands on the website for the first time they will see the Age Verify
 
 As the website contains content on alcoholic drinks to be responsible i have added an age verifier to the site. This feature doesn't ask users to enter their date of birth because the legal age of drinking can vary from country to country. Instead we ask the user to click yes or no to confirm if they are the legal age for drinking in their country.
 
-### **2.2 - The Navbar** ###
+### **2.2 - THE NAVBAR** ###
 
 For the Navbar i decided to use a Materialize mobile collapse navbar. I chose this option because i wanted the Navbar to be responsive on all screen sizes and the Materialize mobile collapse navbar offers this function in a quick and easy way. 
 
@@ -229,7 +212,7 @@ When the user clicks on the hamburger the menu will open from the right hand sid
 ![Image of navbar opened on mobile device](assets/images/readme_images/navbar_mobile_opened.png)
 <br>
 
-### **2.3 - Search drinks feature** ###
+### **2.3 - SEARCH DRINKS** ###
 
 At the top of the home page i have created a search bar for users to search for drinks. If a user wishes the can browse all the drinks listed on the website one by one, or to save time they can use the search feature. 
 <br>
@@ -238,7 +221,21 @@ At the top of the home page i have created a search bar for users to search for 
 
 I have set this functionality up so users can search by: Drink name, drink type (Whiskey, Vodka, Rum) and by drink ingredient. 
 
-### **2.4 - Add drink** ###
+Initially when i first built the site i was going to have only the search bar showing on the homepage (See image below).
+
+![Image of homepage search only function](assets/images/readme_images/search_only.png)
+
+However i did want users to be able to browse all of the drinks on the website on a single page as part of the idea behind the site is to be able to find  search, find drinks/cocktails users may have never have even heard of. I believe the search bar only page would have acted as a barrier to this. I also wanted to have a page that displayed all the drinks on the website so they could browse everything on one page (See image below).
+
+![Image of homepage search function and all drinks displayed](assets/images/readme_images/search_and_drinks.png)
+
+**CONCLUSION** 
+
+After building both of these pages and testing them i felt it was not a pleasant user experience as it was listing the drinks and search on 2 different pages and was just duplication and i didn't feel it gave a positive user experience. 
+
+For this reason i decided to scrap the all drinks page and the search only page and combine the 2 pages into one. Now on the home page of the site users can browse all of the drinks on one single page and they also have the search functionality on this page as well. 
+
+### **2.4 - ADD DRINK** ###
 
 Users of the site who register will have the ability to add drinks to the website. The add drink button will only be visible to registered users, none registered users will not have the ability to submit drinks. 
 <br>
@@ -254,7 +251,7 @@ The data the site collects from each user uploading a drink is:
 5. Preparation time (In minutes)
 6. Serves (Number of people)
 
-### **2.5 - Shop Page** ###
+### **2.5 - SHOP PAGE** ###
 
 I have added a shop page to the website. The majority of cocktails will require you to use specific items to make the drink correctly. Users of the site who are new to making their own cocktails may not know what these items are or where to purchase them so i have created a "Shop Now" button with a link to Amazon where users can browse full cocktail making sets that can be delivered to their door. 
 
@@ -265,7 +262,7 @@ At the time of writing this README file (June 2021) the Amazon link is functioni
 
 ![Image of the amazon page](assets/images/readme_images/amazon_link.png)
 
-### **2.6 - Log In** ###
+### **2.6 - LOG IN** ###
 
 Registered users who are returning to the site will need to log in if they wish to edit any of their submitted content or to add a new drink. The login page is simple and only requires the username and password. 
 
@@ -279,13 +276,13 @@ When the user logs in successfully they will be brought to a welcome back landin
 
 From here they can navigate around the site as normal. They can access the drinks page by clicking the home button in the navbar, or by clicking the search Drinks button below the welcome back image. 
 
-### **2.7 - Log Out** ###
+### **2.7 - LOG OUT** ###
 
 The logout button is on display to all logged in users. Once a user clicks on logout they will be logged out of the site and get a confirmation message that their session has ended. 
 
 ![Image of the Log out page](assets/images/readme_images/log_out.png)
 
-### **2.8 - The Footer** ###
+### **2.8 - THE FOOTER** ###
 
 I have chosen a very basic footer for the website. The footer contains just the social media links and some information about the site in the sub footer. The footer is identical on each page to maintain consistency no matter what page the user finds themselves on.
 
@@ -324,7 +321,7 @@ I have chosen a very basic footer for the website. The footer contains just the 
 ## **5. Deployment** ##
 <br>
 
-### **5.1 Deployment** ###
+### **5.1 DEPLOYMENT** ###
 
 To deploy the site on Github i undertook the following steps:
 
@@ -344,7 +341,7 @@ The link to view the published site can be found by clicking [Here](https://smcg
 
 Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/
 
-### **5.2 Cloning** ###
+### **5.2 CLONING** ###
 
 You can clone the projects repository to your local computer by following the steps below:
 
@@ -366,7 +363,7 @@ Cloning a repository using the command line
 8. In terminal type git clone and then paste the URL you copied earlier: https://github.com/smcgdub/Discover-Ireland-MS2-Project
 9. Press Enter to create your local clone
 
-### **5.3 Cloning Desktop** ###
+### **5.3 CLONING DESKTOP** ###
 
 You can also clone the project using Github Desktop. To do this you can do the following:
 
@@ -387,7 +384,7 @@ You can also clone the project using Github Desktop. To do this you can do the f
 ## **6. Credits** ##
 <br>
 
-### **6.1 Media** ###
+### **6.1 MEDIA** ###
 
 * Image of cocktail on the shop page<br>
 Photo by [Kaufmann Mercantile](https://unsplash.com/@kaufmann_mercantile)<br>
@@ -401,13 +398,13 @@ Photo by [Nick Fewings](https://unsplash.com/@jannerboy62)<br>
 Photo by [Omar Lopez](https://unsplash.com/@omarlopez1)<br>
 [Image Here](https://unsplash.com/photos/vsgdG95Ehyo)
 
-### **6.2 Code** ###
+### **6.2 CODE** ###
 
 * The HTML and CSS code i used Materialize version 1.0. The official Materialize site documentation is the best place to reference for everything you need. [Materialize Documentation Here](https://materializecss.com/)
 * I used some JQuery to achieve the slideDown effect on each page load. The official JQuery website has lots of documentation. [JQuery Documentation Here](https://jquery.com/)
 * For the database i chose to use Mongo DB. The Mongo DB website has all of the official documentation that you can reference. [Mongo DB Documents Here](https://docs.mongodb.com/)
 
-### **6.3 Acknowledgements** ###
+### **6.3 ACKNOWLEDGEMENTS** ###
 
 * Thank you to all of the tutor team at Code Institute who were always on hand whenever i needed their support.
 * A big thank you to my mentor Dick Vlaanderen who always gives me great feedback on my ideas and is able to point me in the right direction.
