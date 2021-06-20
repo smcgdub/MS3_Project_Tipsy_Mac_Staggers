@@ -1,6 +1,8 @@
 # **Tipsy Mac Staggers** #
 ![Image of people drinking](assets/images/readme_images/people_drinking.jpg)
 
+![Image of site on several devices](assets/images/readme_images/readme_header_image.png)
+
 ## **Introduction** ##
 
 The Tipsy Mac Staggers website was created and built by Stephen Mc Govern. The aim of the website is to act as a drinks database where users can search for a new drink/cocktail that they wish to try. The site will provide all of the ingredients, quantities and instructions to make each drink.
@@ -79,6 +81,11 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 
 ### **1.2 - Visitor goals** ###
 
+ As a user of the site my goals are:
+
+* To be able to search through a database of drinks that users have uploaded so i can try and make a classic drink i am already familiar with, or explore and find a drink that i have never tried before. 
+* Once i have found a drink i want to know what ingredients i need, and the step by step instructions to make that drink. 
+
 <hr>
 
 ### **1.3 - User Stories** ###
@@ -100,7 +107,11 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 
 **FONTS**
 
-* For the website i decided to use the google font style of Nixie One. This font is a mixture of neon tubes signage and a typewriter and it is a font that sits well with the colour scheme i went with. The link to the Nixie One font on Google Font can be found by clicking: [Here](https://fonts.google.com/specimen/Nixie+One?query=nix#standard-styles)
+* For the website i decided to use the google font style of Nixie One. This font is a mixture of neon tubes signage and a typewriter and it is a font that sits well with the colour scheme i went with. 
+
+![Image of Nixie One font](assets/images/readme_images/nixie_one_font.png)
+
+* The link to the Nixie One font on Google Font can be found by clicking: [Here](https://fonts.google.com/specimen/Nixie+One?query=nix#standard-styles)
 
 **ICONS**
 
@@ -363,6 +374,10 @@ Photo by [Omar Lopez](https://unsplash.com/@omarlopez1)<br>
 [Image Here](https://unsplash.com/photos/vsgdG95Ehyo)
 
 ### **6.2 Code** ###
+
+* The HTML and CSS code i used Materialize version 1.0. The official Materialize site documentation is the best place to reference for everything you need. [Materialize Documentation Here](https://materializecss.com/)
+* I used some JQuery to achieve the slideDown effect on each page load. The official JQuery website has lots of documentation. [JQuery Documentation Here](https://jquery.com/)
+* For the database i chose to use Mongo DB. The Mongo DB website has all of the official documentation that you can reference. [Mongo DB Documents Here](https://docs.mongodb.com/)
 
 ### **6.3 Acknowledgements** ###
 
