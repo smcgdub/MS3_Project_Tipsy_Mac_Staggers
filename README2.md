@@ -314,7 +314,7 @@ I have chosen a very basic footer for the website. The footer contains just the 
 ## **4. Testing** ##
 <br>
 
-* Testing information can be found in the [testing.md](testing.md) file
+Testing information can be found in the [testing.md](testing.md) file
 
 <hr>
 
