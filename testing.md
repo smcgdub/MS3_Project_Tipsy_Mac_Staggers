@@ -182,7 +182,7 @@ If a user enters the wrong username, password, or both they will get a message s
 
 ![Image of logout confirmed](assets/images/readme_images/logout_confirmed.png)<br>
 
-**10. The Footer**
+**8. The Footer**
 
 * The footer of each page contains the social media icons and the links to those social media sites. 
 * I have tested all of the social media links behind the icons on each page and they all point to the correct social media site relative to the icon. When clicked the social media site will open in a new tab/window.
