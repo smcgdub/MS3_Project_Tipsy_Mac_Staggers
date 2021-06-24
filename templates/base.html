@@ -27,12 +27,8 @@
 </head>
 
 <body>
-  <!-- FB LIKE CODE -->
-  <!-- <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"
-    nonce="MoZc34Qw"></script> -->
-
   <header>
+    <!-- NAVBAR -->
     <nav class="nav-extended right navbar_colour">
       <div class="nav-wrapper">
         <a href="{{ url_for('home') }}" class="brand-logo">Tipsy's</a>
@@ -42,8 +38,6 @@
         <ul class="right hide-on-med-and-down">
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('home') }}">Home</a></li>
           {% if session.user %}
-          <!-- <li><a class="btn nav-btn waves-effect" href="{{ url_for('profile', username=session['user']) }}">Profile</a>
-          </li> -->
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('add_drink') }}">Add Drink</a></li>
           <li><a class="btn nav-btn waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
           <li><a class="btn nav-btn waves-effect logout-btn" href="{{ url_for('logout') }}">Logout</a></li>
@@ -60,8 +54,6 @@
       <h4 class="center">Menu</h4>
       <li class="li_nav mobile-home"><a class="li_nav waves-effect" href="{{ url_for('home') }}">Home</a></li>
       {% if session.user %}
-      <!-- <li class="li_nav"><a class="li_nav waves-effect"
-          href="{{ url_for('profile', username=session['user']) }}">Profile</a></li> -->
       <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('add_drink') }}">Add drink</a></li>
       <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
       <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('logout') }}">Logout</a></li>
@@ -72,7 +64,6 @@
       {% endif %}
     </ul>
   </header>
-
   <!-- DISPLAY FLASH MESSAGES -->
   <section class="container">
     {% with messages = get_flashed_messages() %}
@@ -87,12 +78,11 @@
     {% endif %}
     {% endwith %}
   </section>
-
+  <!-- MAIN CONTENT -->
   <main class="container">
     {% block content %}
     {% endblock %}
   </main>
-
   <!-- FOOTER -->
   <footer class="page-footer">
     <div class="container">
@@ -128,7 +118,6 @@
     </div>
   </footer>
 
-
   <!-- JQUERY SCRIPT -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -139,5 +128,4 @@
   {% block scripts %}
   {% endblock%}
 </body>
-
 </html>
