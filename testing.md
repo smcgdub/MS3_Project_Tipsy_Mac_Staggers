@@ -8,7 +8,7 @@
 
 ## **1. Automated Testing** ##
 
-* 1.1 HTML Code Validating 
+* 1.1 HTML Code Validating
 * 1.2 CSS Code Validating 
 * 1.3 JavaScript Validating
 * 1.4 Python Validating
@@ -22,6 +22,10 @@
 
 * 3.1 Chrome Dev Tools
 * 3.2 Responsive Design Checker
+
+## **4. Console Testing** ##
+
+* 4.1 Console test results
 
 <hr>
 
@@ -105,7 +109,10 @@ With the free product there doesn't seem to be a way to adjust this. It is somet
 * When a user presses the reset button the search bar will clear and the page will reload as intended. 
 * The drinks on the page are all loading correctly and in alphabetical order.
 * The buttons to the right of the ingredients and instructions collapsible section are working correctly and will expand the ingredients and instructions and area as intended. 
-* The scroll to top button is working as intended. When the user presses the button the page will scroll to the top of the page. 
+* The scroll to top button is working as intended on chrome and firefox. When the user presses the button the page will scroll to the top of the page. 
+
+**ERROR DETECTED**
+* However on Safari the button doesn't move up and down the page as it was intended to to. 
 
 **3. Shop Page**
 
@@ -145,12 +152,42 @@ The register page is working as intended and any new user wishing to register wi
 
 ![Image of register error for date of birth](assets/images/readme_images/successfully_registered.png)<br>
 
+
+**5. Log In**<br>
+
+* On the Login page users are required to enter their username and password. If a user tries to login without entering their username they will be prompted to enter it. 
+
+![Image of login error for username](assets/images/readme_images/login_username_required.png)<br>
+
+If a user only enters their username and tries to log in they will then be prompted to provide it before logging in.
+
+![Image of login error for password](assets/images/readme_images/login_password_required.png)<br>
+
+Once the user has entered the correct username and password they will be brought to the welcome page.
+
+![Image of welcome back message](assets/images/readme_images/login_welcome_back.png)<br>
+
+**Incorrect details entered**
+If a user enters the wrong username, password, or both they will get a message saying the username/or password is incorrect. For security the site doesn't say if it is the username or password is incorrect to help prevent an account being hacked. 
+
+![Image of welcome back message](assets/images/readme_images/login_incorrect.png)<br>
+
+**6. Add Drink**
+
+* The add drink page functions the same way as the register page. 
+
+**7. Log Out**<br>
+
+* The logout button has been checked and when a logged in user clicks on it they are logged out of their session and they will get a confirmation message confirming the logout. 
+
+![Image of logout confirmed](assets/images/readme_images/logout_confirmed.png)<br>
+
 **10. The Footer**
 
 * The footer of each page contains the social media icons and the links to those social media sites. 
-* I have tested all of the social media links behind the icons on each page and they all point to the correct social media site relative to the icon. When clicked the social media site will open in a new tab/window 
+* I have tested all of the social media links behind the icons on each page and they all point to the correct social media site relative to the icon. When clicked the social media site will open in a new tab/window.
 
->
+<hr>
 
 **2.1 Manual testing mobile**
 
@@ -168,11 +205,22 @@ The register page is working as intended and any new user wishing to register wi
 
 <hr>
 
-### **D) Console Testing** ###
+### **4. Console Testing** ###
+<br>
 
-I have tested each page of the site on the console and upon loading none of the pages are showing errors or warnings. 
+I have tested each page of the site on the console and upon loading none of the pages are showing any errors or warnings. 
 
->
+There are some messages that are being populated in the console. Image below:
+
+![Image of console messages](assets/images/readme_images/console_test_1.png)<br>
+
+![Image of console messages](assets/images/readme_images/console_test_2.png)<br>
+
+![Image of console messages](assets/images/readme_images/console_test_3.png)<br>
+
+This message is coming from the Materialize JS and is nothing to do with my code. It also doesn't have any effect on the site performance. It is logged here to highlight i am aware of it. 
+
+<hr>
 
 **1.4 Python Code Validating**
 
