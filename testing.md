@@ -1,69 +1,96 @@
 # **Tipsy Mac Staggers - Testing** #
+
 ![Image of site on several devices](assets/images/readme_images/readme_header_image.png)
->
+
+<hr>
+
 ## **Table of contents** ##
 
-### **1. Automated Testing** ###
+## **1. Automated Testing** ##
 
 * 1.1 HTML Code Validating 
 * 1.2 CSS Code Validating 
 * 1.3 JavaScript Validating
 * 1.4 Python Validating
 
-### **2. Manual Testing** ###
+## **2. Manual Testing** ##
 
 * 2.1 Manual testing desktop
 * 2.2 Manual testing mobile
 
->
+## **3. Responsiveness** ##
+
+* 3.1 Chrome Dev Tools
+* 3.2 Responsive Design Checker
+
+<hr>
 
 ### **1. Automated Testing** ###
+<br>
 
 **1.1 HTML Code Validating**
 
 * All of the HTML files were tested on the [W3C HTML Markup Validation website](https://validator.w3.org/)
 * All of the files came back clear with the result of **"Document checking completed. No errors or warnings to show"**
 
+<hr>
+
 **1.2 CSS Code Validating**
+<br>
 
 * The main CSS files were tested on the [W3C CSS  Validation website](https://jigsaw.w3.org/css-validator/) 
-* All of the files came back clear with the result of **"Congratulations! No Error Found."**
+* All of the CSS came back clear with the result of **"Congratulations! No Error Found."**
+
+![Image of CSS results](assets/images/readme_images/css_validator_results.png)
+
+<hr>
 
 **1.3 JavaScript Code Validating**
+<br>
 
-The testing for the script.js file was carried out on [JShint.com](https://jshint.com/) The results from the test were as follows:
+* The testing for the script.js file was carried out on [JShint.com](https://jshint.com/) The results from the test were as follows:
+
+![Image of JSHint results](assets/images/readme_images/jshint_results.png)
+
+* The undefined variable M on line 3 can be ignored. This is the JavaScript that was taken direct from the Materialize website to allow all of the JavaScript functions to work. 
+
+<hr>
 
 **1.4 Python Code Validating**
+<br>
 
->
+* The testing for the python files of app.py and env.py were carried out on [pep 8 online](http://pep8online.com/) The results from the test were as follows:
+
+<hr>
 
 ### **2. Manual Testing** ###
+<br>
 
 **2.1 Manual testing desktop**
 
 All desktop testing was carried out on Chrome, FireFox and Safari. 
 
-**1. Age Verifier**
+**Age Verifier**
 
-When the user lads on the site the age verification page will load before the site does. Users are greeted with a message informing them the website contanis drink recepies of an alcoholic natre and asks them to confirm if they are of the legal drinking age in their country. They have the option to click "Yes" or "No". 
+When the user lands on the site the age verification page will load before the site does. Users are greeted with a message informing them the website contains drink recipes of an alcoholic nature and asks them to confirm if they are of the legal drinking age in their country. They have the option to click "Yes" or "No". 
 
 ![Image of code for age verifier](assets/images/readme_images/age_verifier_landing_page.png)
 
 * If they click yes they will be brought to the main page of the website. 
 
-* If they click no they are redirected away from the site and brough to the homepage of AgeVerify. As i am using the free AgeVerify product i have very limited settings i can adjust, the redirect appears to be one of them. The screenshot from dev tools is below showing the onclick redirect on line 1: `onclick="AVredirectLocation();"`
+* If they click no they are redirected away from the site and brought to the homepage of AgeVerify. As i am using the free AgeVerify product i have very limited settings i can adjust, the redirect appears to be one of them. The screenshot from dev tools is below showing the onclick redirect on line 1: `onclick="AVredirectLocation();"`
 
 ![Image of code for age verifier](assets/images/readme_images/age_verify_redirect.png)
 
-However with the free product i have used for this project i dont seem to have the ability to adjust this. 
+However with the free product i have used for this project i don't seem to have the ability to adjust this. 
 
-Under the yes and no buttons there is also a checkbox with the text "Remeber me". Users would tick/untick this box depending on their preferecnce. Again as i am using the free AgeVerify product i dont have the ability to adjust this 
+Under the yes and no buttons there is also a checkbox with the text "Remember me". Users would tick/untick this box depending on their preference. Again as i am using the free AgeVerify product i don't have the ability to adjust this 
 
 ![Image of code for age verifier](assets/images/readme_images/age_verify_check_box.png)
 
 Using dev tools you can see the code on line 1 is set to: `checked="true"`
 
-With the free product there doesnt seem to be a way to adjust this. It is something i am aware of and may address at a later date.
+With the free product there doesn't seem to be a way to adjust this. It is something i am aware of and may address at a later date.
 
 **1. Navbar**
 
@@ -71,6 +98,52 @@ With the free product there doesnt seem to be a way to adjust this. It is someth
 * Have clicked on each item in the Navbar and can confirm the page then brings to user to that section.
 * Can confirm on smaller screen sizes and mobile devices the list items in the Navbar collapse and now appear as a hamburger menu. When pressed the menu expands to show items. 
 
+**2. Drinks page / Homepage**
+
+* The search bar at the top pf the page loads and is functioning as intended. Users can search via drink name, drink type or drink ingredient.
+* If a user presses the search button without entering any text the verifier will turn the bar read and the user will be prompted by a popup to enter some text. 
+* When a user presses the reset button the search bar will clear and the page will reload as intended. 
+* The drinks on the page are all loading correctly and in alphabetical order.
+* The buttons to the right of the ingredients and instructions collapsible section are working correctly and will expand the ingredients and instructions and area as intended. 
+* The scroll to top button is working as intended. When the user presses the button the page will scroll to the top of the page. 
+
+**3. Shop Page**
+
+* The Shop Now button under the image and text is working as normal. At the time of writing this testing.md file (June 2021) the shop now button will open Amazon.co.uk in a new tab where eit will display the cocktail making kits. The link can be seen [here](https://www.amazon.co.uk/s?k=cocktail+maker+set&crid=3PU5P06BCME2Q&sprefix=cocktail%2Caps%2C187&ref=nb_sb_ss_ts-doa-p_9_8
+)
+
+**4. Register Page**
+
+* If the user tries to register without completing all of the fields they will get a pop up appear asking them to complete the missing field. Screenshots are below:<br>
+
+**Your Name Error**
+![Image of register error for your name](assets/images/readme_images/register_test_your_name.png)<br>
+
+**Username Error**
+![Image of register error for username](assets/images/readme_images/register_test_username.png)<br>
+
+**Email Error**
+![Image of register error for email](assets/images/readme_images/register_test_email.png)<br>
+
+As you can see from the image above if the user doesn't enter a valid email address the popup will tell them an invalid text has been entered.
+
+**Password Error**<br>
+Users are required to enter a password that is a minimum of 6 characters. Users will know this because the password field has placeholder text informing the user of a minimum of 6 characters. 
+
+![Image of register error for password](assets/images/readme_images/password_field.png)<br>
+
+As you can see from the image below if the user doesn't enter a valid password the popup will tell them they must use a minimum of: 1 number, 1 uppercase and 1 lowercase letter in their 6 character password.
+
+![Image of register error for password](assets/images/readme_images/register_test_password.png)<br>
+
+**Date Of Birth**<br>
+With the date of birth users will be prompted to enter this if left empty. 
+
+![Image of register error for date of birth](assets/images/readme_images/register_test_dob.png)<br>
+
+The register page is working as intended and any new user wishing to register will have to complete all fo the fields before registration will be allowed. Once all fields have been entered and registration has been confirmed the user will get a message displayed: 
+
+![Image of register error for date of birth](assets/images/readme_images/successfully_registered.png)<br>
 
 **10. The Footer**
 
@@ -93,7 +166,7 @@ With the free product there doesnt seem to be a way to adjust this. It is someth
 
 * The footer works exactly the same on mobiles and tablets as it does on desktops.  
 
->
+<hr>
 
 ### **D) Console Testing** ###
 
@@ -127,6 +200,6 @@ Users registering on the site must also enter a valid email address. I have crea
 **INSERT SCREENSHOT HERE**
 
 * **Create Password:**<br> 
-Agin in this field i have placed some placeholder text promting the new user to "Create Password" As i did with the username i have specified in the placeholder text the password must be a minimum of 6 characters. If the user enters a password of less than 6 characters they will be greated with a message of "Invalid password". If the user enters 6 or more characters then the field will turn green. I havent added any confirmation place holder text, the field will jsut turn green to confirm the passowrd in long enough.
+Agin in this field i have placed some placeholder text prompting the new user to "Create Password" As i did with the username i have specified in the placeholder text the password must be a minimum of 6 characters. If the user enters a password of less than 6 characters they will be greeted with a message of "Invalid password". If the user enters 6 or more characters then the field will turn green. I haven't added any confirmation place holder text, the field will just turn green to confirm the password in long enough.
 
 **INSERT SCREENSHOT HERE**
