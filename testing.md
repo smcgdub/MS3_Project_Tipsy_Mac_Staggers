@@ -1,5 +1,5 @@
-# **Tipsy Mac Staggers** #
-![Image of people drinking](assets/images/readme_images/people_drinking.jpg)
+# **Tipsy Mac Staggers - Testing** #
+![Image of site on several devices](assets/images/readme_images/readme_header_image.png)
 >
 ## **Table of contents** ##
 
