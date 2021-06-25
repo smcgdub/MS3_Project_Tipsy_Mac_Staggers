@@ -42,7 +42,10 @@ $(document).ready(function () {
     $('form.login_page_form').slideDown(1000),
     $('form.search_bar').slideDown(1000),
     $('div.shop_div').slideDown(1000),
-  $('div.welcome_back_col').slideDown(1000);
+    $('p.all_inputs_p').slideDown(1000),
+    $('p.occasion-p').slideDown(1000),
+    $('h4.all_drinks_h4').slideDown(1000),
+    $('div.welcome_back_col').slideDown(1000);
 });
 
 // CHARACTER COUNTER FOR ADD DRINK PAGE - INGREDIENTS AND INSTRUCTIONS INPUT
@@ -50,3 +53,34 @@ $(document).ready(function () {
   $('textarea#drink_ingredients').characterCounter();
   $('textarea#drink_instructions').characterCounter();
 });
+
+// VALIDATOR FOR SELECT INPUTS
+// CODE WAS FOUND ON GITHUB HERE: https://github.com/Dogfalo/materialize/issues/1861#issuecomment-275121774
+$(document).ready(function () {
+  $('select[required]').css({
+    display: 'inline',
+    position: 'absolute',
+    float: 'center',
+    padding: 0,
+    margin: 0,
+    border: '1px solid rgba(255,255,255,0)',
+    height: 0,
+    width: 0,
+    top: '2em',
+    left: '3em'
+  });
+});
+
+
+// $('select[required]').css({
+//   display: 'inline',
+//   position: 'absolute',
+//   float: 'center',
+//   padding: 0,
+//   margin: 0,
+//   border: '1px solid rgba(255,255,255,0)',
+//   height: 0, 
+//   width: 0,
+//   top: '2em',
+//   left: '3em'
+// });

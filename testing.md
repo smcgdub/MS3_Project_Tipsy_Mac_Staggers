@@ -179,7 +179,35 @@ If a user enters the wrong username, password, or both they will get a message s
 
 **6. Add Drink**
 
-* The add drink page functions the same way as the register page. 
+The add drink page will only be visible to registered users who are currently logged in. Users who are adding a drink are required to enter 6 different type of information. They are:
+
+1. Drink name
+2. Drink type
+3. Drink ingredients and quantities 
+4. Step by step instructions 
+5. Preparation time 
+6. Serves (Number of people) 
+
+* If the user tries to register without completing all of the fields they will get a pop up appear asking them to complete the missing field. Screenshots are below:<br>
+
+**Drink Name Left Empty**
+![Image of drink name left empty](assets/images/readme_images/add_drink_drink_name.png)<br>
+
+**Drink Type Left Empty**
+![Image of drink Type left empty](assets/images/readme_images/add_drink_drink_type.png)<br>
+
+**Drink Ingredients Left Empty**
+![Image of drink ingredients left empty](assets/images/readme_images/add_drink_ingredients.png)<br>
+
+**Drink Instructions Left Empty**
+![Image of drink instructions left empty](assets/images/readme_images/add_drink_instructions.png)<br>
+
+**Preparation Time Left Empty**
+![Image of drink instructions left empty](assets/images/readme_images/add_drink_preperation.png)<br>
+
+**Serves Left Empty**
+![Image of drink instructions left empty](assets/images/readme_images/add_drink_serves.png)<br>
+
 
 **7. Log Out**<br>
 

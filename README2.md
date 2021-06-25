@@ -403,6 +403,7 @@ Photo by [Omar Lopez](https://unsplash.com/@omarlopez1)<br>
 * The HTML and CSS code i used Materialize version 1.0. The official Materialize site documentation is the best place to reference for everything you need. [Materialize Documentation Here](https://materializecss.com/)
 * I used some JQuery to achieve the slideDown effect on each page load. The official JQuery website has lots of documentation. [JQuery Documentation Here](https://jquery.com/)
 * For the database i chose to use Mongo DB. The Mongo DB website has all of the official documentation that you can reference. [Mongo DB Documents Here](https://docs.mongodb.com/)
+* The code i used for the select validators on the add drink and edit drink dropdowns was found on Github. The code i used was posted by [Tom Freudenberg](https://github.com/TomFreudenberg). The Link to the code on Github can be found [Here](https://github.com/Dogfalo/materialize/issues/1861#issuecomment-275121774)
 
 ### **6.3 ACKNOWLEDGEMENTS** ###
 

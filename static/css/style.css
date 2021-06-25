@@ -148,6 +148,7 @@ main {
 
 .all_drinks_h4 {
   margin: 0px;
+  display: none;
 }
 
 .fb-like {
@@ -242,6 +243,14 @@ main {
 .add_drink {
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
+}
+
+.all_inputs_p {
+  display: none;
+}
+
+.occasion-p {
+  display: none;
 }
 
 /* EDIT DRINK PAGE */
