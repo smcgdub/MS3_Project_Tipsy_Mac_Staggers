@@ -179,7 +179,7 @@ If a user enters the wrong username, password, or both they will get a message s
 
 **6. Add Drink**
 
-The add drink page will only be visible to registered users who are currently logged in. Users who are adding a drink are required to enter 6 different type of information. They are:
+* The add drink page will only be visible to registered users who are currently logged in. Users who are adding a drink are required to enter 6 different type of information. They are:
 
 1. Drink name
 2. Drink type
@@ -203,19 +203,34 @@ The add drink page will only be visible to registered users who are currently lo
 ![Image of drink instructions left empty](assets/images/readme_images/add_drink_instructions.png)<br>
 
 **Preparation Time Left Empty**
-![Image of drink instructions left empty](assets/images/readme_images/add_drink_preperation.png)<br>
+![Image of drink preparation left empty](assets/images/readme_images/add_drink_preperation.png)<br>
 
 **Serves Left Empty**
-![Image of drink instructions left empty](assets/images/readme_images/add_drink_serves.png)<br>
+![Image of drink serves left empty](assets/images/readme_images/add_drink_serves.png)<br>
 
+**7. Edit Drink**<br>
 
-**7. Log Out**<br>
+* Only a registered user can edit and delete drinks. The user is only able to edit and delete the drink that they have entered. When a logged in user clicks on the edit drink button the edit drink window will open and the previous data will be pre-populated to save the user having to re-enter everything. 
+
+![Image of edit drink page](assets/images/readme_images/edit_drink.png)<br>
+
+**8. Delete Drink**
+
+* When a registered user tries to delete a drink they entered a popup will appear asking them to confirm they wish to delete the drink. This feature was added for some defensive programming to ensure a user doesn't delete a drink by accident. I have tested this feature and confirm its working correctly. 
+
+![Image of delete drink page](assets/images/readme_images/delete_drink.png)<br>
+
+Once the user has confirmed the delete in the pop up the page will reload and the user will get a confirmation the drink is deleted.
+
+![Image of delete drink confirmation](assets/images/readme_images/delete_confirmed.png)<br>
+
+**9. Log Out**<br>
 
 * The logout button has been checked and when a logged in user clicks on it they are logged out of their session and they will get a confirmation message confirming the logout. 
 
 ![Image of logout confirmed](assets/images/readme_images/logout_confirmed.png)<br>
 
-**8. The Footer**
+**10. The Footer**
 
 * The footer of each page contains the social media icons and the links to those social media sites. 
 * I have tested all of the social media links behind the icons on each page and they all point to the correct social media site relative to the icon. When clicked the social media site will open in a new tab/window.
@@ -259,11 +274,23 @@ Mobile testing was carried out on the following devices:<br>
 
 * All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
 
-**7. Log Out**<br>
+**6. Add Drink**
 
 * All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
 
-**8. The Footer**
+**7. Edit Drink**
+
+* All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
+
+**8. Delete Drink**
+
+* All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
+
+**9. Log Out**<br>
+
+* All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
+
+**10. The Footer**
 
 * The footer works exactly the same on mobiles and tablets as it does on desktops.  
 
