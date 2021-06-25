@@ -198,11 +198,11 @@ If a user enters the wrong username, password, or both they will get a message s
 
 **2.1 Manual testing mobile**
 
-To reduce repetition of the desktop results for the mobile testing i have just highlighted the different functionalities that mobile users have. However i have carried out all of the exact same manual tests on mobile as i did on the desktop. 
+To reduce repetition of the desktop results, for the mobile testing i have just highlighted the different functionalities that mobile users may experience while using the site on a mobile device. I have carried out all of the exact same manual tests on mobile devices as i did on the desktop however unless highlighted below, readers of this document can know i experienced the exact same outcomes on mobile devices as i did on desktop.  
 
 Mobile testing was carried out on the following devices:<br>
-1. iPhone 6/7/8
-2. iPad
+1. iPhone 6/7/8 (Via Chrome Dev Tools)
+2. iPad (Via Chrome Dev Tools)
 3. Huawei P20 lite
 4. Huawei P smart
 5. Chuwi h9 pro 
@@ -217,18 +217,23 @@ Mobile testing was carried out on the following devices:<br>
 
 **2. Drinks page / Homepage**
 
-* The search bar at the top pf the page loads and is functioning as intended. Users can search via drink name, drink type or drink ingredient.
-* If a user presses the search button without entering any text the verifier will turn the bar read and the user will be prompted by a popup to enter some text. 
-* When a user presses the reset button the search bar will clear and the page will reload as intended. 
-* The drinks on the page are all loading correctly and in alphabetical order.
-* The buttons to the right of the ingredients and instructions collapsible section are working correctly and will expand the ingredients and instructions and area as intended. 
-* The scroll to top button is working as intended on chrome and firefox. When the user presses the button the page will scroll to the top of the page. 
-* If the user searches for a drink that isn't in the database they will get a notification that there is no drink that matches that search. They are then prompted to register and add that drink to the database. 
+* All tests on mobile devices returned the same results as the desktop results listed above. 
 
-![Drink not in database](assets/images/readme_images/drink_not_found.png)
+**3. Shop Page**
 
-**ERROR DETECTED**
-* However on Safari the button doesn't move up and down the page as it was intended to to. 
+* All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
+
+**4. Register Page**
+
+* All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
+
+**5. Log In**<br>
+
+* All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
+
+**7. Log Out**<br>
+
+* All tests on mobile devices returned the same results as the desktop results listed above. The page is functioning normally and as intended on mobile devices. 
 
 **8. The Footer**
 
