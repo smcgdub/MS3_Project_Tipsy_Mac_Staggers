@@ -123,18 +123,18 @@ With the free product there doesn't seem to be a way to adjust this. It is somet
 
 * If the user tries to register without completing all of the fields they will get a pop up appear asking them to complete the missing field. Screenshots are below:<br>
 
-**Your Name Error**
+**Your Name Left Empty**
 ![Image of register error for your name](assets/images/readme_images/register_test_your_name.png)<br>
 
-**Username Error**
+**Username Left Empty**
 ![Image of register error for username](assets/images/readme_images/register_test_username.png)<br>
 
-**Email Error**
+**Email Left Empty**
 ![Image of register error for email](assets/images/readme_images/register_test_email.png)<br>
 
 As you can see from the image above if the user doesn't enter a valid email address the popup will tell them an invalid text has been entered.
 
-**Password Error**<br>
+**Password Left Empty / Error**<br>
 Users are required to enter a password that is a minimum of 6 characters. Users will know this because the password field has placeholder text informing the user of a minimum of 6 characters. 
 
 ![Image of register error for password](assets/images/readme_images/password_field.png)<br>
@@ -143,7 +143,7 @@ As you can see from the image below if the user doesn't enter a valid password t
 
 ![Image of register error for password](assets/images/readme_images/register_test_password.png)<br>
 
-**Date Of Birth**<br>
+**Date Of Birth Left Empty**<br>
 With the date of birth users will be prompted to enter this if left empty. 
 
 ![Image of register error for date of birth](assets/images/readme_images/register_test_dob.png)<br>
@@ -157,17 +157,19 @@ The register page is working as intended and any new user wishing to register wi
 
 * On the Login page users are required to enter their username and password. If a user tries to login without entering their username they will be prompted to enter it. 
 
+**Username Left Empty**<br>
 ![Image of login error for username](assets/images/readme_images/login_username_required.png)<br>
 
 If a user only enters their username and tries to log in they will then be prompted to provide it before logging in.
 
+**Password Left Empty**<br>
 ![Image of login error for password](assets/images/readme_images/login_password_required.png)<br>
 
 Once the user has entered the correct username and password they will be brought to the welcome page.
 
 ![Image of welcome back message](assets/images/readme_images/login_welcome_back.png)<br>
 
-**Incorrect details entered**
+**Incorrect details entered**<br>
 If a user enters the wrong username, password, or both they will get a message saying the username/or password is incorrect. For security the site doesn't say if it is the username or password is incorrect to help prevent an account being hacked. 
 
 ![Image of welcome back message](assets/images/readme_images/login_incorrect.png)<br>
@@ -187,6 +189,8 @@ If a user enters the wrong username, password, or both they will get a message s
 * The footer of each page contains the social media icons and the links to those social media sites. 
 * I have tested all of the social media links behind the icons on each page and they all point to the correct social media site relative to the icon. When clicked the social media site will open in a new tab/window.
 
+![Image of footer icons](assets/images/readme_images/footer_icons.png)<br>
+
 <hr>
 
 **2.1 Manual testing mobile**
@@ -199,7 +203,7 @@ If a user enters the wrong username, password, or both they will get a message s
 * Have clicked on the Tipsy's text on the left of the Navbar. Can confirm it brings the user back to the drinks.html landing page.
 
 
-**10. The Footer**
+**8. The Footer**
 
 * The footer works exactly the same on mobiles and tablets as it does on desktops.  
 
@@ -221,33 +225,3 @@ There are some messages that are being populated in the console. Image below:
 This message is coming from the Materialize JS and is nothing to do with my code. It also doesn't have any effect on the site performance. It is logged here to highlight i am aware of it. 
 
 <hr>
-
-**1.4 Python Code Validating**
-
-**A) Register Page**
-
-Any user who wishes to contribute content to the website must first register their details and create an account. There are 5 input fields on the register page which are:
-
-1) Users name 
-2) Create username 
-3) Users email 
-4) Create password
-5) Enter their date of birth 
-
-* **Your Name:**<br> 
-
-
-* **Create Username:**<br> 
-Users registering on the site must create a username that is a minimum of 5 characters. To help guide new users i have created 2 pieces of placeholder text. The first piece of placeholder text prompts the user to "Create Username". The second piece of placeholder text specifies "Min 5 characters" This lets any new registering user know they have to use a minimum of 5 characters when creating their username. I have also installed some validation code in the HTML so if the user creates a username of less than 5 characters the input field will turn red and they user will be displayed a message of "Invalid Username". If the user enters the 5 characters correctly when they click on a new input field the field they populated will turn green and they will get the confirmation message "Username valid" 
-
-**INSERT SCREENSHOT HERE**
-
-* **Your Email:**<br>
-Users registering on the site must also enter a valid email address. I have created some placeholder again to help guide new users. The first piece is placeholder text on this input field specifying "Your email". If the user enters an invalid email address then the field will turn red and the user will see a message saying "Invalid email address". If the user enters a correct email address then the field will turn green and the user will see the message "Email valid" 
-
-**INSERT SCREENSHOT HERE**
-
-* **Create Password:**<br> 
-Agin in this field i have placed some placeholder text prompting the new user to "Create Password" As i did with the username i have specified in the placeholder text the password must be a minimum of 6 characters. If the user enters a password of less than 6 characters they will be greeted with a message of "Invalid password". If the user enters 6 or more characters then the field will turn green. I haven't added any confirmation place holder text, the field will just turn green to confirm the password in long enough.
-
-**INSERT SCREENSHOT HERE**
