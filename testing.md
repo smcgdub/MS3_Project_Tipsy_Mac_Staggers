@@ -110,6 +110,9 @@ With the free product there doesn't seem to be a way to adjust this. It is somet
 * The drinks on the page are all loading correctly and in alphabetical order.
 * The buttons to the right of the ingredients and instructions collapsible section are working correctly and will expand the ingredients and instructions and area as intended. 
 * The scroll to top button is working as intended on chrome and firefox. When the user presses the button the page will scroll to the top of the page. 
+* If the user searches for a drink that isn't in the database they will get a notification that there is no drink that matches that search. They are then prompted to register and add that drink to the database. 
+
+![Drink not in database](assets/images/readme_images/drink_not_found.png)
 
 **ERROR DETECTED**
 * However on Safari the button doesn't move up and down the page as it was intended to to. 
@@ -195,13 +198,37 @@ If a user enters the wrong username, password, or both they will get a message s
 
 **2.1 Manual testing mobile**
 
+To reduce repetition of the desktop results for the mobile testing i have just highlighted the different functionalities that mobile users have. However i have carried out all of the exact same manual tests on mobile as i did on the desktop. 
+
+Mobile testing was carried out on the following devices:<br>
+1. iPhone 6/7/8
+2. iPad
+3. Huawei P20 lite
+4. Huawei P smart
+5. Chuwi h9 pro 
+
 **1. Navbar**
 
+* When held vertically on a tablet the Navbar buttons will disappear and be accessed by clicking on the hamburger menu that appears on the top right hand side. 
 * When viewing on a tablet horizontally the Navbar will display all of the list items the same as a desktop. 
-* When held vertically on a tablet the Navbar will display with the hamburger menu in place. 
 * On mobile phones whether held horizontally or vertically the Navbar will always appear as a hamburger menu. When pressed the hamburger menu expands to show the list items. 
 * Have clicked on the Tipsy's text on the left of the Navbar. Can confirm it brings the user back to the drinks.html landing page.
+* When viewing on smaller devices where the hamburger is active the text "Tipsey's" moves from the top left of the page to the center. 
 
+**2. Drinks page / Homepage**
+
+* The search bar at the top pf the page loads and is functioning as intended. Users can search via drink name, drink type or drink ingredient.
+* If a user presses the search button without entering any text the verifier will turn the bar read and the user will be prompted by a popup to enter some text. 
+* When a user presses the reset button the search bar will clear and the page will reload as intended. 
+* The drinks on the page are all loading correctly and in alphabetical order.
+* The buttons to the right of the ingredients and instructions collapsible section are working correctly and will expand the ingredients and instructions and area as intended. 
+* The scroll to top button is working as intended on chrome and firefox. When the user presses the button the page will scroll to the top of the page. 
+* If the user searches for a drink that isn't in the database they will get a notification that there is no drink that matches that search. They are then prompted to register and add that drink to the database. 
+
+![Drink not in database](assets/images/readme_images/drink_not_found.png)
+
+**ERROR DETECTED**
+* However on Safari the button doesn't move up and down the page as it was intended to to. 
 
 **8. The Footer**
 
