@@ -91,13 +91,16 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 
 **As a visitor to Tipsy mac Staggers i want/expect/need:**
 
-* A simple user friendly site where i can get information of different types of cocktails/drinks that i am looking to try. I want the layout of the site to be simple and to make sense so I am not confused or put off using it.
-* I want the information I am presented with to be laid out in a way that is easy for me to navigate.
-* I may be viewing the site from a mobile phone or tablet. I want the site to have been designed responsively so that it is still easy to navigate and use on my mobile device.
-* I also expect to be able to connect to the sites social media channels with a simple click so i can keep up to date with anything that the site admins may post there. 
-* Finally as a user I expect feedback from the website I am using when I interact with it. If i send a message to the website i would like a confirmation that my message has been sent successfully. 
+1. A simple user friendly site where i can find information of different types of cocktails/drinks that i am looking to try. 
+2. I want the layout of the site to be simple and intuitive. I want it to make sense so I am not confused or put off using it.
+3. The information should be presented in a uniform way and be laid out in a way that is easy for me to navigate and to understand.
+4. I also want the ability to search for and to view only drinks/ingredients that i am interested in so i am able to filter out content that is not relevant to my search.
+5. I may be viewing the site from a mobile phone or tablet. I expect the site to have been designed responsively so that it works on my mobile device.
+6. On mobile devices the site should work similarly to the way it does on desktop so i am able to navigate it and not be faced with a completely different layout/functionality.
+7. I want the ability to add my own drinks to the website so i can share some of my own favorite recipes with other people. I also expect to be able to edit and delete my own content at any time should i wish to do so. 
+8. I also expect to be able to connect to the sites social media channels with a simple click so i can keep up to date with anything that the site admins may post there. 
+9. Finally as a user I expect feedback from the website when I interact with it. If i add a drink, edit a drink, delete a drink or log in and log out i want to see confirmation that this action has been completed successfully. 
 
-### **User Experience Walk through** ### 
 <hr>
 
 ### **1.4 - Design Choices** ###
