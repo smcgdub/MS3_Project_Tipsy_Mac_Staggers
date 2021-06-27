@@ -29,10 +29,10 @@
 
 <hr>
 
-### **1. Automated Testing** ###
+## **1. Automated Testing** ##
 <br>
 
-**1.1 HTML Code Validating**
+### **1.1 HTML Code Validating** ###
 
 * All of the HTML files were tested on the [W3C HTML Markup Validation website](https://validator.w3.org/)
 * When testing all of the HTML the pages all came back as clear with no errors. There was however 1 warning showing which was referring to lines 79 > 90 on the base.html page (Code is below): 
@@ -56,7 +56,7 @@ Now when i run the code through the validator after the flash message has been d
 
 <hr>
 
-**1.2 CSS Code Validating**
+### **1.2 CSS Code Validating** ###
 <br>
 
 * The main CSS files were tested on the [W3C CSS  Validation website](https://jigsaw.w3.org/css-validator/) 
@@ -66,28 +66,28 @@ Now when i run the code through the validator after the flash message has been d
 
 <hr>
 
-**1.3 JavaScript Code Validating**
+### **1.3 JavaScript Code Validating** ###
 <br>
 
 * The testing for the script.js file was carried out on [JShint.com](https://jshint.com/) The results from the test were as follows:
 
 ![Image of JSHint results](assets/images/readme_images/jshint_results.png)
 
-* The undefined variable M on line 3 can be ignored. This is the JavaScript that was taken direct from the Materialize website to allow all of the JavaScript functions to work. 
+* The undefined variable M on line 3 can be ignored. This is referring ot the M.AutoInit(); This can be ignored as this was taken directly from the the Materialize documents. Auto Init allows you to initialize all of the Materialize Components with a single function call. It is important to note that you cannot pass in options using this method. 
 
 <hr>
 
-**1.4 Python Code Validating**
+### **1.4 Python Code Validating** ###
 <br>
 
 * The testing for the python files of app.py and env.py were carried out on [pep 8 online](http://pep8online.com/) The results from the test were as follows:
 
 <hr>
 
-### **2. Manual Testing** ###
+## **2. Manual Testing** ##
 <br>
 
-**2.1 Manual testing desktop**
+### **2.1 Manual testing desktop** ###
 
 All desktop testing was carried out on Chrome, FireFox and Safari. 
 
@@ -256,7 +256,7 @@ Once the user has confirmed the delete in the pop up the page will reload and th
 
 <hr>
 
-**2.1 Manual testing mobile**
+### **2.1 Manual testing mobile** ###
 
 To reduce repetition of the desktop results, for the mobile testing i have just highlighted the different functionalities that mobile users may experience while using the site on a mobile device. I have carried out all of the exact same manual tests on mobile devices as i did on the desktop however unless highlighted below, readers of this document can know i experienced the exact same outcomes on mobile devices as i did on desktop.  
 
@@ -313,7 +313,7 @@ Mobile testing was carried out on the following devices:<br>
 
 <hr>
 
-### **4. Console Testing** ###
+## **4. Console Testing** ##
 <br>
 
 I have tested each page of the site on the console and upon loading none of the pages are showing any errors or warnings. 

@@ -300,7 +300,15 @@ I have chosen a very basic footer for the website. The footer contains just the 
 * 3.5 - [JQuery](https://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
 * 3.6 - [Python](https://www.python.org/) - Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
 * 3.7 - [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
-* 3.8 - [Mongo DB](https://www.mongodb.com/) - MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. For this project all of the content for every drink is hosted on Mongo DB. 
+* 3.8 - [Mongo DB](https://www.mongodb.com/) - For this project i used Mongo DB for the database. 
+
+MongoDB is a fully managed cloud based database. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. For this project all of the content is hosted on Mongo DB. 
+
+This particular project has has 3 collections in the database. All of the fields are strings and the database structure can be viewed below: 
+
+![Image of the Mongo DB structure](assets/images/readme_images/mongo_db_structure.png)
+
+
 * 3.9 - [Materialize](https://materializecss.com/) - Materialize is a CSS Framework similar to Bootsrap for developing responsive websites. Materialize 1.0 is the version i used for the development of this project. I chose to use Materialize for this project because i had never used it before and wanted to see how it stacked up compared to Bootstrap.
 * 3.10 - [Google fonts](https://fonts.google.com/) - Launched in 2010 Google Fonts is a library of 1,023 free licensed font families. For this project i went with the google font of Nixie One.
 * 3.11 - [Font Awesome](https://fontawesome.com/) - Font awesome is world's most popular and easiest to use icon set. Users have access to thousands of different icons that will cover nearly every icon you are looking for and incorporating them into your website is very easy. 
