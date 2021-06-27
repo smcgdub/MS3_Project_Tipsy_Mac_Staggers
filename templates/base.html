@@ -74,6 +74,7 @@
       {% endif %}
     </ul> -->
   </header>
+
   <!-- DISPLAY FLASH MESSAGES -->
   <section class="container">
     {% with messages = get_flashed_messages() %}
@@ -83,11 +84,11 @@
       <div class="col s10"></div>
       <h4 class="center">{{ message }}</h4>
     </div>
-    </div>
     {% endfor %}
     {% endif %}
     {% endwith %}
   </section>
+  
   <!-- MAIN CONTENT -->
   <main class="container">
     {% block content %}

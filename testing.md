@@ -35,7 +35,26 @@
 **1.1 HTML Code Validating**
 
 * All of the HTML files were tested on the [W3C HTML Markup Validation website](https://validator.w3.org/)
-* All of the files came back clear with the result of **"Document checking completed. No errors or warnings to show"**
+* When testing all of the HTML the pages all came back as clear with no errors. There was however 1 warning showing which was referring to lines 79 > 90 on the base.html page. 
+
+![Image of code on lines 79 > 90](assets/images/readme_images/code_79_90.png)
+
+The code warning is highlighting that there is no `<h>` tags in this section (Screenshot below): 
+
+![Image of code warning](assets/images/readme_images/code_warning.png)
+
+![Image of code warning](assets/images/readme_images/section_without_h_tag.png)
+
+However this warning is incorrect. There is a `<h>` tag in the code, however the `<h>` tag is wrapped inside my Jinja Loop. This `<h>` tag will only be displayed when he user does something on the site that causes the flash message to appear.  
+
+<!-- When the user does something that causes a flash message to appear you can see the code and the `<h>` tag are now generated in the code that is run through the validator (Screenshot below):  -->
+
+![Image of h tag showing](assets/images/readme_images/section_with_h_tag.png)
+
+When i run the code through the validator after the flash message has been displayed i get no warnings or errors displayed (Screenshot below):
+
+![Image of validator showing all clear](assets/images/readme_images/no_errors_or_warnings.png)
+
 
 <hr>
 
