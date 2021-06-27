@@ -336,7 +336,7 @@ Testing information can be found in the [testing.md](testing.md) file
 
 To deploy the site on Github i undertook the following steps:
 
-1. Navigated to my profile page on Github
+<!-- 1. Navigated to my profile page on Github
 2. Selected this project from the repositories
 3. Clicked on settings
 4. Scroll down to the Github pages section
@@ -350,7 +350,7 @@ You will then receive a confirmation saying the page has been published and also
 
 The link to view the published site can be found by clicking [Here](https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/)
 
-Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/
+Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/ -->
 
 ### **5.2 CLONING** ###
 
@@ -358,20 +358,14 @@ You can clone the projects repository to your local computer by following the st
 
 Cloning a repository using the command line
 
-1. On github navigate to the project repository. The link can be found here: https://github.com/smcgdub/Discover-Ireland-MS2-Project
+1. On github navigate to the project repository. You can navigate there by clicking [Here](https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers)
 2. Click on the tab that says < >code
 3. Above the files, click the button that says ↓code
-
-![Image of clone options](assets/readme-images/clone-project.png)
-
 4. From the menu select HTTPS
-5. Click on the clipboard icon on the right hand side (Image below)
-
-![Image of copy clipboard icon](assets/readme-images/github-clipboard.png)
-
+5. Click on the clipboard icon on the right hand side
 6. Open the terminal in your IDE
 7. Change the current working directory to the location where you want the cloned directory.
-8. In terminal type git clone and then paste the URL you copied earlier: https://github.com/smcgdub/Discover-Ireland-MS2-Project
+8. In terminal type git clone and then paste the URL you copied earlier: https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers
 9. Press Enter to create your local clone
 
 ### **5.3 CLONING DESKTOP** ###
@@ -383,9 +377,6 @@ You can also clone the project using Github Desktop. To do this you can do the f
 3. On github navigate to the project repository. The link can be found here: 
 4. Click on the tab that says < >code
 5. Above the files, click the button that says ↓code
-
-![Image of clone options](assets/readme-images/clone-project.png)
-
 6. Click open with GitHub Desktop to clone and open the repository with GitHub Desktop.
 7. Click Choose... and, using the Finder window, navigate to a local path where you want to clone the repository
 8. Click clone
