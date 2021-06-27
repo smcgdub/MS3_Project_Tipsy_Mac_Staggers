@@ -336,6 +336,13 @@ Testing information can be found in the [testing.md](testing.md) file
 
 To deploy the site on Github i undertook the following steps:
 
+Requirements:
+
+* Python 3
+* Github account
+* Mongo DB account 
+* Heroku account 
+
 <!-- 1. Navigated to my profile page on Github
 2. Selected this project from the repositories
 3. Clicked on settings
