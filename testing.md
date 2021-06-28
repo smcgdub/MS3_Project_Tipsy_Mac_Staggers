@@ -89,7 +89,7 @@ Now when i run the code through the validator after the flash message has been d
 
 ### **2.1 Manual testing desktop** ###
 
-All desktop testing was carried out on Chrome, FireFox, Opera and Safari. 
+All desktop testing was carried out on Chrome, FireFox, Opera and Safari. Results listed below will apply to all browsers unless highlighted as otherwise. 
 
 **Age Verifier**
 
@@ -132,7 +132,7 @@ With the free product there doesn't seem to be a way to adjust this. It is somet
 ![Drink not in database](assets/images/readme_images/drink_not_found.png)
 
 **ERROR DETECTED**
-* However on Safari the button doesn't move up and down the page as it was intended to to. 
+* On Safari the scroll to top button doesn't move up and down the page as a user scrolls through the drinks as was intended to do. This is a bug i am aware of and will be working on at a future date.  
 
 **3. Shop Page**
 

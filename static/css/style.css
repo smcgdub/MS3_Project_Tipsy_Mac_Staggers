@@ -226,6 +226,7 @@ main {
 
 .scroll_top {
   position: sticky;
+  /* position: -webkit-sticky; */
   top: 95%;
   margin-bottom: 20px;
   /* margin-left: 50%; */
