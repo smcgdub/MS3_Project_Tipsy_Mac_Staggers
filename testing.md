@@ -267,6 +267,8 @@ Mobile testing was carried out on the following devices:<br>
 4. Huawei P smart
 5. Chuwi h9 pro 
 
+All mobile testing was carried out on Chrome, FireFox, Opera and Brave browsers.
+
 **1. Navbar**
 
 * When held vertically on a tablet the Navbar buttons will disappear and be accessed by clicking on the hamburger menu that appears on the top right hand side. 
