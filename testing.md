@@ -89,7 +89,7 @@ Now when i run the code through the validator after the flash message has been d
 
 ### **2.1 Manual testing desktop** ###
 
-All desktop testing was carried out on Chrome, FireFox and Safari. 
+All desktop testing was carried out on Chrome, FireFox, Opera and Safari. 
 
 **Age Verifier**
 
@@ -126,7 +126,7 @@ With the free product there doesn't seem to be a way to adjust this. It is somet
 * When a user presses the reset button the search bar will clear and the page will reload as intended. 
 * The drinks on the page are all loading correctly and in alphabetical order.
 * The buttons to the right of the ingredients and instructions collapsible section are working correctly and will expand the ingredients and instructions and area as intended. 
-* The scroll to top button is working as intended on chrome and firefox. When the user presses the button the page will scroll to the top of the page. 
+* The scroll to top button is working as intended on Chrome, FireFox, Opera and Safari. When the user presses the button the page will scroll to the top of the page. 
 * If the user searches for a drink that isn't in the database they will get a notification that there is no drink that matches that search. They are then prompted to register and add that drink to the database. 
 
 ![Drink not in database](assets/images/readme_images/drink_not_found.png)
