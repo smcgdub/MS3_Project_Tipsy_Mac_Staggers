@@ -330,7 +330,7 @@ Testing information can be found in the [testing.md](testing.md) file
 <hr>
 
 ## **5. Deployment** ##
-<br>
+<!-- <br>
 
 ### **5.1 DEPLOYMENT** ###
 
@@ -341,7 +341,7 @@ Requirements:
 * Python 3
 * Github account
 * Mongo DB account 
-* Heroku account 
+* Heroku account  -->
 
 <!-- 1. Navigated to my profile page on Github
 2. Selected this project from the repositories
@@ -361,13 +361,26 @@ Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/ -->
 
 ### **5.2 CLONING** ###
 
-* If you wish to make a local copy of this website you can do so by cloning it. Firstly you will need the link to the repository which can be found on Github by clicking [Here](https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers)
-* You will need to follow the instructions on how to clone a Github repository, these instructions can be found by clicking [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository#cloning-a-repository-to-github-desktop) 
-* <em>**Note:** In terminal when you type git clone and then paste the URL you it should look like this `$ git clone https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers`</em>
-* You will also need to create your own env.py file to store the necessary variables.<br>
-* <em>**Note:** You must also create a gitignore file and be sure your your env.py file is listed on it otherwise your information will be pushed into the public domain.</em>
+If you wish to make a local copy of this website you can do so by cloning it. 
 
-The following variables are required for your env.py file:
+1. First you must create a Database in Mongo DB. If you don't have a Mongo DB account you can open one by clicking [Here](https://www.mongodb.com/cloud/atlas)
+2. Once your signed up create a cluster and a database.
+3. Create 3 collections in the database: users, drinks and categories. 
+4. The structure i used for my database on Mongo DB can be found below. You must set yours up the same way if you are looking to clone the site. 
+
+![Image of the Mongo DB structure](assets/images/readme_images/mongo_db_structure.png)
+
+Now your DB is set up you can clone the repository from Github. The link to the repository which can be found on Github by clicking [Here](https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers)<br>
+
+You will need to follow the instructions on how to clone a Github repository, these instructions can be found by clicking [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository#cloning-a-repository-to-github-desktop)<br>
+
+<em>**Note:** In terminal when you type git clone and then paste the URL you it should look like this `$ git clone https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers`</em><br>
+
+Now you will also need to create your own env.py file and store the necessary environment variables in it. To do so securely you must<br>
+
+1. Create a gitignore file in your root directory
+2. Then create an env.py file
+3. Add the following variables to your env.py file:
 
 - Import os
 - os.environ.setdefault("IP", "enter value")
@@ -375,6 +388,8 @@ The following variables are required for your env.py file:
 - os.environ.setdefault("SECRET_KEY", "enter value")
 - os.environ.setdefault("MONGO_URI", "enter value")
 - os.environ.setdefault("MONGO_DBNAME", "enter value")
+
+4. Add your env.py file to the gitignore file. (This is essential to ensure your confidential details will not be pushed into the public domain)
 
 ### **Deployment to Heroku** ###
 
