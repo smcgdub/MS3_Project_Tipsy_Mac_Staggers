@@ -275,7 +275,7 @@ All mobile testing was carried out on Chrome, FireFox, Opera and Brave browsers.
 * When viewing on a tablet horizontally the Navbar will display all of the list items the same as a desktop. 
 * On mobile phones whether held horizontally or vertically the Navbar will always appear as a hamburger menu. When pressed the hamburger menu expands to show the list items. 
 * Have clicked on the Tipsy's text on the left of the Navbar. Can confirm it brings the user back to the drinks.html landing page.
-* When viewing on smaller devices where the hamburger is active the text "Tipsey's" moves from the top left of the page to the center. 
+* When viewing on smaller devices where the hamburger is active the text "Tipsy's" moves from the top left of the page to the center. 
 
 **2. Drinks page / Homepage**
 

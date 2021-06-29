@@ -361,21 +361,65 @@ Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/ -->
 
 ### **5.2 CLONING** ###
 
-You can clone the projects repository to your local computer by following the steps below:
+* If you wish to make a local copy of this website you can do so by cloning it. Firstly you will need the link to the repository which can be found on Github by clicking [Here](https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers)
+* You will need to follow the instructions on how to clone a Github repository, these instructions can be found by clicking [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository#cloning-a-repository-to-github-desktop) 
+* <em>**Note:** In terminal when you type git clone and then paste the URL you it should look like this `$ git clone https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers`</em>
+* You will also need to create your own env.py file to store the necessary variables.<br>
+* <em>**Note:** You must also create a gitignore file and be sure your your env.py file is listed on it otherwise your information will be pushed into the public domain.</em>
 
-Cloning a repository using the command line
+The following variables are required for your env.py file:
 
-1. On github navigate to the project repository. You can navigate there by clicking [Here](https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers)
-2. Click on the tab that says < >code
-3. Above the files, click the button that says ↓code
-4. From the menu select HTTPS
-5. Click on the clipboard icon on the right hand side
-6. Open the terminal in your IDE
-7. Change the current working directory to the location where you want the cloned directory.
-8. In terminal type git clone and then paste the URL you copied earlier: https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers
-9. Press Enter to create your local clone
+- Import os
+- os.environ.setdefault("IP", "enter value")
+- os.environ.setdefault("PORT", "enter value")
+- os.environ.setdefault("SECRET_KEY", "enter value")
+- os.environ.setdefault("MONGO_URI", "enter value")
+- os.environ.setdefault("MONGO_DBNAME", "enter value")
 
-### **5.3 CLONING DESKTOP** ###
+### **Deployment to Heroku** ###
+
+1. Create an account on Heroku if you do not have one. You can create an account by clicking [Here](https://signup.heroku.com/) 
+2. Click the new button and then click on "Create new app" 
+
+![Image of new app button](assets/images/readme_images/heroku_new_app.png)
+
+3. Enter an app name. On Heroku your app name must be unique, so you can not call it the same as mine. You must then select the region closest to you. 
+
+![Image of app name](assets/images/readme_images/heroku_app_name.png)
+
+4. If you have already cloned the files to your Github account then the easiest way to sync to Heroku is via Github. Click on "Deploy" in the menu and then click on "Connect to Github" 
+
+![Image of connect to Github](assets/images/readme_images/github_sync.png)
+
+5. Search for the repository name and once you've found it press the connect button.
+
+![Image of connect to Github](assets/images/readme_images/repository_connect.png)
+
+6. Before you can click on "Enable Automatic Deploys" you must first enter the variables that are in your hidden env.py file. To do this click on "Settings" and then click on the "Reveal config vars" button 
+
+![Image of config vars button](assets/images/readme_images/config_vars_button.png)
+
+7. You will need to enter the following variables for your version of the project. The variables you will need are: 
+
+* IP Address
+* PORT
+* SECRET_KEY
+* MONGO_URI
+* MONGO_DATABASE
+
+Add the variables (Example below):
+
+![Image of hidden vars](assets/images/readme_images/hidden_vars.png)
+
+8. Once all the hidden variables have been entered click on the deploy tab, scroll down to where you see the "Enable Automatic Deploys" button and click it (Main should be selected unless you want other branches to be deployed)
+
+![Image of enable deploy](assets/images/readme_images/enable-deploy.png)
+
+9. When the app is has been deployed by Heroku you will get a confirmation message confirming the deployment. Click the view button to view the deployed app.
+
+![Image of deployment success](assets/images/readme_images/deployment-success.png)
+
+<!-- ### **5.3 CLONING DESKTOP** ###
 
 You can also clone the project using Github Desktop. To do this you can do the following:
 
@@ -386,7 +430,7 @@ You can also clone the project using Github Desktop. To do this you can do the f
 5. Above the files, click the button that says ↓code
 6. Click open with GitHub Desktop to clone and open the repository with GitHub Desktop.
 7. Click Choose... and, using the Finder window, navigate to a local path where you want to clone the repository
-8. Click clone
+8. Click clone -->
 
 <hr>
 
@@ -402,10 +446,6 @@ Photo by [Kaufmann Mercantile](https://unsplash.com/@kaufmann_mercantile)<br>
 * Image of welcome back sign<br>
 Photo by [Nick Fewings](https://unsplash.com/@jannerboy62)<br>
 [Image Here](https://unsplash.com/photos/bTRsbY5RLr4)
-
-* Image of people partying (Top of readme document)<br>
-Photo by [Omar Lopez](https://unsplash.com/@omarlopez1)<br>
-[Image Here](https://unsplash.com/photos/vsgdG95Ehyo)
 
 ### **6.2 CODE** ###
 
