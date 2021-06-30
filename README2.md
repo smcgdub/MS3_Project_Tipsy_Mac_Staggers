@@ -50,9 +50,7 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 * 4.1 See [testing.md](testing.md) document 
 
 ## **5. Deployment** ##
-* 5.1 Deployment
-* 5.2 Cloning
-* 5.3 Cloning Desktop
+* 5.1 Deployment & cloning
 
 ## **6. Credits** ##
 * 6.1 Media
@@ -84,6 +82,7 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 
 * To be able to search through a database of drinks that users have uploaded so i can try and make a classic drink i am already familiar with, or explore and find a drink that i have never tried before. 
 * Once i have found a drink i want to know what ingredients i need, and the step by step instructions to make that drink. 
+* I also want the ability to to add/edit/delete my own drinks on the website should i wish to do so. 
 
 <hr>
 
@@ -169,7 +168,7 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 ## **2. Features** ## 
 <br>
 
-### **2.1 - AGE VERIFIER** ###
+### **2.1 - Age Verifier** ###
 
 When a user lands on the website for the first time they will see the Age Verify page/function. 
 
@@ -177,7 +176,11 @@ When a user lands on the website for the first time they will see the Age Verify
 
 As the website contains content on alcoholic drinks to be responsible i have added an age verifier to the site. This feature doesn't ask users to enter their date of birth because the legal age of drinking can vary from country to country. Instead we ask the user to click yes or no to confirm if they are the legal age for drinking in their country.
 
-### **2.2 - THE NAVBAR** ###
+The age verifier can be set to remember the user session ranging from 1 day to 30 days. For this project i set the verifier to remember the user for 1 day. 
+
+<hr>
+
+### **2.2 - The Navbar** ###
 
 For the Navbar i decided to use a Materialize mobile collapse navbar. I chose this option because i wanted the Navbar to be responsive on all screen sizes and the Materialize mobile collapse navbar offers this function in a quick and easy way. 
 
@@ -215,7 +218,9 @@ When the user clicks on the hamburger the menu will open from the right hand sid
 ![Image of navbar opened on mobile device](assets/images/readme_images/navbar_mobile_opened.png)
 <br>
 
-### **2.3 - SEARCH DRINKS** ###
+<hr>
+
+### **2.3 - Search Drinks** ###
 
 At the top of the home page i have created a search bar for users to search for drinks. If a user wishes the can browse all the drinks listed on the website one by one, or to save time they can use the search feature. 
 <br>
@@ -228,7 +233,7 @@ Initially when i first built the site i was going to have only the search bar sh
 
 ![Image of homepage search only function](assets/images/readme_images/search_only.png)
 
-However i did want users to be able to browse all of the drinks on the website on a single page as part of the idea behind the site is to be able to find  search, find drinks/cocktails users may have never have even heard of. I believe the search bar only page would have acted as a barrier to this. I also wanted to have a page that displayed all the drinks on the website so they could browse everything on one page (See image below).
+However i wanted users to be able to browse all of the drinks on the website on a single page as part of the idea behind the site is to be able to find  search, find drinks/cocktails users may have never have even heard of. I believe the search bar only page would have acted as a barrier to this. I also wanted to have a page that displayed all the drinks on the website so they could browse everything on one page (See image below).
 
 ![Image of homepage search function and all drinks displayed](assets/images/readme_images/search_and_drinks.png)
 
@@ -238,7 +243,9 @@ After building both of these pages and testing them i felt it was not a pleasant
 
 For this reason i decided to scrap the all drinks page and the search only page and combine the 2 pages into one. Now on the home page of the site users can browse all of the drinks on one single page and they also have the search functionality on this page as well. 
 
-### **2.4 - ADD DRINK** ###
+<hr>
+
+### **2.4 - Add Drink** ###
 
 Users of the site who register will have the ability to add drinks to the website. The add drink button will only be visible to registered users, none registered users will not have the ability to submit drinks. 
 <br>
@@ -254,7 +261,9 @@ The data the site collects from each user uploading a drink is:
 5. Preparation time (In minutes)
 6. Serves (Number of people)
 
-### **2.5 - SHOP PAGE** ###
+<hr>
+
+### **2.5 - Shop Page** ###
 
 I have added a shop page to the website. The majority of cocktails will require you to use specific items to make the drink correctly. Users of the site who are new to making their own cocktails may not know what these items are or where to purchase them so i have created a "Shop Now" button with a link to Amazon where users can browse full cocktail making sets that can be delivered to their door. 
 
@@ -265,7 +274,9 @@ At the time of writing this README file (June 2021) the Amazon link is functioni
 
 ![Image of the amazon page](assets/images/readme_images/amazon_link.png)
 
-### **2.6 - LOG IN** ###
+<hr>
+
+### **2.6 - Log In** ###
 
 Registered users who are returning to the site will need to log in if they wish to edit any of their submitted content or to add a new drink. The login page is simple and only requires the username and password. 
 
@@ -279,13 +290,17 @@ When the user logs in successfully they will be brought to a welcome back landin
 
 From here they can navigate around the site as normal. They can access the drinks page by clicking the home button in the navbar, or by clicking the search Drinks button below the welcome back image. 
 
-### **2.7 - LOG OUT** ###
+<hr>
+
+### **2.7 - Log Out** ###
 
 The logout button is on display to all logged in users. Once a user clicks on logout they will be logged out of the site and get a confirmation message that their session has ended. 
 
 ![Image of the Log out page](assets/images/readme_images/log_out.png)
 
-### **2.8 - THE FOOTER** ###
+<hr>
+
+### **2.8 - The Footer** ###
 
 I have chosen a very basic footer for the website. The footer contains just the social media links and some information about the site in the sub footer. The footer is identical on each page to maintain consistency no matter what page the user finds themselves on.
 
@@ -317,7 +332,7 @@ This particular project has has 3 collections in the database. All of the fields
 * 3.11 - [Font Awesome](https://fontawesome.com/) - Font awesome is world's most popular and easiest to use icon set. Users have access to thousands of different icons that will cover nearly every icon you are looking for and incorporating them into your website is very easy. 
 * 3.12 - [W3schools](https://www.w3schools.com/) - One of the first ports of call for any developer. It has a vast amount of content and code tutorials that will help explain how code works. A great free resource for every developer. 
 * 3.13 - [Balsamiq](https://balsamiq.com/) - Balsamiq Wireframes is a small graphical tool to sketch out user interfaces for websites and web / desktop / mobile applications. I used Balsamiq to formulate my initial ideas for the site so i could visualize how the site would look and also be able to gage the scope of the project. 
-* 3.14 - [Age Verify](https://ageverify.com/) - AgeVerify is a website age checker, pop up splash entry page & age verification pop-up script that easily integrates in to your existing website with a single line of code, brought to you by the fine folks at Imbibe Digital.
+* 3.14 - [Age Verify](https://elfsight.com/) - The age verify tool is provided by Elfsight. The team over at Elfsight offer a wide range of widgets and tools for people to use on their websites and they are very easy to design and implement.
 * 3.15 - [Favicon](https://favicon.io/favicon-generator/) - A free and simple website that allows you to create, build and customize your Favicons for your own site. 
 
 <hr>
@@ -330,38 +345,11 @@ Testing information can be found in the [testing.md](testing.md) file
 <hr>
 
 ## **5. Deployment** ##
-<!-- <br>
+<br>
 
-### **5.1 DEPLOYMENT** ###
+### **5.1 DEPLOYMENT & CLONING** ###
 
-To deploy the site on Github i undertook the following steps:
-
-Requirements:
-
-* Python 3
-* Github account
-* Mongo DB account 
-* Heroku account  -->
-
-<!-- 1. Navigated to my profile page on Github
-2. Selected this project from the repositories
-3. Clicked on settings
-4. Scroll down to the Github pages section
-5. Click where is says source and in the dropdown menu select master
-6. Click on the next dropdown menu to the right select /(root)
-7. Click save
-
-You will then receive a confirmation saying the page has been published and also be provided with the link where people can view your site.
-
-![Image of page published confirmation](assets/images/readme_images/github_page_published.png)
-
-The link to view the published site can be found by clicking [Here](https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/)
-
-Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/ -->
-
-### **5.2 CLONING** ###
-
-If you wish to make a local copy of this website you can do so by cloning it. 
+If you wish to make a local copy of this website you can do so by cloning it. The steps listed below outline how to clone your own version of this site.
 
 1. First you must create a Database in Mongo DB. If you don't have a Mongo DB account you can open one by clicking [Here](https://www.mongodb.com/cloud/atlas)
 2. Once your signed up create a cluster and a database.
@@ -452,7 +440,7 @@ You can also clone the project using Github Desktop. To do this you can do the f
 ## **6. Credits** ##
 <br>
 
-### **6.1 MEDIA** ###
+### **6.1 Media** ###
 
 * Image of cocktail on the shop page<br>
 Photo by [Kaufmann Mercantile](https://unsplash.com/@kaufmann_mercantile)<br>
@@ -462,14 +450,16 @@ Photo by [Kaufmann Mercantile](https://unsplash.com/@kaufmann_mercantile)<br>
 Photo by [Nick Fewings](https://unsplash.com/@jannerboy62)<br>
 [Image Here](https://unsplash.com/photos/bTRsbY5RLr4)
 
-### **6.2 CODE** ###
+<hr>
+
+### **6.2 Code** ###
 
 * The HTML and CSS code i used Materialize version 1.0. The official Materialize site documentation is the best place to reference for everything you need. [Materialize Documentation Here](https://materializecss.com/)
 * I used some JQuery to achieve the slideDown effect on each page load. The official JQuery website has lots of documentation. [JQuery Documentation Here](https://jquery.com/)
 * For the database i chose to use Mongo DB. The Mongo DB website has all of the official documentation that you can reference. [Mongo DB Documents Here](https://docs.mongodb.com/)
 * The code i used for the select validators on the add drink and edit drink dropdowns was found on Github. The code i used was posted by [Tom Freudenberg](https://github.com/TomFreudenberg). The Link to the code on Github can be found [Here](https://github.com/Dogfalo/materialize/issues/1861#issuecomment-275121774)
 
-### **6.3 ACKNOWLEDGEMENTS** ###
+### **6.3 Acknowledgements** ###
 
 * Thank you to all of the tutor team at Code Institute who were always on hand whenever i needed their support.
 * A big thank you to my mentor Dick Vlaanderen who always gives me great feedback on my ideas and is able to point me in the right direction.
