@@ -82,6 +82,16 @@ This in no way effects the performance of the website and is noted in the testin
 
 * The testing for the python files of app.py and env.py were carried out on [pep 8 online](http://pep8online.com/) The results from the test were as follows:
 
+app.py file results:
+
+![Image of pep8 results](assets/images/readme_images/pep8_validation.png)
+
+env.py file results:
+
+![Image of pep8 results](assets/images/readme_images/env_py_validation.png)
+
+**Note:** There is 1 issue highlighted in my env.py file indicating that line 6, which is my MONGO_URI variable is to long. However I have checked with Code Institute and have been told this is acceptable and just to highlight this in my testing.md file. 
+
 <hr>
 
 ## **2. Manual Testing** ##

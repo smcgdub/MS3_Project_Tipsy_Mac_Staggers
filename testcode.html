@@ -9,7 +9,7 @@
   <!-- <link rel="manifest" href="{{ url_for('favicon', filename='site.webmanifest') }}"> -->
 
 
-    <!-- FAV ICON -->
+  <!-- FAV ICON -->
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
   <link rel="apple-touch-icon" type="image/x-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
@@ -21,27 +21,47 @@
 
 
 
-To deploy the site on Github i undertook the following steps:
+  To deploy the site on Github i undertook the following steps:
 
-Requirements:
+  Requirements:
 
-* Python 3
-* Github account
-* Mongo DB account 
-* Heroku account 
+  * Python 3
+  * Github account
+  * Mongo DB account
+  * Heroku account
 
-1. Navigated to my profile page on Github
-2. Selected this project from the repositories
-3. Clicked on settings
-4. Scroll down to the Github pages section
-5. Click where is says source and in the dropdown menu select master
-6. Click on the next dropdown menu to the right select /(root)
-7. Click save
+  1. Navigated to my profile page on Github
+  2. Selected this project from the repositories
+  3. Clicked on settings
+  4. Scroll down to the Github pages section
+  5. Click where is says source and in the dropdown menu select master
+  6. Click on the next dropdown menu to the right select /(root)
+  7. Click save
 
-You will then receive a confirmation saying the page has been published and also be provided with the link where people can view your site.
+  You will then receive a confirmation saying the page has been published and also be provided with the link where
+  people can view your site.
 
-![Image of page published confirmation](assets/images/readme_images/github_page_published.png)
+  ![Image of page published confirmation](assets/images/readme_images/github_page_published.png)
 
-The link to view the published site can be found by clicking [Here](https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/)
+  The link to view the published site can be found by clicking
+  [Here](https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/)
 
-Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/
+  Link: https://smcgdub.github.io/MS3_Project_Tipsy_Mac_Staggers/
+
+
+  # @app.route('/<drink_id>', methods=["POST"])
+    # def upvote(drink_id):
+    # mongo.db.drinks.update_one({"_id": ObjectId(drink_id)}, {"$inc": {'upvotes': 1}})
+    # return redirect(url_for("home"))
+    # return redirect(url_for('recipe_description', recipe_id=recipe_id))
+
+
+    # @app.route("/drinks_by")
+    # def drinks_by():
+    # drinks_by = mongo.db.drinks.find()
+    # return render_template("drinks_by.html", drinks_by=drinks_by)
+
+    # mongo.db.drinks.find({"created_by": "username"})
+    # return render_template("drinks_by.html")
+    # drinks = mongo.db.drinks.find()
+    # return render_template("drinks.html", drinks=drinks)

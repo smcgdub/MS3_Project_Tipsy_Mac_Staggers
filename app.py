@@ -109,17 +109,6 @@ def profile(username):
         return redirect(url_for("login"))
 
 
-# @app.route("/drinks_by")
-# def drinks_by():
-#     drinks_by = mongo.db.drinks.find()
-#     return render_template("drinks_by.html", drinks_by=drinks_by)
-
-    # mongo.db.drinks.find({"created_by": "username"})
-    # return render_template("drinks_by.html")
-#     drinks = mongo.db.drinks.find()
-#     return render_template("drinks.html", drinks=drinks)
-
-
 @app.route("/logout")
 def logout():
     # LOGS USER OUT OF THEIR SESSION
@@ -185,13 +174,6 @@ def delete_drink(drink_id):
 def shop():
     # PAGE FOR USERS TO SHOP FOR COCKTAIL ESSENTIALS
     return render_template("shop.html")
-
-
-# @app.route('/<drink_id>', methods=["POST"])
-# def upvote(drink_id):
-#     mongo.db.drinks.update_one({"_id": ObjectId(drink_id)}, {"$inc": {'upvotes': 1}})
-#     return redirect(url_for("home"))
-    # return redirect(url_for('recipe_description', recipe_id=recipe_id))
 
 
 if __name__ == "__main__":
