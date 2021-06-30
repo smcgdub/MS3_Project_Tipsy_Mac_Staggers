@@ -16,17 +16,17 @@
   <!-- LOCAL CSS STYLE SHEET -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <!-- FAV ICON -->
-  <link rel="apple-touch-icon" sizes="180x180" type="image/x-icon"
+  <link rel="apple-touch-icon" sizes="180x180"
     href="{{ url_for('static', filename='/css/images/apple-touch-icon.png') }}">
-  <link rel="icon" type="image/png" sizes="32x32" type="image/x-icon"
+  <link rel="icon" type="image/png" sizes="32x32" 
     href="{{ url_for('static', filename='/css/images/favicon-32x32.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" type="image/x-icon"
+  <link rel="icon" type="image/png" sizes="16x16" 
     href="{{ url_for('static', filename='/css/images/favicon-16x16.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" type="image/x-icon"
+  <link rel="icon" type="image/png" sizes="16x16" 
     href="{{ url_for('static', filename='/css/images/android-chrome-192x192.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" type="image/x-icon"
+  <link rel="icon" type="image/png" sizes="16x16" 
     href="{{ url_for('static', filename='/css/images/favicon.ico') }}">
-  <link rel="icon" type="image/png" sizes="16x16" type="image/x-icon"
+  <link rel="icon" type="image/png" sizes="16x16" 
     href="{{ url_for('static', filename='/css/images/android-chrome-512x512.png') }}">
   <link rel="manifest" href="{{ url_for('static', filename='css/images/site.webmanifest') }}">
   {% block styles %}
@@ -73,20 +73,6 @@
         {% endif %}
       </ul>
     </div>
-
-    <!-- <ul class="sidenav" id="mobile-demo">
-      <h4 class="center">Menu</h4>
-      <li class="li_nav mobile-home"><a class="li_nav waves-effect" href="{{ url_for('home') }}">Home</a></li>
-      {% if session.user %}
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('add_drink') }}">Add drink</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('logout') }}">Logout</a></li>
-      {% else %}
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('register') }}">Register</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('login') }}">Login</a></li>
-      {% endif %}
-    </ul> -->
   </header>
 
   <!-- DISPLAY FLASH MESSAGES -->

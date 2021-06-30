@@ -65,3 +65,17 @@
     # return render_template("drinks_by.html")
     # drinks = mongo.db.drinks.find()
     # return render_template("drinks.html", drinks=drinks)
+
+    <!-- <ul class="sidenav" id="mobile-demo">
+      <h4 class="center">Menu</h4>
+      <li class="li_nav mobile-home"><a class="li_nav waves-effect" href="{{ url_for('home') }}">Home</a></li>
+      {% if session.user %}
+      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('add_drink') }}">Add drink</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('logout') }}">Logout</a></li>
+      {% else %}
+      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('register') }}">Register</a></li>
+      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('login') }}">Login</a></li>
+      {% endif %}
+    </ul> -->
