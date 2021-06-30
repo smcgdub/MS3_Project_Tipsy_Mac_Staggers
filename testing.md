@@ -53,7 +53,7 @@ Now when i run the code through the validator after the flash message has been d
 
 ![Image of validator showing all clear](assets/images/readme_images/no_errors_or_warnings.png)
 
-
+This in no way effects the performance of the website and is noted in the testing.md document to highlight i am aware of this. 
 <hr>
 
 ### **1.2 CSS Code Validating** ###
@@ -73,7 +73,7 @@ Now when i run the code through the validator after the flash message has been d
 
 ![Image of JSHint results](assets/images/readme_images/jshint_results.png)
 
-* The undefined variable M on line 3 can be ignored. This is referring ot the M.AutoInit(); This can be ignored as this was taken directly from the the Materialize documents. Auto Init allows you to initialize all of the Materialize Components with a single function call. It is important to note that you cannot pass in options using this method. 
+* The undefined variable M on line 3 can be ignored. This is referring ot the M.AutoInit(); This can be ignored as this was taken directly from the the Materialize documents so the JS code is written correctly. Auto Init allows you to initialize all of the Materialize Components with a single function call. It is important to note that you cannot pass in options using this method. 
 
 <hr>
 
@@ -95,23 +95,13 @@ All desktop testing was carried out on Chrome, FireFox, Opera and Safari. Result
 
 When the user lands on the site the age verification page will load before the site does. Users are greeted with a message informing them the website contains drink recipes of an alcoholic nature and asks them to confirm if they are of the legal drinking age in their country. They have the option to click "Yes" or "No". 
 
-![Image of code for age verifier](assets/images/readme_images/age_verifier_landing_page.png)
+![Image of age verifier](assets/images/readme_images/age_verify.png)
 
-* If they click yes they will be brought to the main page of the website. 
+* If they click yes they will be brought to the main page of the website.
 
-* If they click no they are redirected away from the site and brought to the homepage of AgeVerify. As i am using the free AgeVerify product i have very limited settings i can adjust, the redirect appears to be one of them. The screenshot from dev tools is below showing the onclick redirect on line 1: `onclick="AVredirectLocation();"`
+* If they click no they will see a popup message will display a message asking the user to come back and use the site when they are of legal drinking age. 
 
-![Image of code for age verifier](assets/images/readme_images/age_verify_redirect.png)
-
-However with the free product i have used for this project i don't seem to have the ability to adjust this. 
-
-Under the yes and no buttons there is also a checkbox with the text "Remember me". Users would tick/untick this box depending on their preference. Again as i am using the free AgeVerify product i don't have the ability to adjust this 
-
-![Image of code for age verifier](assets/images/readme_images/age_verify_check_box.png)
-
-Using dev tools you can see the code on line 1 is set to: `checked="true"`
-
-With the free product there doesn't seem to be a way to adjust this. It is something i am aware of and may address at a later date.
+![Image of age verifier](assets/images/readme_images/age_verify_negative.png)
 
 **1. Navbar**
 
