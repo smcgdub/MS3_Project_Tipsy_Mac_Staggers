@@ -15,20 +15,16 @@
   <div class="elfsight-app-0deb35bb-9e44-469f-8a19-232cfe557e7a"></div>
   <!-- LOCAL CSS STYLE SHEET -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  <!-- FAV ICON -->
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="{{ url_for('static', filename='/css/images/apple-touch-icon.png') }}">
-  <link rel="icon" type="image/png" sizes="32x32" 
-    href="{{ url_for('static', filename='/css/images/favicon-32x32.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" 
-    href="{{ url_for('static', filename='/css/images/favicon-16x16.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" 
-    href="{{ url_for('static', filename='/css/images/android-chrome-192x192.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" 
-    href="{{ url_for('static', filename='/css/images/favicon.ico') }}">
-  <link rel="icon" type="image/png" sizes="16x16" 
-    href="{{ url_for('static', filename='/css/images/android-chrome-512x512.png') }}">
+
+  <!-- FAVICON -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='css/images/apple-touch-icon.png') }}">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='css/images/favicon-32x32.png') }}">
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='css/images/favicon-16x16.png') }}">
   <link rel="manifest" href="{{ url_for('static', filename='css/images/site.webmanifest') }}">
+
   {% block styles %}
   {% endblock %}
   <title>Tipsy Mac Staggers</title>
