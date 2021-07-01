@@ -131,6 +131,18 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 ![Image of the colour pallet used for the project](assets/images/readme_images/ms3_colour_palette.png)
 <br>
 
+**IMAGES**
+
+I did explore the option of allowing users to add an image to the site when they add a drink but in the end i decided against this. The layout i decided to go with is a simple and easy to follow one for the user and I intentionally wanted to keep the site this way. There are 3 possibilities that can arise from user added imagery on each drink:
+
+1. A user may end up not adding an image to when they add a drink to the site. This could create a situation where some drinks have images and some drinks do not. I believe this would make the site look cheap and amateurish and is not a look/feel i wish to have. 
+2. I could write some defensive programming and auto generate a stock image if a user doesn't enter an image. However if you have a lot of users not adding images you will end up with a lot of stock images across the site and again i feel this would make the site look amateurish, especially if the stock image looks nothing like the actual drink. 
+3. A user may end up uploading a copyrighted image. Again this may lead to problems especially if the correct credit isn't given to the owner of that image. You have to assume the majority of users are not familiar with copyright law and many may just pull an image they find off the internet and upload it instead of taking their own picture.
+
+**CONCLUSION** 
+
+Imagery is something i may explore at a later date but if i do then i will rearrange the site layout in a different way and maybe give each drink its own page as opposed to the current layout. 
+
 <hr>
 
 ### **1.5 - Wire Frames** ###
