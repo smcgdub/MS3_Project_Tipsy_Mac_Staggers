@@ -358,17 +358,17 @@ If you wish to make a local copy of this website you can do so by cloning it. Th
 
 ![Image of the Mongo DB structure](assets/images/readme_images/mongo_db_structure.png)
 
-Now your DB is set up you can clone the repository from Github. The link to the repository which can be found on Github by clicking [Here](https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers)<br>
-
-You will need to follow the instructions on how to clone a Github repository, these instructions can be found by clicking [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository#cloning-a-repository-to-github-desktop)<br>
+5. Now your DB is set up you can clone the repository from Github. The link to the repository which can be found on Github by clicking [Here](https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers)
+6. You will need to follow the instructions on how to clone a Github repository, these instructions can be found by clicking [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository#cloning-a-repository-to-github-desktop)<br>
 
 <em>**Note:** In terminal when you type git clone and then paste the URL you it should look like this `$ git clone https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers`</em><br>
 
-Now you will also need to create your own env.py file and store the necessary environment variables in it. To do so securely you must<br>
+7. Once you have downloaded all the files you will need to install the requirements for the project. You can do sy by typing in your terminal `pip3 install -r requirements.txt` and pressing enter. All of the requirements from the txt file will now download.
+8. Now you will also need to create your own env.py file and store the necessary environment variables in it. To do so securely you must:
 
-1. Create a gitignore file in your root directory
-2. Then create an env.py file
-3. Add the following variables to your env.py file:
+i. Create a gitignore file in your root directory if its not already created<br>
+ii. Then create an env.py file<br>
+iii. Add the following variables to your env.py file:<br>
 
 - Import os
 - os.environ.setdefault("IP", "enter value")
@@ -377,9 +377,12 @@ Now you will also need to create your own env.py file and store the necessary en
 - os.environ.setdefault("MONGO_URI", "enter value")
 - os.environ.setdefault("MONGO_DBNAME", "enter value")
 
-4. Add your env.py file to the gitignore file. (This is essential to ensure your confidential details will not be pushed into the public domain)
+9. Add your env.py file to the gitignore file. (This is essential to ensure your confidential details will not be pushed into the public domain)
+10. in your terminal type `python3 app.py` and press enter to run the programme. 
 
 ### **Deployment to Heroku** ###
+
+Once you have completed all of the above steps its time to sync everything up to Heroku and deploy the site. 
 
 1. Create an account on Heroku if you do not have one. You can create an account by clicking [Here](https://signup.heroku.com/) 
 2. Click the new button and then click on "Create new app" 
@@ -422,18 +425,6 @@ Add the variables (Example below):
 
 ![Image of deployment success](assets/images/readme_images/deployment-success.png)
 
-<!-- ### **5.3 CLONING DESKTOP** ###
-
-You can also clone the project using Github Desktop. To do this you can do the following:
-
-1. Download Github Desktop if you do not already have it installed. The link can be found here: [GitHub Desktop](https://desktop.github.com/)
-2. Sign in to GitHub and GitHub Desktop before you start to clone.
-3. On github navigate to the project repository. The link can be found here: 
-4. Click on the tab that says < >code
-5. Above the files, click the button that says ↓code
-6. Click open with GitHub Desktop to clone and open the repository with GitHub Desktop.
-7. Click Choose... and, using the Finder window, navigate to a local path where you want to clone the repository
-8. Click clone -->
 
 <hr>
 
