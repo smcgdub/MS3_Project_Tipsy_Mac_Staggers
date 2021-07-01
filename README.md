@@ -363,7 +363,7 @@ If you wish to make a local copy of this website you can do so by cloning it. Th
 
 <em>**Note:** In terminal when you type git clone and then paste the URL you it should look like this `$ git clone https://github.com/smcgdub/MS3_Project_Tipsy_Mac_Staggers`</em><br>
 
-7. Once you have downloaded all the files you will need to install the requirements for the project. You can do sy by typing in your terminal `pip3 install -r requirements.txt` and pressing enter. All of the requirements from the txt file will now download.
+7. Once you have downloaded all the files you will need to install the requirements for the project. You can do this by typing in your terminal `pip3 install -r requirements.txt` and pressing enter. All of the requirements from the txt file will now download.
 8. Now you will also need to create your own env.py file and store the necessary environment variables in it. To do so securely you must:
 
 i. Create a gitignore file in your root directory if its not already created<br>
@@ -378,7 +378,7 @@ iii. Add the following variables to your env.py file:<br>
 - os.environ.setdefault("MONGO_DBNAME", "enter value")
 
 9. Add your env.py file to the gitignore file. (This is essential to ensure your confidential details will not be pushed into the public domain)
-10. in your terminal type `python3 app.py` and press enter to run the programme. 
+10. In your terminal type `python3 app.py` and press enter to run the programme. 
 
 ### **Deployment to Heroku** ###
 
@@ -473,6 +473,3 @@ If you need to reach me i can be contacted via the three methods below:
 <br>
 
 8.1 - This website and all of its content was completed for my personal assessment and is strictly for educational purposes only.
-
-
-This is some test text 
