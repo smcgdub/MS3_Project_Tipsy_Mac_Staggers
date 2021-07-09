@@ -122,7 +122,7 @@ When the user lands on the site the age verification page will load before the s
 **2. Drinks page / Homepage**
 
 * The search bar at the top pf the page loads and is functioning as intended. Users can search via drink name, drink type or drink ingredient.
-* If a user presses the search button without entering any text the verifier will turn the bar read and the user will be prompted by a popup to enter some text. 
+* If a user presses the search button without entering any text the verifier will turn the bar read and the user will be prompted by a popup to "Please fill in this field". 
 * When a user presses the reset button the search bar will clear and the page will reload as intended. 
 * The drinks on the page are all loading correctly and in alphabetical order.
 * The buttons to the right of the ingredients and instructions collapsible section are working correctly and will expand the ingredients and instructions and area as intended. 
@@ -132,12 +132,25 @@ When the user lands on the site the age verification page will load before the s
 ![Drink not in database](assets/images/readme_images/drink_not_found.png)
 
 **ERROR DETECTED**
-* On Safari the scroll to top button doesn't move up and down the page as a user scrolls through the drinks as was intended to do. This is a bug i am aware of and will be working on at a future date.  
+* On Safari the scroll to top button doesn't move up and down the page as a user scrolls through the drinks as was intended to do. 
+
+**SOLUTIONS TRIED**
+1. I have looked into this and it from what i could find online a lot of solutions offered advised to add `position: --webkit--sticky` to the element in the CSS file. I tried this however and it was unsuccessful. 
+2. I spoke with tutor support at code institute and the solution we tried was to wrap the scroll button in a div and apply the `scroll_top` CSS to that `<div>`. This solution did solve the problem and the scroll to top button started scrolling as the user went up and down the page. However this created another problem, if the user scrolls to the bottom of the page to the very last drink, if they try clicking on the button to expand the instructions section it will not expand. I used dev tools and the cause of this is because the newly created `<div>` now sits on top covering the final instructions row (Screenshot below)
+
+![](assets/images/readme_images/web-sticky-test-1.png)
+
+3. Another solution i tried was to use the `z-index: ;` however this again was unsuccessful. I tried to set the `z-index: -1;` but this made the button disappear completely. I then tried to set the `z-index: +1;` but this created the same problem in point 2 above.
+
+**CONCLUSION:**
+
+Moving forward this this is a bug i am aware of and have noted it here in my README.MD/TESTING.MD file. I will be working to address this issue moving forward at a later date.
 
 **3. Shop Page**
 
-* The Shop Now button under the image and text is working as normal. At the time of writing this testing.md file (June 2021) the shop now button will open Amazon.co.uk in a new tab where eit will display the cocktail making kits. The link can be seen [here](https://www.amazon.co.uk/s?k=cocktail+maker+set&crid=3PU5P06BCME2Q&sprefix=cocktail%2Caps%2C187&ref=nb_sb_ss_ts-doa-p_9_8
-)
+* The Shop Now button under the image and text is working as normal. At the time of writing this testing.md file (July 2021) the shop now button will open Amazon.co.uk in a new tab where it will display the cocktail making kits. The link that i used can be seen here: https://www.amazon.co.uk/s?k=cocktail+maker+set&crid=3PU5P06BCME2Q&sprefix=cocktail%2Caps%2C187&ref=nb_sb_ss_ts-doa-p_9_8
+
+* I will be monitoring this link as Amazon may change it in future which is beyond my control. If the link is changed at a later date by Amazon i will update the link. 
 
 **4. Register Page**
 
@@ -152,7 +165,7 @@ When the user lands on the site the age verification page will load before the s
 **Email Left Empty**
 ![Image of register error for email](assets/images/readme_images/register_test_email.png)<br>
 
-As you can see from the image above if the user doesn't enter a valid email address the popup will tell them an invalid text has been entered.
+As you can see from the image above if the user doesn't enter an email address the popup will tell them an invalid text has been entered.
 
 **Password Left Empty / Error**<br>
 Users are required to enter a password that is a minimum of 6 characters. Users will know this because the password field has placeholder text informing the user of a minimum of 6 characters. 
@@ -190,7 +203,7 @@ Once the user has entered the correct username and password they will be brought
 ![Image of welcome back message](assets/images/readme_images/login_welcome_back.png)<br>
 
 **Incorrect details entered**<br>
-If a user enters the wrong username, password, or both they will get a message saying the username/or password is incorrect. For security the site doesn't say if it is the username or password is incorrect to help prevent an account being hacked. 
+If a user enters the wrong username, password, or both they will get a message saying the username and/or password is incorrect. For security the site doesn't specify if it is the username or password that is incorrect to help prevent an account being hacked. 
 
 ![Image of welcome back message](assets/images/readme_images/login_incorrect.png)<br>
 
@@ -265,7 +278,7 @@ Mobile testing was carried out on the following devices:<br>
 2. iPad (Via Chrome Dev Tools)
 3. Huawei P20 lite
 4. Huawei P smart
-5. Chuwi h9 pro 
+5. Chuwi h9 pro tablet 
 
 All mobile testing was carried out on Chrome, FireFox, Opera and Brave browsers.
 

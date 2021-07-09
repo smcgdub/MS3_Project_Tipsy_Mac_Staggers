@@ -283,7 +283,7 @@ I have added a shop page to the website. The majority of cocktails will require 
 ![Image of the shop now page](assets/images/readme_images/shop_now.png)
 <br>
 
-At the time of writing this README file (June 2021) the Amazon link is functioning normally and as intended. As the Amazon site is constantly updated this link may need adjusting, but as of the time of writing this README the link is working as normal. 
+At the time of writing this README file (July 2021) the Amazon link is functioning normally and as intended. As the Amazon site is constantly updated this link may need adjusting, but as of the time of writing this README the link is working as normal. 
 
 ![Image of the amazon page](assets/images/readme_images/amazon_link.png)
 

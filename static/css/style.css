@@ -233,6 +233,8 @@ main {
   /* text-align: center; */
   /* margin-left: 20px; */
   /* margin-right: 20px; */
+  position: -webkit-sticky;
+  z-index: 1;
 }
 
 .scroll {
