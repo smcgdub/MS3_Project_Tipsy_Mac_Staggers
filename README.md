@@ -174,6 +174,7 @@ Imagery is something i may explore at a later date but if i do then i will rearr
 [Add Drink Desktop](https://ibb.co/FBxgLRJ)<br>
 [Add Drink iPad](https://ibb.co/GktKQGX)<br>
 [Add Drink iPhone](https://ibb.co/HgmX2Nn)<br>
+<em>(Note: On all devices the edit drink page will be the exact same display and layout as the add drink page except the content for each field will be pre populated. To save on duplication and repetitiveness i have not added this wireframe as it would be the exact same as the add drink wireframe just with some dummy text.)</em><br>
 
 <hr>
 
@@ -245,13 +246,13 @@ Initially when i first built the site i was going to have only the search bar sh
 
 ![Image of homepage search only function](assets/images/readme_images/search_only.png)
 
-However i wanted users to be able to browse all of the drinks on the website on a single page as part of the idea behind the site is to be able to find  search, find drinks/cocktails users may have never have even heard of. I believe the search bar only page would have acted as a barrier to this. I also wanted to have a page that displayed all the drinks on the website so they could browse everything on one page (See image below).
+However i wanted users to be able to browse all of the drinks on the website on a single page as part of the idea behind the site is to be able to find  search, find drinks/cocktails users may have never have been exposed to or be familiar with. Part of the fun of using a site like this is discovering and trying new things. I believe having only the search bar on the page would have acted as a barrier to this. I also wanted to have a page that displayed all the drinks on the website so they could browse everything on one page (See image below).
 
 ![Image of homepage search function and all drinks displayed](assets/images/readme_images/search_and_drinks.png)
 
 **CONCLUSION** 
 
-After building both of these pages and testing them i felt it was not a pleasant user experience as it was listing the drinks and search on 2 different pages and was just duplication and i didn't feel it gave a positive user experience. 
+After building both of these pages and testing them i felt it was not a pleasant user experience. The reason for this is because it was listing all the drinks and the search functionality on 2 different pages. This was just duplication and i didn't feel it gave a positive user experience. 
 
 For this reason i decided to scrap the all drinks page and the search only page and combine the 2 pages into one. Now on the home page of the site users can browse all of the drinks on one single page and they also have the search functionality on this page as well. 
 
@@ -286,6 +287,8 @@ At the time of writing this README file (June 2021) the Amazon link is functioni
 
 ![Image of the amazon page](assets/images/readme_images/amazon_link.png)
 
+The link behind the shop now button is here: https://www.amazon.co.uk/s?k=cocktail+maker+set&crid=3PU5P06BCME2Q&sprefix=cocktail%2Caps%2C187&ref=nb_sb_ss_ts-doa-p_9_8
+
 <hr>
 
 ### **2.6 - Log In** ###
@@ -294,13 +297,13 @@ Registered users who are returning to the site will need to log in if they wish 
 
 ![Image of the Login page](assets/images/readme_images/log_in.png)
 
-I have also added a redirect under the login button. This displays the message to users that if they are new to the site they need ot register for an account. The link here will bring them to the user register page.
+I have also added a redirect under the login button. This displays the message to users that if they are new to the site they need to register for an account. The link displayed here will bring them to the user register page.
 
 When the user logs in successfully they will be brought to a welcome back landing page. 
 
 ![Image of the welcome back page](assets/images/readme_images/welcome_back.png)
 
-From here they can navigate around the site as normal. They can access the drinks page by clicking the home button in the navbar, or by clicking the search Drinks button below the welcome back image. 
+From here they can navigate around the site as normal. They can access the drinks page by clicking the home button in the navbar, or by clicking the Search Drinks button below the welcome back image. 
 
 <hr>
 
@@ -461,6 +464,8 @@ Photo by [Nick Fewings](https://unsplash.com/@jannerboy62)<br>
 * I used some JQuery to achieve the slideDown effect on each page load. The official JQuery website has lots of documentation. [JQuery Documentation Here](https://jquery.com/)
 * For the database i chose to use Mongo DB. The Mongo DB website has all of the official documentation that you can reference. [Mongo DB Documents Here](https://docs.mongodb.com/)
 * The code i used for the select validators on the add drink and edit drink dropdowns was found on Github. The code i used was posted by [Tom Freudenberg](https://github.com/TomFreudenberg). The Link to the code on Github can be found [Here](https://github.com/Dogfalo/materialize/issues/1861#issuecomment-275121774)
+
+<hr>
 
 ### **6.3 Acknowledgements** ###
 
