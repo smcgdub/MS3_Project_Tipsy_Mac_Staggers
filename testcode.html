@@ -1,17 +1,3 @@
-  <!-- FAVICON -->
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='css/images/apple-touch-icon.png') }}">
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='css/images/favicon-32x32.png') }}">
-  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='css/images/favicon-16x16.png') }}">
-  <link rel="manifest" href="{{ url_for('static', filename='css/images/site.webmanifest') }}">
-
-<!-- ALANS CODE -->
-  <link rel="shortcut icon" type="image/ico" href="{{ url_for('static', filename='img/favicon.ico') }}" />
-
-
-
   To deploy the site on Github i undertook the following steps:
 
   Requirements:
@@ -57,18 +43,36 @@
     # drinks = mongo.db.drinks.find()
     # return render_template("drinks.html", drinks=drinks)
 
-    <!-- <ul class="sidenav" id="mobile-demo">
-      <h4 class="center">Menu</h4>
-      <li class="li_nav mobile-home"><a class="li_nav waves-effect" href="{{ url_for('home') }}">Home</a></li>
-      {% if session.user %}
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('add_drink') }}">Add drink</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('logout') }}">Logout</a></li>
-      {% else %}
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('shop') }}">Shop</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('register') }}">Register</a></li>
-      <li class="li_nav"><a class="li_nav waves-effect" href="{{ url_for('login') }}">Login</a></li>
-      {% endif %}
-    </ul> -->
-
-    type="image/png"
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- MATERIALIZE LIBRARY -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- FONT AWESOME LIBRARY -->
+      <script src="https://kit.fontawesome.com/debc4afe80.js" crossorigin="anonymous"></script>
+      <!-- LOCAL CSS STYLE SHEET -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+      {% block styles %}
+      {% endblock %}
+      <title>Tipsy Mac Staggers</title>
+    </head>
+    
+    <body>
+    
+    
+      <!-- JQUERY SCRIPT -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <!-- MATERIALIZE SCRIPT -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- LOCAL JS FILE -->
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+      {% block scripts %}
+      {% endblock%}
+    </body>
+    
+    </html>
