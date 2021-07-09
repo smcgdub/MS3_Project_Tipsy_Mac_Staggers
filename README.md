@@ -24,10 +24,12 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 * 2.2 The navbar
 * 2.3 Search drinks feature 
 * 2.4 Add drink
-* 2.5 Shop
-* 2.6 LogIn
-* 2.7 Log out
-* 2.8 The Footer 
+* 2.5 Edit drink
+* 2.6 Delete drink
+* 2.7 Shop
+* 2.8 LogIn
+* 2.9 Log out
+* 2.10 The Footer 
 
 ## **3. Technologies/Languages Used** ##
 * 3.1 Gitpod
@@ -276,7 +278,35 @@ The data the site collects from each user uploading a drink is:
 
 <hr>
 
-### **2.5 - Shop Page** ###
+### **2.5 - Edit Drink** ###
+
+Any user who has uploaded a drink to the site will have the ability to edit this drink at any time they wish, however they must be logged in for this edit button to be displayed (Screenshot below)
+
+![Image of the edit drink button](assets/images/readme_images/edit_drink_button.png)
+
+Once the user clicks on the edit drink button they will be brought to the edit drink page where all of the drinks information will appear. All this information is pre-populated with the information the user originally entered when they created the drink (Screenshot below)
+
+![Image of the edit drink page](assets/images/readme_images/edit_drink_page.png)
+
+<hr>
+
+### **2.6 - Delete Drink** ###
+
+Any user who has uploaded a drink to the site will also have the ability to delete this drink at any time, however they must be logged in for this delete button to be displayed (Screenshot below)
+
+![Image of the delete drink button](assets/images/readme_images/delete_button.png)
+
+Once the user clicks the delete button a popup will appear and the user must confirm they do wish to delete this drink by clicking the ok button (Screenshot below)
+
+![Image of the confirm delete button](assets/images/readme_images/confirm_delete_button.png)
+
+After the user clicks the ok to delete button the drink will be deleted and the drinks database will reload. The user will also be given a confirmation that the drink has now been deleted (Screenshot below)
+
+![Image of the confirm delete button](assets/images/readme_images/drink_deleted.png)
+
+<hr>
+
+### **2.7 - Shop Page** ###
 
 I have added a shop page to the website. The majority of cocktails will require you to use specific items to make the drink correctly. Users of the site who are new to making their own cocktails may not know what these items are or where to purchase them so i have created a "Shop Now" button with a link to Amazon where users can browse full cocktail making sets that can be delivered to their door. 
 
@@ -291,7 +321,7 @@ The link behind the shop now button is here: https://www.amazon.co.uk/s?k=cockta
 
 <hr>
 
-### **2.6 - Log In** ###
+### **2.8 - Log In** ###
 
 Registered users who are returning to the site will need to log in if they wish to edit any of their submitted content or to add a new drink. The login page is simple and only requires the username and password. 
 
@@ -307,7 +337,7 @@ From here they can navigate around the site as normal. They can access the drink
 
 <hr>
 
-### **2.7 - Log Out** ###
+### **2.9 - Log Out** ###
 
 The logout button is on display to all logged in users. Once a user clicks on logout they will be logged out of the site and get a confirmation message that their session has ended. 
 
@@ -315,7 +345,7 @@ The logout button is on display to all logged in users. Once a user clicks on lo
 
 <hr>
 
-### **2.8 - The Footer** ###
+### **2.10 - The Footer** ###
 
 I have chosen a very basic footer for the website. The footer contains just the social media links and some information about the site in the sub footer. The footer is identical on each page to maintain consistency no matter what page the user finds themselves on.
 
