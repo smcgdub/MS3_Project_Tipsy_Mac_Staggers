@@ -142,9 +142,9 @@ When the user lands on the site the age verification page will load before the s
 
 3. Another solution i tried was to use the `z-index: ;` however this again was unsuccessful. I tried to set the `z-index: -1;` but this made the button disappear completely. I then tried to set the `z-index: +1;` but this created the same problem in point 2 above.
 
-**CONCLUSION:**
+**RESOLUTION:**
 
-Moving forward this this is a bug i am aware of and have noted it here in my README.MD/TESTING.MD file. I will be working to address this issue moving forward at a later date.
+* I have managed to solve the issue on Safari with the scroll to top floating button. I have wrapped the button in its own `<div>` and applied a margin on each side of the element. The button is now scrolling up and down the page as intended and when the button is on the last item you are now able to click and expand the instructions panel and the button is not blocking it. The code can be found from rows 36 > 39 on the drinks.html page.
 
 **3. Shop Page**
 
