@@ -226,15 +226,12 @@ main {
 
 .scroll_top {
   position: sticky;
-  /* position: -webkit-sticky; */
   top: 95%;
   margin-bottom: 20px;
   /* margin-left: 50%; */
   /* text-align: center; */
-  /* margin-left: 20px; */
-  /* margin-right: 20px; */
-  /* position: -webkit-sticky; */
-  /* position: sticky; */
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 .scroll {
@@ -243,8 +240,11 @@ main {
   padding: 4px;
   border-radius: 20px;
   opacity: 0.3;
+  /* margin-left: 49%; */
+
+  /* margin: auto; */
+  /* position: -webkit-sticky; */
   /* width: 100%; */
-  margin-left: 49%;
   /* margin-left: auto; */
   /* margin-right: auto; */
   /* text-align: center; */
