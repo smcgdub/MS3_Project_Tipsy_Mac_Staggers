@@ -228,8 +228,6 @@ main {
   position: sticky;
   top: 95%;
   margin-bottom: 20px;
-  /* margin-left: 50%; */
-  /* text-align: center; */
   margin-left: 45%;
   margin-right: 45%;
 }
@@ -240,14 +238,6 @@ main {
   padding: 4px;
   border-radius: 20px;
   opacity: 0.3;
-  /* margin-left: 49%; */
-
-  /* margin: auto; */
-  /* position: -webkit-sticky; */
-  /* width: 100%; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* text-align: center; */
 }
 
 /* ADD DRINK PAGE */

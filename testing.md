@@ -138,13 +138,17 @@ When the user lands on the site the age verification page will load before the s
 1. I have looked into this and it from what i could find online a lot of solutions offered advised to add `position: --webkit--sticky` to the element in the CSS file. I tried this however and it was unsuccessful. 
 2. I spoke with tutor support at code institute and the solution we tried was to wrap the scroll button in a div and apply the `scroll_top` CSS to that `<div>`. This solution did solve the problem and the scroll to top button started scrolling as the user went up and down the page. However this created another problem, if the user scrolls to the bottom of the page to the very last drink, if they try clicking on the button to expand the instructions section it will not expand. I used dev tools and the cause of this is because the newly created `<div>` now sits on top covering the final instructions row (Screenshot below)
 
-![](assets/images/readme_images/web-sticky-test-1.png)
+![Image of button stopping bottom instructions being clickable](assets/images/readme_images/web-sticky-test-1.png)
 
 3. Another solution i tried was to use the `z-index: ;` however this again was unsuccessful. I tried to set the `z-index: -1;` but this made the button disappear completely. I then tried to set the `z-index: +1;` but this created the same problem in point 2 above.
 
-**RESOLUTION:**
+**SOLUTION FOUND:**
 
-* I have managed to solve the issue on Safari with the scroll to top floating button. I have wrapped the button in its own `<div>` and applied a margin on each side of the element. The button is now scrolling up and down the page as intended and when the button is on the last item you are now able to click and expand the instructions panel and the button is not blocking it. The code can be found from rows 36 > 39 on the drinks.html page.
+* I have managed to solve the issue on Safari with the scroll to top floating button. I have wrapped the button in its own `<div>` and applied a margin on each side of that element (Screenshot below) 
+
+![Image of button solution](assets/images/readme_images/solution_found.png)
+
+The button is now scrolling up and down the page as intended and when the button is on the last item you are now able to click and expand the instructions panel and the button is not blocking it. The code can be found from rows 36 > 39 on the drinks.html page.
 
 **3. Shop Page**
 
