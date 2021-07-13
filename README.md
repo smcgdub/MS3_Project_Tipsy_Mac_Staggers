@@ -523,25 +523,28 @@ If you need to reach me i can be contacted via the three methods below:
 <hr>
 
 ## **8. Future Items To Develop** ##
+<br>
 
-8.1 Search Bar
+### **8.1 Search Bar** ###
 
 * When a user searches for a drink in the search bar, if that drink is in the database a list of those drinks will be populated. If the drink isn't in the database the user will be promoted to sign up and add that drink to the database. On both occasions the search bar will clear. On my final mentor call it was suggested that i leave the item that was searched for populated in the search bar so the user can see what they last searched for. This is a feature i may add at a later date. If i do add this i will need to code the website so that when the user clicks on the search bar to search for another drink, the searched item disappears when the user clicks on the search box. I don't want the user to have to click on the search bar, then delete what was searched for, then type in a new search item as this would be an unpleasant user experience. 
 
-8.2 Like feature on each drink
+### **8.2 Like feature on each drink** ###
 
 * I would also like to develop a rating feature each drink so registered and logged in users can up-vote each drink. This will allow users to see at a glance as they scroll through the drinks which drinks have the highest ratings. When this feature is added i would also like to add a search by rating feature so users can filter results not just on their search, but also on drink ratings.  
 
-8.3 Dedicated profile pages
+### **8.3 Dedicated profile pages** ###
 
-* I will also be looking at add a profile page for every registered user. On the page i want a user to havwe the ability to:
+* I will also be looking at add a profile page for every registered user. On the page i want a user to have the ability to:
 
 1. Upload a profile picture of themselves
 2. Write a short bio about themselves
 3. be able to add what location (county/city) they are in
 4. For people to see all of the drinks they have added ot the site on their profile page 
 
-8.4 Share drink feature
+### **8.4 Share drink feature** ###
+
+* The final feature i want to create is a share drink feature. The way i want this to work is if a user shares a drink, that particular drink will be posted to a social media site of their choice. I had tried installing a widget that has this feature and the share icons were displaying correctly, however when tested the widget was sharing the webpage and not the specific drink. I will have to look at a custom solution for this as the standard free widgets i found online do not seem to have the functionality i desire. 
 
 <hr>
 
