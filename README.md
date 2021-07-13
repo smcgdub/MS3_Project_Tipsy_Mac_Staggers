@@ -64,8 +64,14 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 * 7.2 Email
 * 7.3 Skype
 
-## **8. Disclaimer** ##
-* 8.1 Disclaimer on project
+## **8. Future Features To Develop** ##
+* 8.1 Search Bar
+* 8.2 Like feature on each drink
+* 8.3 Dedicated profile pages
+* 8.4 Share drink feature
+
+## **9. Disclaimer** ##
+* 9.1 Disclaimer on project
 
 <hr>
 
@@ -516,7 +522,30 @@ If you need to reach me i can be contacted via the three methods below:
 
 <hr>
 
-## **8. Disclaimer** ##
+## **8. Future Items To Develop** ##
+
+8.1 Search Bar
+
+* When a user searches for a drink in the search bar, if that drink is in the database a list of those drinks will be populated. If the drink isn't in the database the user will be promoted to sign up and add that drink to the database. On both occasions the search bar will clear. On my final mentor call it was suggested that i leave the item that was searched for populated in the search bar so the user can see what they last searched for. This is a feature i may add at a later date. If i do add this i will need to code the website so that when the user clicks on the search bar to search for another drink, the searched item disappears when the user clicks on the search box. I don't want the user to have to click on the search bar, then delete what was searched for, then type in a new search item as this would be an unpleasant user experience. 
+
+8.2 Like feature on each drink
+
+* I would also like to develop a rating feature each drink so registered and logged in users can up-vote each drink. This will allow users to see at a glance as they scroll through the drinks which drinks have the highest ratings. When this feature is added i would also like to add a search by rating feature so users can filter results not just on their search, but also on drink ratings.  
+
+8.3 Dedicated profile pages
+
+* I will also be looking at add a profile page for every registered user. On the page i want a user to havwe the ability to:
+
+1. Upload a profile picture of themselves
+2. Write a short bio about themselves
+3. be able to add what location (county/city) they are in
+4. For people to see all of the drinks they have added ot the site on their profile page 
+
+* 8.4 Share drink feature
+
+<hr>
+
+## **9. Disclaimer** ##
 <br>
 
-8.1 - This website and all of its content was completed for my personal assessment and is strictly for educational purposes only.
+9.1 - This website and all of its content was completed for my personal assessment and is strictly for educational purposes only.
