@@ -541,7 +541,7 @@ If you need to reach me i can be contacted via the three methods below:
 3. be able to add what location (county/city) they are in
 4. For people to see all of the drinks they have added ot the site on their profile page 
 
-* 8.4 Share drink feature
+8.4 Share drink feature
 
 <hr>
 
