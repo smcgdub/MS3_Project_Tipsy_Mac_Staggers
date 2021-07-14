@@ -152,6 +152,7 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 **MOBILE DRINKS INFORMATION IMAGE**
 
 ![Image of site on a mobile device 2](assets/images/readme_images/mobile_view2.png)
+
 <br>
 
 **IMAGES**
