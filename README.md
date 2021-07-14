@@ -90,7 +90,8 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 
 * To be able to search through a database of drinks that users have uploaded so i can try and make a classic drink i am already familiar with, or explore and find a drink that i have never tried before. 
 * Once i have found a drink i want to know what ingredients i need, and the step by step instructions to make that drink. 
-* I also want the ability to to add/edit/delete my own drinks on the website should i wish to do so. 
+* If i become a regular user of the site i would like the ability to add my own drinks to the site for people to try.
+* I also want the ability to to edit/delete any of the drinks that i have added to the site at any time should i wish to do so. 
 
 <hr>
 
@@ -389,7 +390,7 @@ I have chosen a very basic footer for the website. The footer contains just the 
 
 MongoDB is a fully managed cloud based database. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. For this project all of the content is hosted on Mongo DB. 
 
-This particular project has has 3 collections in the database. All of the fields are strings and the database structure can be viewed below: 
+This particular project has has 3 collections in the database. All of the fields are strings and the database structure can be viewed in the screen shot below: 
 
 ![Image of the Mongo DB structure](assets/images/readme_images/mongo_db_structure.png)
 
