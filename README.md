@@ -139,6 +139,21 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 ![Image of the colour pallet used for the project](assets/images/readme_images/ms3_colour_palette.png)
 <br>
 
+* Across the pages i haven't gone for lots of different colours and there is a lot of white space on the main drinks page. Again, this is a design choice i purposefully went with as it keeps with the minimalist feel i wanted to achieve with the site. On desktop the site might appear to contain a lot of dead white space but when you are using the site on a mobile device i feel the plain white keeps the page from looking to cluttered (Screenshots below)
+
+<br>
+
+**MOBILE HOMEPAGE WITH SEARCH IMAGE**
+
+![Image of site on a mobile device 1](assets/images/readme_images/mobile_view1.png)
+
+<br>
+
+**MOBILE DRINKS INFORMATION IMAGE**
+
+![Image of site on a mobile device 2](assets/images/readme_images/mobile_view2.png)
+<br>
+
 **IMAGES**
 
 I did explore the option of allowing users to add an image to the site when they add a drink but in the end i decided against this. The layout i decided to go with is a simple and easy to follow one for the user and I intentionally wanted to keep the site this way. There are 3 possibilities that can arise from user added imagery on each drink:
