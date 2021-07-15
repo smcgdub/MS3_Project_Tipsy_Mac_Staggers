@@ -47,6 +47,7 @@ Only registered users will also be able to upload their own cocktail/drinks reci
 * 3.13 Balsamiq
 * 3.14 Age Verifier 
 * 3.15 Favicon Generator 
+* 3.16 Security/LogIn
 
 ## **4. Testing** ##
 * 4.1 See [testing.md](testing.md) document 
@@ -394,6 +395,36 @@ This particular project has has 3 collections in the database. All of the fields
 
 ![Image of the Mongo DB structure](assets/images/readme_images/mongo_db_structure.png)
 
+All of the fields in the collections have been named so they are self explanatory from their description. However for 100% clarification i have also listed them below in a bit more detail:
+
+**USERS**
+<br>
+
+**id =** Unique user id created by Mongo DB upon registration for every user<br>
+**your_name =** The users full name they entered upon registration<br> 
+**username =** The username the user creates upon registration<br>
+**email =** The email address the user has entered when registering<br>
+**password =** The password the user creates when registering<br>
+**d.o.b =** The users date of birth they entered when registering
+
+**DRINKS**
+<br>
+
+**id =** Unique id assigned to each drink by Mongo DB upon the drinks creation by the user<br>
+**drink_category =** The main element of the drink, ex: Whiskey, Vodka, Rum<br>
+**drink_name =** The name the user has given to the drink when they created it<br>
+**drink_ingredients =** The ingredients that are used to make the drink<br>
+**drink_instructions =** The instructions a user needs to follow to make the drink<br>
+**preperation_time =** Set by the person who added the drink to let other users know how long it will take them to make the drink<br>
+**serves =** Set by the person who added the drink to let users know how many people the drink will serve<br>
+**created_by =** Lets users know who added the drink to the website. This is the exact same data as **username** in the users collection<br>
+
+**CATEGORIES**
+<br>
+
+**id =** Unique id assigned to each type of drink (Whiskey, Vodka, Rum) upon its creation. You may have 5 drinks that have the main ingredient of whiskey, however all 5 will have the same id as the main ingredient is still the same, whiskey for example.<br>
+**drink_category =** The main element of the drink, ex: Whiskey, Vodka, Rum. This is the same data that is also in the **DRINKS** collection above.<br>
+
 
 * 3.9 - [Materialize](https://materializecss.com/) - Materialize is a CSS Framework similar to Bootsrap for developing responsive websites. Materialize 1.0 is the version i used for the development of this project. I chose to use Materialize for this project because i had never used it before and wanted to see how it stacked up compared to Bootstrap.
 * 3.10 - [Google fonts](https://fonts.google.com/) - Launched in 2010 Google Fonts is a library of 1,023 free licensed font families. For this project i went with the google font of Nixie One.
@@ -401,7 +432,8 @@ This particular project has has 3 collections in the database. All of the fields
 * 3.12 - [W3schools](https://www.w3schools.com/) - One of the first ports of call for any developer. It has a vast amount of content and code tutorials that will help explain how code works. A great free resource for every developer. 
 * 3.13 - [Balsamiq](https://balsamiq.com/) - Balsamiq Wireframes is a small graphical tool to sketch out user interfaces for websites and web / desktop / mobile applications. I used Balsamiq to formulate my initial ideas for the site so i could visualize how the site would look and also be able to gage the scope of the project. 
 * 3.14 - [Age Verify](https://elfsight.com/) - The age verify tool is provided by Elfsight. The team over at Elfsight offer a wide range of widgets and tools for people to use on their websites and they are very easy to design and implement.
-* 3.15 - [Favicon](https://favicon.io/favicon-generator/) - A free and simple website that allows you to create, build and customize your Favicons for your own site. 
+* 3.15 - [Favicon](https://favicon.io/favicon-generator/) - A free and simple website that allows you to create, build and customize your Favicons for your own site.
+* 3.16 - I haven't listed anything here in relation to the security/logIn features that i have used. This is done intentionally as i don't want to list here the security features i used to secure peoples accounts on the site.
 
 <hr>
 
